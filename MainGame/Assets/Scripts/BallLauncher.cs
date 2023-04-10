@@ -8,7 +8,7 @@ public class BallLauncher : MonoBehaviour
     public void BallAddForce()
     {
         var playerRigi = MainGameController.Instance.PlayerRigibody;
-        Vector3 test = new Vector3(0, 0, 1) * launchForce_;
-        playerRigi.AddForce(test);
+        var force_ = Vector3.forward * launchForce_;
+        playerRigi.AddForce(force_);
     }
 }

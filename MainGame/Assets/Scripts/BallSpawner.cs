@@ -5,7 +5,7 @@ using UnityEngine;
 public class BallSpawner : MonoBehaviour
 {
     [SerializeField] private Transform spawnPoint_;
-    [SerializeField] private GameObject BallPrefab;
+    [SerializeField] private GameObject ballPrefab_;
     private void Start()
     {
         spawn_Ball();
@@ -13,7 +13,7 @@ public class BallSpawner : MonoBehaviour
     private void spawn_Ball()
     {
         var playerObj = MainGameController.Instance.PlayerObject;
-        MainGameController.Instance.PlayerObject = Instantiate<GameObject>(BallPrefab, spawnPoint_.transform.position, Quaternion.identity);
+        MainGameController.Instance.PlayerObject = Instantiate<GameObject>(ballPrefab_, spawnPoint_.transform.position, Quaternion.identity);
 
     }
 }
