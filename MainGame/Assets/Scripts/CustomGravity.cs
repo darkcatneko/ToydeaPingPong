@@ -5,10 +5,9 @@ using UnityEngine;
 public class CustomGravity : MonoBehaviour
 {
     private Vector3 gravity_ = Vector3.back * 9.8f;
-    //private Rigidbody playerRigi_ => MainGameController.Instance.PlayerRigibody;     
+    private Rigidbody playerRigi_ => MainGameController.Instance.PlayerRigibody;     
     private void FixedUpdate()
     {   
-        var playerRigi_ = MainGameController.Instance.PlayerRigibody;
         playerRigi_.AddForce(gravity_);
     }
 }
