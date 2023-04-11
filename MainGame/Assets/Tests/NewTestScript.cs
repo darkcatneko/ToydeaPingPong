@@ -8,6 +8,11 @@ public class NewTestScript
 {
     // A Test behaves as an ordinary method
     [Test]
+    public void SpeedLimitTest(Vector3 nowVelocity)
+    {
+
+    }
+
     public void NewTestScriptSimplePasses()
     {
         // Use the Assert class to test conditions
