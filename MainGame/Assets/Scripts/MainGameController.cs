@@ -6,7 +6,7 @@ public class MainGameController : MonoBehaviour
 {
     public static MainGameController Instance;
     public GameObject PlayerObject;
-    public Rigidbody PlayerRigibody => PlayerObject.GetComponent<Rigidbody>();
+    public Rigidbody PlayerRigidbody => PlayerObject.GetComponent<Rigidbody>();
     private void Awake()
     {
         Instance = this;

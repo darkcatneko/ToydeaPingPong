@@ -5,7 +5,7 @@ using UnityEngine;
 public class BallLauncher : MonoBehaviour
 {
     [SerializeField] private float launchForce_;
-    private Rigidbody playerRigi_ => MainGameController.Instance.PlayerRigibody;
+    private Rigidbody playerRigid_ => MainGameController.Instance.PlayerRigidbody;
     private void Update()
     {
         
@@ -13,7 +13,7 @@ public class BallLauncher : MonoBehaviour
     public void BallAddForce()
     {
         var force_ = Vector3.forward * launchForce_;
-        playerRigi_.AddForce(force_);
+        playerRigid_.AddForce(force_);
     }
     public void ChargedLaunch()
     {

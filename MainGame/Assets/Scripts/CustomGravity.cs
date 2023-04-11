@@ -5,9 +5,15 @@ using UnityEngine;
 public class CustomGravity : MonoBehaviour
 {
     private Vector3 gravity_ = Vector3.back * 9.8f;
-    private Rigidbody playerRigi_ => MainGameController.Instance.PlayerRigibody;     
+    private Rigidbody playerRigid_ => MainGameController.Instance.PlayerRigidbody;
+    private SpeedLimiter speedLimiter_ ;
+    private void Start()
+    {
+        speedLimiter_ = new SpeedLimiter(); 
+    }
     private void FixedUpdate()
     {   
-        playerRigi_.AddForce(gravity_);
+        playerRigid_.AddForce(gravity_);
+        speedLimiter_.SpeedLimit();
     }
 }
