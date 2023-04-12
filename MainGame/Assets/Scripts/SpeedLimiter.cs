@@ -19,8 +19,8 @@ public class SpeedLimiter
         if (Physics.Raycast(playerObj.transform.position, playerObj.transform.forward , out hit, 10))
         {
             // 如果擊中了物體，則打印擊中物體的名字和擊中點的位置
-            Debug.Log("Hit object: " + hit.collider.gameObject.name);
-            Debug.Log("Hit point: " + hit.point);
+           // Debug.Log("Hit object: " + hit.collider.gameObject.name);
+           // Debug.Log("Hit point: " + hit.point);
         }
         //var targetWall_
     }
