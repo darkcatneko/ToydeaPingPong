@@ -231,10 +231,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 38471649}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d7bf8365ff573140b3ebe2dfc86c84e, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e117fb2dcaa4b340916514d71e29c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bounceForce_: 1.2
+  baseForce_: 10
 --- !u!1001 &42860316
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1291,7 +1292,7 @@ GameObject:
   - component: {fileID: 444705973}
   - component: {fileID: 444705972}
   - component: {fileID: 444705971}
-  - component: {fileID: 444705970}
+  - component: {fileID: 444705975}
   m_Layer: 0
   m_Name: BounceCylinder (5)
   m_TagString: Untagged
@@ -1299,19 +1300,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &444705970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 444705969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d7bf8365ff573140b3ebe2dfc86c84e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bounceForce_: 1.2
 --- !u!136 &444705971
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1391,6 +1379,20 @@ Transform:
   m_Father: {fileID: 1757135125}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &444705975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444705969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e117fb2dcaa4b340916514d71e29c76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce_: 1.2
+  baseForce_: 10
 --- !u!1 &529488595
 GameObject:
   m_ObjectHideFlags: 0
@@ -2064,7 +2066,7 @@ GameObject:
   - component: {fileID: 712135059}
   - component: {fileID: 712135058}
   - component: {fileID: 712135057}
-  - component: {fileID: 712135056}
+  - component: {fileID: 712135061}
   m_Layer: 0
   m_Name: BounceCylinder (6)
   m_TagString: Untagged
@@ -2072,19 +2074,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &712135056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 712135055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d7bf8365ff573140b3ebe2dfc86c84e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bounceForce_: 1.2
 --- !u!136 &712135057
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2164,6 +2153,20 @@ Transform:
   m_Father: {fileID: 1757135125}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &712135061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712135055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e117fb2dcaa4b340916514d71e29c76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce_: 1.2
+  baseForce_: 10
 --- !u!1001 &729947949
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2438,10 +2441,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 794795826}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d7bf8365ff573140b3ebe2dfc86c84e, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e117fb2dcaa4b340916514d71e29c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bounceForce_: 1.2
+  baseForce_: 10
 --- !u!1 &856634387
 GameObject:
   m_ObjectHideFlags: 0
@@ -2724,7 +2728,7 @@ GameObject:
   - component: {fileID: 1106722909}
   - component: {fileID: 1106722908}
   - component: {fileID: 1106722907}
-  - component: {fileID: 1106722906}
+  - component: {fileID: 1106722911}
   m_Layer: 0
   m_Name: BounceCylinder (8)
   m_TagString: Untagged
@@ -2732,19 +2736,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1106722906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106722905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d7bf8365ff573140b3ebe2dfc86c84e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bounceForce_: 1.2
 --- !u!136 &1106722907
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2824,6 +2815,20 @@ Transform:
   m_Father: {fileID: 1757135125}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1106722911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106722905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e117fb2dcaa4b340916514d71e29c76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce_: 1.2
+  baseForce_: 10
 --- !u!1 &1220792317
 GameObject:
   m_ObjectHideFlags: 0
@@ -2836,7 +2841,7 @@ GameObject:
   - component: {fileID: 1220792321}
   - component: {fileID: 1220792320}
   - component: {fileID: 1220792319}
-  - component: {fileID: 1220792318}
+  - component: {fileID: 1220792323}
   m_Layer: 0
   m_Name: Right_Tri
   m_TagString: Untagged
@@ -2844,19 +2849,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1220792318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1220792317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d5741355b72a6747812af7be95e9bdf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bounceForce_: 1.4
 --- !u!65 &1220792319
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2935,6 +2927,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: -39.448, z: 0}
+--- !u!114 &1220792323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220792317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e117fb2dcaa4b340916514d71e29c76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce_: 1.4
+  baseForce_: 20
 --- !u!1 &1223433374
 GameObject:
   m_ObjectHideFlags: 0
@@ -3007,7 +3013,7 @@ GameObject:
   - component: {fileID: 1239528873}
   - component: {fileID: 1239528872}
   - component: {fileID: 1239528871}
-  - component: {fileID: 1239528870}
+  - component: {fileID: 1239528875}
   m_Layer: 0
   m_Name: BounceCylinder (4)
   m_TagString: Untagged
@@ -3015,19 +3021,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1239528870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1239528869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d7bf8365ff573140b3ebe2dfc86c84e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bounceForce_: 1.2
 --- !u!136 &1239528871
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3107,6 +3100,20 @@ Transform:
   m_Father: {fileID: 1757135125}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1239528875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239528869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e117fb2dcaa4b340916514d71e29c76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce_: 1.2
+  baseForce_: 10
 --- !u!1 &1260250425
 GameObject:
   m_ObjectHideFlags: 0
@@ -3119,7 +3126,7 @@ GameObject:
   - component: {fileID: 1260250429}
   - component: {fileID: 1260250428}
   - component: {fileID: 1260250427}
-  - component: {fileID: 1260250426}
+  - component: {fileID: 1260250431}
   m_Layer: 0
   m_Name: BounceCylinder (7)
   m_TagString: Untagged
@@ -3127,19 +3134,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1260250426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1260250425}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d7bf8365ff573140b3ebe2dfc86c84e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bounceForce_: 1.2
 --- !u!136 &1260250427
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3219,6 +3213,20 @@ Transform:
   m_Father: {fileID: 1757135125}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1260250431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260250425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e117fb2dcaa4b340916514d71e29c76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce_: 1.2
+  baseForce_: 10
 --- !u!1 &1345009626
 GameObject:
   m_ObjectHideFlags: 0
@@ -3417,7 +3425,7 @@ GameObject:
   - component: {fileID: 1374398098}
   - component: {fileID: 1374398097}
   - component: {fileID: 1374398096}
-  - component: {fileID: 1374398095}
+  - component: {fileID: 1374398100}
   m_Layer: 0
   m_Name: BounceCylinder (3)
   m_TagString: Untagged
@@ -3425,19 +3433,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1374398095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1374398094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d7bf8365ff573140b3ebe2dfc86c84e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bounceForce_: 1.2
 --- !u!136 &1374398096
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3517,6 +3512,20 @@ Transform:
   m_Father: {fileID: 1757135125}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1374398100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374398094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e117fb2dcaa4b340916514d71e29c76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce_: 1.2
+  baseForce_: 10
 --- !u!4 &1429596398 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 421050, guid: ef0dafb6f6c0b274786bd50e43d222ac, type: 3}
@@ -3667,7 +3676,7 @@ GameObject:
   - component: {fileID: 1708236071}
   - component: {fileID: 1708236070}
   - component: {fileID: 1708236069}
-  - component: {fileID: 1708236068}
+  - component: {fileID: 1708236073}
   m_Layer: 0
   m_Name: Left_Tri
   m_TagString: Untagged
@@ -3675,19 +3684,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1708236068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1708236067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d5741355b72a6747812af7be95e9bdf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bounceForce_: 1.4
 --- !u!65 &1708236069
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3766,6 +3762,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 38.228, z: 0}
+--- !u!114 &1708236073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708236067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e117fb2dcaa4b340916514d71e29c76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce_: 1.4
+  baseForce_: 20
 --- !u!1 &1757135124
 GameObject:
   m_ObjectHideFlags: 0
@@ -4147,10 +4157,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1901171305}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d7bf8365ff573140b3ebe2dfc86c84e, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e117fb2dcaa4b340916514d71e29c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bounceForce_: 1.2
+  baseForce_: 10
 --- !u!1 &1911608902
 GameObject:
   m_ObjectHideFlags: 0
