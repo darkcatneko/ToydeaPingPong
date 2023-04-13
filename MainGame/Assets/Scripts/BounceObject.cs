@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BouncePad : MonoBehaviour
+public class BounceObject : MonoBehaviour
 {
     [SerializeField] private float bounceForce_;
+    [SerializeField] private float baseForce_;
     void OnCollisionEnter(Collision collision)
     {
         var otherObject_ = collision.gameObject;
@@ -14,7 +15,7 @@ public class BouncePad : MonoBehaviour
             var velocity_ = collision.relativeVelocity;
             var force_ = collision.impulse.magnitude;
 
-            force_ = Mathf.Clamp(force_, 20, 1000);
+            force_ = Mathf.Clamp(force_, baseForce_, 1000);
             Debug.Log(force_);
             var bounceDirection_ = Vector3.Reflect(velocity_.normalized, normal_);
 
