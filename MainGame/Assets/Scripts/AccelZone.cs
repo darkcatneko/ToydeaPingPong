@@ -15,10 +15,10 @@ public class AccelZone : MonoBehaviour
             playerRigid_.velocity = boost(nowVelocity);
         }   
     }
-    private Vector3 boost(float velocity)
+    private Vector3 boost(float velocity_)
     {
-        velocity = Mathf.Clamp(velocity*accelAmount_, minSpeed_, 2000);
-        var result = Vector3.forward * velocity;
-        return result;
+        velocity_ = Mathf.Clamp(velocity_*accelAmount_, minSpeed_, 2000);
+        var result_ = Vector3.forward * velocity_;
+        return result_;
     }
 }

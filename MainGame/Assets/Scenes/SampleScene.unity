@@ -422,8 +422,9 @@ GameObject:
   - component: {fileID: 86678417}
   - component: {fileID: 86678416}
   - component: {fileID: 86678415}
+  - component: {fileID: 86678419}
   m_Layer: 0
-  m_Name: BounceCylinder
+  m_Name: BlackHole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -436,13 +437,13 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 86678414}
-  m_Material: {fileID: 13400000, guid: e6c69c99eeda34440990f19f38f7ac6e, type: 2}
-  m_IsTrigger: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Center: {x: 0.00000029802322, y: 0, z: -0.00000008940697}
 --- !u!23 &86678416
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -463,7 +464,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d0f8814f6654ea34dbfc40f86360e4cc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -501,13 +502,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 86678414}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3095, y: 0.01, z: 0.15966667}
-  m_LocalScale: {x: 0.09807675, y: 1.9615351, z: 0.06538451}
+  m_LocalPosition: {x: 0.004, y: 0.2397, z: -0.104}
+  m_LocalScale: {x: 0.09807675, y: 1.7318393, z: 0.06538451}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 435211964}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &86678419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86678414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ead29d31465f3c40b450d3ab143d8c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stayTime_: 0
 --- !u!1 &96763467
 GameObject:
   m_ObjectHideFlags: 0

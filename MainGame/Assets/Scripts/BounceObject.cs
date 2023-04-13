@@ -20,7 +20,7 @@ public class BounceObject : MonoBehaviour
             var bounceDirection_ = Vector3.Reflect(velocity_.normalized, normal_);
 
             // 在這裡處理反彈
-            var otherObjectRigidbody = otherObject_.GetComponent<Rigidbody>();
+            var otherObjectRigidbody = MainGameController.Instance.PlayerRigidbody;
             otherObjectRigidbody.velocity = bounceDirection_ * force_ * bounceForce_;
         }
     }
