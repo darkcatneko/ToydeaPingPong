@@ -26,22 +26,22 @@ namespace PinBallNamespace
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                ResetLaunch();
+                ResetPressedTime();
             }
             if (Input.GetKey(KeyCode.Space))
             {
-                PressingCharge();
+                AddPressedTime();
             }
             if (Input.GetKeyUp(KeyCode.Space))
             {
                 BallAddForce();
             }
         }
-        public void ResetLaunch()
+        public void ResetPressedTime()
         {
             nowPressedTime_ = 0;
         }
-        public void PressingCharge()
+        public void AddPressedTime()
         {
             nowPressedTime_ = AddTime(nowPressedTime_, chargeUsedTime_);            
         }
