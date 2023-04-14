@@ -15,4 +15,12 @@ public class MainGameController : MonoBehaviour
     {
         
     }    
+    public void PlayerAddForce(Vector3 force_)
+    {
+        PlayerRigidbody.AddForce(force_);
+    }
+    public void PlayerChangeVelocity(Vector3 velocity_)
+    {
+        PlayerRigidbody.velocity = velocity_;
+    }
 }

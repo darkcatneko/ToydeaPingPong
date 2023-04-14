@@ -2,38 +2,63 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BallLauncher : MonoBehaviour
+namespace PinBallNamespace
 {
-    [SerializeField] private float launchForce_;
-    [SerializeField] private float nowPercentage_;
-    private const float MAX_PERCENTAGE = 100f;
-    [SerializeField] private float chargeUsedTime_;
-    
-    private Rigidbody playerRigid_ => MainGameController.Instance.PlayerRigidbody;
-    private void Update()
+    public class BallLauncher : MonoBehaviour
     {
-        ChargedLaunch();
-    }
-    public void BallAddForce()
-    {
-        var force_ = Vector3.forward * launchForce_*nowPercentage_*0.01f;
-        playerRigid_.AddForce(force_);
-    }
-    public void ChargedLaunch()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
+       
+        [SerializeField] private float nowPressedTime_;
+        [Header("Max Force")]
+        [SerializeField] private float  basicLaunchForce_;
+        private const float MAX_PERCENTAGE = 1f;
+        [Header("Charge need time")]
+        [SerializeField] private float chargeUsedTime_;
+       
+        private float nowPercentage_ => MAX_PERCENTAGE/nowPressedTime_;
+        private float nowForce_ => basicLaunchForce_ * nowPercentage_;
+
+        private Rigidbody playerRigid_ => MainGameController.Instance.PlayerRigidbody;
+        private void Update()
         {
-            nowPercentage_ = 0;
+            ChargedLaunch();
         }
-        if (Input.GetKey(KeyCode.Space))
+        public void ChargedLaunch()
         {
-            nowPercentage_ += (MAX_PERCENTAGE / chargeUsedTime_) * Time.deltaTime;
-            nowPercentage_ = Mathf.Clamp(nowPercentage_, 0, MAX_PERCENTAGE);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                ResetLaunch();
+            }
+            if (Input.GetKey(KeyCode.Space))
+            {
+                PressingCharge();
+            }
+            if (Input.GetKeyUp(KeyCode.Space))
+            {
+                BallAddForce();
+            }
         }
-        if (Input.GetKeyUp(KeyCode.Space))
+        public void ResetLaunch()
         {
-            BallAddForce();
+            nowPressedTime_ = 0;
         }
+        public void PressingCharge()
+        {
+            nowPressedTime_ = AddTime(nowPressedTime_, chargeUsedTime_);            
+        }
+        public float AddTime(float nowTime_,float maxTime_)
+        {
+            var resultTime_ = nowTime_+Time.deltaTime;
+            resultTime_ = Mathf.Clamp(resultTime_, 0, maxTime_);
+            return resultTime_;
+        }
+        public void BallAddForce()
+        {           
+            var launchForce_ = Vector3.forward * nowForce_;
+            MainGameController.Instance.PlayerAddForce(launchForce_);
+        }
+
+
+
     }
-    
 }
+

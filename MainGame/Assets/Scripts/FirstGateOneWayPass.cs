@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FirstGateOneWayPass : MonoBehaviour
 {
-    [Header("一方通行")]
+    [Header("GateWay")]
     [SerializeField] private Collider rightGate_;
     [SerializeField] private Collider leftGate_;
     private void OnTriggerEnter(Collider other)
