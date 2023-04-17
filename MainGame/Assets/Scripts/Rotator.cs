@@ -10,6 +10,7 @@ public class Rotator : MonoBehaviour
     [SerializeField] private float pressedPosition_ = 45f;
     [SerializeField] private float hitStrength_ = 10000f;
     [SerializeField] private float flipperDamper_ = 150f;
+
     void Start()
     {
 
@@ -28,6 +29,7 @@ public class Rotator : MonoBehaviour
         }
         
     }
+
     public void PaddleUp(KeyCode key)
     {
         JointSpring spring = new JointSpring();

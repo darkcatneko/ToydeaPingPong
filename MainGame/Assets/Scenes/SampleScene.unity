@@ -522,7 +522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStayTime_: 0
-  launchNeedTime_: 0
+  launchNeedTime_: 1.5
   launchSpeed_: 20
 --- !u!1 &96763467
 GameObject:
@@ -1488,6 +1488,7 @@ GameObject:
   m_Component:
   - component: {fileID: 478467204}
   - component: {fileID: 478467203}
+  - component: {fileID: 478467205}
   m_Layer: 0
   m_Name: GameOverZone
   m_TagString: Untagged
@@ -1523,6 +1524,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &478467205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478467202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bed2b962181f36a4b83a0ebcb73aeeb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &529488595
 GameObject:
   m_ObjectHideFlags: 0
@@ -2638,6 +2651,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerObject: {fileID: 0}
+  GameRestartEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &856634391
 MonoBehaviour:
   m_ObjectHideFlags: 0

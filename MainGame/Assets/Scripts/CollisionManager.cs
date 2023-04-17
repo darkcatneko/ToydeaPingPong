@@ -5,6 +5,7 @@ using UnityEngine;
 public class CollisionManager : MonoBehaviour
 {
     protected virtual string customTag_ { get; } = "Player";
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag(customTag_))
@@ -12,6 +13,7 @@ public class CollisionManager : MonoBehaviour
             onCollisionTag(collision);
         }
     }
+
     protected virtual void onCollisionTag(Collision collision)
     {
 

@@ -17,15 +17,17 @@ namespace AccelZoneNamespace
             var velocityAfterBoost = GetVelocityAfterBoost(speedAfterBoost, Vector3.forward);
             MainGameController.Instance.PlayerChangeVelocity(velocityAfterBoost);
         }
+
         public float GetSpeedAfterBoost(float nowPlayerSpeed)
         {
             var maxSpeed = 2000f;
             var speedAfterBoost = Mathf.Clamp(nowPlayerSpeed * accelAmount_, minSpeed_, maxSpeed);
             return speedAfterBoost;
         }
+
         public Vector3 GetVelocityAfterBoost(float speed, Vector3 direction)
         {
-            var velocityAfterBoost = direction * speed;
+            var velocityAfterBoost = speed * direction;
             return velocityAfterBoost;
         }
     }

@@ -8,6 +8,7 @@ public class FirstGateOneWayPass : TriggerManager
     [Header("GateWay")]
     [SerializeField] private Collider rightGate_;
     [SerializeField] private Collider leftGate_;
+
     protected override void onTriggerEnterTag(Collider other)
     {
         if (thisGateType_ == GateType.Outside)
@@ -19,9 +20,7 @@ public class FirstGateOneWayPass : TriggerManager
         {
             rightGate_.isTrigger = false;
             leftGate_.isTrigger = false;
-        }
-        
-       
+        }       
     }
 }
 [System.Serializable]

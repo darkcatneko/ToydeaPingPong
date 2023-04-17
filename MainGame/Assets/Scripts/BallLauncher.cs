@@ -17,11 +17,11 @@ namespace PinBallNamespace
         private float nowPercentage_ => MAX_PERCENTAGE/nowPressedTime_;
         private float nowForce_ => basicLaunchForce_ * nowPercentage_;
 
-        private Rigidbody playerRigid_ => MainGameController.Instance.PlayerRigidbody;
         private void Update()
         {
             ChargedLaunch();
         }
+
         public void ChargedLaunch()
         {
             if (Input.GetKeyDown(KeyCode.Space))
@@ -37,20 +37,24 @@ namespace PinBallNamespace
                 BallAddForce();
             }
         }
+
         public void ResetPressedTime()
         {
             nowPressedTime_ = 0;
         }
+
         public void AddPressedTime()
         {
             nowPressedTime_ = AddTime(nowPressedTime_, chargeUsedTime_);            
         }
+
         public float AddTime(float nowTime_,float maxTime_)
         {
             var resultTime_ = nowTime_+Time.deltaTime;
             resultTime_ = Mathf.Clamp(resultTime_, 0, maxTime_);
             return resultTime_;
         }
+
         public void BallAddForce()
         {           
             var launchForce_ = Vector3.forward * nowForce_;

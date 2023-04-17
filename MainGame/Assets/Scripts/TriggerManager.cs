@@ -13,6 +13,7 @@ public class TriggerManager : MonoBehaviour
             onTriggerEnterTag(other);
         }
     }
+
     protected virtual void onTriggerEnterTag(Collider other)
     {
 

@@ -12,10 +12,12 @@ public class Blackhole : MonoBehaviour
     [SerializeField]
     private float launchSpeed_;
     private Vector3 obj2DMapPos_ => new Vector3(transform.position.x, 0, transform.position.z);
+
     private void OnTriggerEnter(Collider other)
     {
         playerStayTime_ = 0;
     }
+
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -24,6 +26,7 @@ public class Blackhole : MonoBehaviour
             blackHoleLaunch();
         }
     }
+
     private void blackHoleLaunch()
     {
         if (playerStayTime_ <= launchNeedTime_)
@@ -38,6 +41,7 @@ public class Blackhole : MonoBehaviour
         }
 
     }
+
     private void stopInBlackHole()
     {
         var blackholeCenterPos_ = obj2DMapPos_;

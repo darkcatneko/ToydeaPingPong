@@ -13,18 +13,22 @@ public class MainGameController : TSingletonMonoBehavior<MainGameController>
     {
         
     }    
+
     public void PlayerAddForce(Vector3 force)
     {
         PlayerRigidbody.AddForce(force);
     }
+
     public void PlayerChangeVelocity(Vector3 velocity)
     {
         PlayerRigidbody.velocity = velocity;
     }
+
     public void PlayerChangePosition(Vector3 finalPos)
     {
         PlayerObject.transform.position = finalPos;
     }
+
     public void GameRestart()
     {
         GameRestartEvent.Invoke();
