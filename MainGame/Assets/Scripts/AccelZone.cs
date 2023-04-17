@@ -10,19 +10,16 @@ public class AccelZone : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            var playerRigid_ = MainGameController.Instance.PlayerRigidbody;
-            var nowVelocity = playerRigid_.velocity.magnitude;            
-            playerRigid_.velocity = getVelocityAfterBoost(nowVelocity);
-            //get speed
-            //boost speed
-            //get velocity 
-            //change player velocity
+            var playerRigid_ = MainGameController.Instance.PlayerRigidbody;  
+            var nowPlayerSpeed_ = playerRigid_.velocity.magnitude;
+            var velocityAfterBoost_ = getVelocityAfterBoost(nowPlayerSpeed_,Vector3.forward);
+            MainGameController.Instance.PlayerChangeVelocity(velocityAfterBoost_);
         }   
     }
-    private Vector3 getVelocityAfterBoost(float velocity_)
+    private Vector3 getVelocityAfterBoost(float speed_,Vector3 direction)
     {
-        velocity_ = Mathf.Clamp(velocity_*accelAmount_, minSpeed_, 2000);
-        var result_ = Vector3.forward * velocity_;
-        return result_;
+        speed_ = Mathf.Clamp(speed_*accelAmount_, minSpeed_, 2000);
+        var velocityAfterBoost_ = direction * speed_;
+        return velocityAfterBoost_;
     }
 }
