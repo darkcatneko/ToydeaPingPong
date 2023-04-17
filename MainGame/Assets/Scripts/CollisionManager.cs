@@ -9,10 +9,10 @@ public class CollisionManager : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(customTag_))
         {
-            OnCollisionTag(collision);
+            onCollisionTag(collision);
         }
     }
-    protected virtual void OnCollisionTag(Collision collision)
+    protected virtual void onCollisionTag(Collision collision)
     {
 
     }

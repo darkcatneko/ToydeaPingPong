@@ -9,21 +9,21 @@ public class BallLaunchTest
 {
     // A Test behaves as an ordinary method
     [Test]
-    [TestCase(2,3,2, false)]
-    [TestCase(4.999f,5,5,true)]
-    [TestCase(5, 5, 5,true)]
-    public void LauncherTest(float nowTime_, float chargeUsedTime_,float result,bool isOverTime_)
+    [TestCase(2,3,2)]
+    [TestCase(4.999f,5,5)]
+    [TestCase(5, 5, 5)]
+    public void LauncherTest(float nowTime, float chargeUsedTime,float result)
     {
-        var testobj_ = new GameObject();
-        var ballLauncher = testobj_.AddComponent<BallLauncher>();
-        var actualOutputForce_ = ballLauncher.AddTime(nowTime_,chargeUsedTime_);
-        if (isOverTime_)
+        var testobj = new GameObject();
+        var ballLauncher = testobj.AddComponent<BallLauncher>();
+        var actualOutputForce = ballLauncher.AddTime(nowTime,chargeUsedTime);
+        if (nowTime + Time.deltaTime >= chargeUsedTime)
         {
-            Assert.That(actualOutputForce_, Is.EqualTo(result));
+            Assert.That(actualOutputForce, Is.EqualTo(result));
         }
         else 
         {
-            Assert.That(actualOutputForce_, Is.EqualTo(nowTime_ + Time.deltaTime));
+            Assert.That(actualOutputForce, Is.EqualTo(nowTime + Time.deltaTime));
         }    
         
     }

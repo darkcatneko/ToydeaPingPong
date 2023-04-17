@@ -1,25 +1,33 @@
+using Codice.CM.Common;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AccelZone : MonoBehaviour
+namespace AccelZoneNamespace
 {
-    [SerializeField] private float minSpeed_;
-    [SerializeField] private float accelAmount_;
-    private void OnTriggerEnter(Collider other)
+    public class AccelZone : TriggerManager
     {
-        if (other.gameObject.CompareTag("Player"))
+        [SerializeField] private float minSpeed_ = 20;
+        [SerializeField] private float accelAmount_ = 1.5f;
+        protected override void onTriggerEnterTag(Collider other)
         {
-            var playerRigid_ = MainGameController.Instance.PlayerRigidbody;  
-            var nowPlayerSpeed_ = playerRigid_.velocity.magnitude;
-            var velocityAfterBoost_ = getVelocityAfterBoost(nowPlayerSpeed_,Vector3.forward);
-            MainGameController.Instance.PlayerChangeVelocity(velocityAfterBoost_);
-        }   
-    }
-    private Vector3 getVelocityAfterBoost(float speed_,Vector3 direction)
-    {
-        speed_ = Mathf.Clamp(speed_*accelAmount_, minSpeed_, 2000);
-        var velocityAfterBoost_ = direction * speed_;
-        return velocityAfterBoost_;
+            var playerRigid = MainGameController.Instance.PlayerRigidbody;
+            var nowPlayerSpeed = playerRigid.velocity.magnitude;
+            var speedAfterBoost = GetSpeedAfterBoost(nowPlayerSpeed);
+            var velocityAfterBoost = GetVelocityAfterBoost(speedAfterBoost, Vector3.forward);
+            MainGameController.Instance.PlayerChangeVelocity(velocityAfterBoost);
+        }
+        public float GetSpeedAfterBoost(float nowPlayerSpeed)
+        {
+            var maxSpeed = 2000f;
+            var speedAfterBoost = Mathf.Clamp(nowPlayerSpeed * accelAmount_, minSpeed_, maxSpeed);
+            return speedAfterBoost;
+        }
+        public Vector3 GetVelocityAfterBoost(float speed, Vector3 direction)
+        {
+            var velocityAfterBoost = direction * speed;
+            return velocityAfterBoost;
+        }
     }
 }
+

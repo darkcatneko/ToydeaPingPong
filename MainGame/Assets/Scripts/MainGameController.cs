@@ -2,25 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainGameController : MonoBehaviour
+public class MainGameController : TSingletonMonoBehavior<MainGameController>
 {
-    public static MainGameController Instance;
     public GameObject PlayerObject;
     public Rigidbody PlayerRigidbody => PlayerObject.GetComponent<Rigidbody>();
-    private void Awake()
-    {
-        Instance = this;
-    }
     private void Start()
     {
         
     }    
-    public void PlayerAddForce(Vector3 force_)
+    public void PlayerAddForce(Vector3 force)
     {
-        PlayerRigidbody.AddForce(force_);
+        PlayerRigidbody.AddForce(force);
     }
-    public void PlayerChangeVelocity(Vector3 velocity_)
+    public void PlayerChangeVelocity(Vector3 velocity)
     {
-        PlayerRigidbody.velocity = velocity_;
+        PlayerRigidbody.velocity = velocity;
     }
 }

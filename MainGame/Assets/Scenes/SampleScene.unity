@@ -568,7 +568,7 @@ GameObject:
   - component: {fileID: 144228925}
   - component: {fileID: 144228924}
   - component: {fileID: 144228923}
-  - component: {fileID: 144228922}
+  - component: {fileID: 144228926}
   m_Layer: 0
   m_Name: First_Gate_Trigger
   m_TagString: Untagged
@@ -576,21 +576,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &144228922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 144228921}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b8a2f858f0f13e468e4a5cd984c1d84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstGateObject_: {fileID: 870193305}
-  rightGate_: {fileID: 2004177076}
-  leftGate_: {fileID: 529862698}
 --- !u!65 &144228923
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -627,6 +612,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &144228926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144228921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3c5d9240fde5e42ae0be94e64fc711, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisGateType_: 1
+  rightGate_: {fileID: 2004177076}
+  leftGate_: {fileID: 529862698}
 --- !u!1 &164990648
 GameObject:
   m_ObjectHideFlags: 0
@@ -1768,6 +1768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad3c5d9240fde5e42ae0be94e64fc711, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisGateType_: 0
   rightGate_: {fileID: 529862698}
   leftGate_: {fileID: 2004177076}
 --- !u!1001 &574178850
@@ -3086,6 +3087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad3c5d9240fde5e42ae0be94e64fc711, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisGateType_: 0
   rightGate_: {fileID: 2004177076}
   leftGate_: {fileID: 529862698}
 --- !u!1 &1239528869
@@ -4000,7 +4002,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1757135125
 Transform:
   m_ObjectHideFlags: 0
@@ -4913,7 +4915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nowPressedTime_: 0
-  basicLaunchForce_: 0
+  basicLaunchForce_: 5000
   chargeUsedTime_: 1.5
 --- !u!4 &2127395577
 Transform:
