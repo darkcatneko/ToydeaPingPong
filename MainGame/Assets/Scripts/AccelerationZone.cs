@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace AccelZoneNamespace
 {
-    public class AccelZone : TriggerManager
+    public class AccelerationZone : TriggerManager
     {
         [SerializeField] private float minSpeed_ = 20;
         [SerializeField] private float accelAmount_ = 1.5f;

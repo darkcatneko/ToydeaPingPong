@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UmaAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: df046ef77b4096b458095ac0b7167ed0, type: 3}
+    - {fileID: 2800000, guid: 234e6981d3e38dc48865210eac34c320, type: 3}
+    - {fileID: 2800000, guid: be71bcbdcdaf48648864f2b297ca04c1, type: 3}
+    - {fileID: 2800000, guid: ccb26bbd3ba2476498873c58d33940b5, type: 3}
+    - {fileID: 2800000, guid: ce57429695195084691829328832aad6, type: 3}
+    - {fileID: 2800000, guid: 0f326516f86b2e34bbe582472b7f41a2, type: 3}
+    - {fileID: 2800000, guid: a3a0806662fcb234ea472008fef89e48, type: 3}
+    - {fileID: 2800000, guid: e12e729bff1e38144a5ec08025861a47, type: 3}
+    - {fileID: 2800000, guid: 52c4a248d84616a489b0883ef0e0b232, type: 3}
+    - {fileID: 2800000, guid: 5d80903dd6c0c4f4d9c8e79187525f30, type: 3}
+    - {fileID: 2800000, guid: e8815f943181b3743a0c97798e4cae79, type: 3}
+    - {fileID: 2800000, guid: 99fd752d4f061894e8f0547c08a13870, type: 3}
+    - {fileID: 2800000, guid: 14732683873a29d4ebac1876e0aaafce, type: 3}
+    - {fileID: 2800000, guid: 3b3a656fe1287b9488da252b5acd4861, type: 3}
+    - {fileID: 2800000, guid: b1cf9088a14dfd94683ebc04debe5711, type: 3}
+    - {fileID: 2800000, guid: 3aa7f9f335246db42a9277d8a70f5dfa, type: 3}
+    - {fileID: 2800000, guid: bdedd858c6d313047b502c248ca323e2, type: 3}
+    - {fileID: 2800000, guid: c001c5a3cc0d7c745bab8b8375cc5e3f, type: 3}
+    - {fileID: 2800000, guid: c04509a1b4a3f9d4783e27b44aae28c6, type: 3}
+    - {fileID: 2800000, guid: 6bd56c0e67e595146b939ddff6289282, type: 3}
+    - {fileID: 2800000, guid: 40cbeefa204174c4f989df617f1d3e02, type: 3}
+    - {fileID: 2800000, guid: 23e4a6fda02982b409387902c643c8a6, type: 3}
+    - {fileID: 2800000, guid: f2c3b7c3d707bba44be961f0914632bb, type: 3}
+    - {fileID: 2800000, guid: b802f8e0e3d64e445bce5119d1b7faa0, type: 3}
+    - {fileID: 2800000, guid: 6f7a1da298328784aa00ab7a15980645, type: 3}
+    - {fileID: 2800000, guid: 2708de71db26b134683ceaeae1091642, type: 3}
+    - {fileID: 2800000, guid: c7667a2244643d9429413029d5d7346d, type: 3}
+    - {fileID: 2800000, guid: 2a025de196501d44382706ec9a00a8fd, type: 3}
+    - {fileID: 2800000, guid: 2a07c0de7b191b742b1742dc7a1f0e9c, type: 3}
+    - {fileID: 2800000, guid: 21957adc0f7db354691dc108a2b9b7d4, type: 3}
+    - {fileID: 2800000, guid: aed4c64260416784ea8fba0301b3238a, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: b802f8e0e3d64e445bce5119d1b7faa0, type: 3}
+  - {fileID: 21300000, guid: 2708de71db26b134683ceaeae1091642, type: 3}
+  - {fileID: 21300000, guid: 234e6981d3e38dc48865210eac34c320, type: 3}
+  - {fileID: 21300000, guid: c04509a1b4a3f9d4783e27b44aae28c6, type: 3}
+  - {fileID: 21300000, guid: 2a025de196501d44382706ec9a00a8fd, type: 3}
+  - {fileID: 21300000, guid: c7667a2244643d9429413029d5d7346d, type: 3}
+  - {fileID: 21300000, guid: aed4c64260416784ea8fba0301b3238a, type: 3}
+  - {fileID: 21300000, guid: 6f7a1da298328784aa00ab7a15980645, type: 3}
+  - {fileID: 21300000, guid: 14732683873a29d4ebac1876e0aaafce, type: 3}
+  - {fileID: 21300000, guid: c001c5a3cc0d7c745bab8b8375cc5e3f, type: 3}
+  - {fileID: 21300000, guid: f2c3b7c3d707bba44be961f0914632bb, type: 3}
+  - {fileID: 21300000, guid: 3aa7f9f335246db42a9277d8a70f5dfa, type: 3}
+  - {fileID: 21300000, guid: e8815f943181b3743a0c97798e4cae79, type: 3}
+  - {fileID: 21300000, guid: 0f326516f86b2e34bbe582472b7f41a2, type: 3}
+  - {fileID: 21300000, guid: a3a0806662fcb234ea472008fef89e48, type: 3}
+  - {fileID: 21300000, guid: ce57429695195084691829328832aad6, type: 3}
+  - {fileID: 21300000, guid: df046ef77b4096b458095ac0b7167ed0, type: 3}
+  - {fileID: 21300000, guid: 52c4a248d84616a489b0883ef0e0b232, type: 3}
+  - {fileID: 21300000, guid: bdedd858c6d313047b502c248ca323e2, type: 3}
+  - {fileID: 21300000, guid: b1cf9088a14dfd94683ebc04debe5711, type: 3}
+  - {fileID: 21300000, guid: 40cbeefa204174c4f989df617f1d3e02, type: 3}
+  - {fileID: 21300000, guid: e12e729bff1e38144a5ec08025861a47, type: 3}
+  - {fileID: 21300000, guid: 21957adc0f7db354691dc108a2b9b7d4, type: 3}
+  - {fileID: 21300000, guid: 99fd752d4f061894e8f0547c08a13870, type: 3}
+  - {fileID: 21300000, guid: 5d80903dd6c0c4f4d9c8e79187525f30, type: 3}
+  - {fileID: 21300000, guid: ccb26bbd3ba2476498873c58d33940b5, type: 3}
+  - {fileID: 21300000, guid: be71bcbdcdaf48648864f2b297ca04c1, type: 3}
+  - {fileID: 21300000, guid: 23e4a6fda02982b409387902c643c8a6, type: 3}
+  - {fileID: 21300000, guid: 6bd56c0e67e595146b939ddff6289282, type: 3}
+  - {fileID: 21300000, guid: 2a07c0de7b191b742b1742dc7a1f0e9c, type: 3}
+  - {fileID: 21300000, guid: 3b3a656fe1287b9488da252b5acd4861, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - 100px-Chr_icon_1068_106801_01
+  - 100px-Chr_icon_1076_107601_01
+  - 100px-Chr_icon_1002_100201_01
+  - 100px-Chr_icon_1057_105701_01
+  - 100px-Chr_icon_1085_108501_01
+  - 100px-Chr_icon_1078_107801_01
+  - 100px-Chr_icon_1099_109901_01
+  - 100px-Chr_icon_1069_106901_01
+  - 100px-Chr_icon_1033_103301_01
+  - 100px-Chr_icon_1050_105001_01
+  - 100px-Chr_icon_1067_106701_01
+  - 100px-Chr_icon_1044_104401_01
+  - 100px-Chr_icon_1026_102601_01
+  - 100px-Chr_icon_1019_101901_01
+  - 100px-Chr_icon_1020_102001_01
+  - 100px-Chr_icon_1015_101501_01
+  - 100px-Chr_icon_1001_100101_01
+  - 100px-Chr_icon_1024_102402_01
+  - 100px-Chr_icon_1046_104601_01
+  - 100px-Chr_icon_1040_104002_01
+  - 100px-Chr_icon_1059_105901_01
+  - 100px-Chr_icon_1022_102201_01
+  - 100px-Chr_icon_1098_109801_01
+  - 100px-Chr_icon_1030_103001_01
+  - 100px-Chr_icon_1025_102501_01
+  - 100px-Chr_icon_1013_101301_01
+  - 100px-Chr_icon_1003_100301_01
+  - 100px-Chr_icon_1065_106501_01
+  - 100px-Chr_icon_1058_105801_01
+  - 100px-Chr_icon_1087_108701_01
+  - 100px-Chr_icon_1038_103801_01
+  m_RenderDataMap: {}
+  m_Tag: UmaAtlas
+  m_IsVariant: 0

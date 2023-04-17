@@ -15,7 +15,7 @@ public class AccelZoneTest
     public void SpeedBoostTest(float nowSpeed,float result)
     {
         var gameobject = new GameObject();
-        var accelZone = gameobject.AddComponent<AccelZone>();
+        var accelZone = gameobject.AddComponent<AccelerationZone>();
         var speedAfterBoost = accelZone.GetSpeedAfterBoost(nowSpeed);
         Assert.That(speedAfterBoost, Is.EqualTo(result));
     }

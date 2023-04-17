@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa33cbcca022f75419badbc3ff87d060, type: 3}
+  m_Name: cafe
+  m_EditorClassIdentifier: 
+  ThisUma:
+    UmaPicture: {fileID: 21300000, guid: 5d80903dd6c0c4f4d9c8e79187525f30, type: 3}
+    UmaName: "\u66FC\u54C8\u9813\u5496\u5561"
+    UmaId: 1025

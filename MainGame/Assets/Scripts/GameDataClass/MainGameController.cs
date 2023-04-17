@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class MainGameController : TSingletonMonoBehavior<MainGameController>
 {
     public GameObject PlayerObject;
+    public GameData ThisGameData;
     public Rigidbody PlayerRigidbody => PlayerObject.GetComponent<Rigidbody>();
     public UnityEvent GameRestartEvent = new UnityEvent();
     private void Start()
