@@ -11,7 +11,11 @@ public class Blackhole : TriggerManager
     private float launchNeedTime_;
     [SerializeField]
     private float launchSpeed_;
+    [SerializeField]
+    private Vector3 launchDir_ = new Vector3(-1, 0, -1);
     private Vector3 obj2DMapPos_ => new Vector3(transform.position.x, 0, transform.position.z);
+
+    
 
     protected override void onTriggerEnterTag(Collider other)
     {
@@ -24,7 +28,6 @@ public class Blackhole : TriggerManager
         blackHoleLaunch();
     }
 
-
     private void blackHoleLaunch()
     {
         if (playerStayTime_ <= launchNeedTime_)
@@ -34,7 +37,7 @@ public class Blackhole : TriggerManager
         }
         else
         {
-            var launchVelocity_ = new Vector3(-1, 0, -1) * launchSpeed_;
+            var launchVelocity_ = launchDir_ * launchSpeed_;
             MainGameController.Instance.PlayerChangeVelocity(launchVelocity_);
         }
 

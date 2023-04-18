@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollisionManager : MonoBehaviour
 {
-    protected virtual string customTag_ { get; } = "Player";
+    protected virtual string customTag_ {  get; } = "Player";
 
     private void OnCollisionEnter(Collision collision)
     {
