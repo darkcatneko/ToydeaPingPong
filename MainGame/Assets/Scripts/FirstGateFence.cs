@@ -11,13 +11,7 @@ public class FirstGateFence : TriggerManager
     [SerializeField] private float clostOROpenTime_;
     protected override void onTriggerEnterTag(Collider other)
     {
-        if (thisGateType_ == GateType.Inside)
-        {
-            fenceObj_.transform.DOMoveY(fenceHighestPos_, clostOROpenTime_);
-        }
-        else
-        {
-            fenceObj_.transform.DOMoveY(0, clostOROpenTime_);
-        }
+        var finalPos = thisGateType_ == GateType.Inside ? fenceHighestPos_ : 0;
+        fenceObj_.transform.DOMoveY(finalPos, clostOROpenTime_);
     }
 }
