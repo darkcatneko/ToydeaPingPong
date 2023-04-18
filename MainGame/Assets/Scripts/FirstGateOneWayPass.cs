@@ -11,16 +11,7 @@ public class FirstGateOneWayPass : TriggerManager
 
     protected override void onTriggerEnterTag(Collider other)
     {
-        if (thisGateType_ == GateType.Outside)
-        {
-            rightGate_.isTrigger = true;
-            leftGate_.isTrigger = true;
-        }
-        else
-        {
-            rightGate_.isTrigger = false;
-            leftGate_.isTrigger = false;
-        }       
+        rightGate_.isTrigger = leftGate_.isTrigger = thisGateType_ == GateType.Outside;           
     }
 }
 [System.Serializable]

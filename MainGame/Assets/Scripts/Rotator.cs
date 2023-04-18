@@ -19,18 +19,11 @@ public class Rotator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (direction_ == Direction.Left)
-        {
-            PaddleUp(KeyCode.F);
-        }
-        else
-        {
-            PaddleUp(KeyCode.J);
-        }
-        
+        var keycode = direction_ == Direction.Left ? KeyCode.F : KeyCode.J;
+        paddleUp(keycode);                
     }
 
-    public void PaddleUp(KeyCode key)
+    private void paddleUp(KeyCode key)
     {
         JointSpring spring = new JointSpring();
         spring.spring = hitStrength_;
@@ -39,7 +32,7 @@ public class Rotator : MonoBehaviour
         {
             spring.targetPosition = pressedPosition_;
         }
-        else
+        else if(Input.GetKeyUp(key))
         {
             spring.targetPosition = restPosition_;
         }

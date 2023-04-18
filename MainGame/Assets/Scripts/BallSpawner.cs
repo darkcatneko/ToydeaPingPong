@@ -16,6 +16,7 @@ public class BallSpawner : MonoBehaviour
     private void spawn_Ball()
     {
         MainGameController.Instance.PlayerObject = Instantiate<GameObject>(ballPrefab_, spawnPoint_.transform.position, Quaternion.identity);
+        MainGameController.Instance.SetPlayerRigidbody();
     }
     
 }

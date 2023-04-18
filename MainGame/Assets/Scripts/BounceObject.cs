@@ -10,31 +10,31 @@ public class BounceObject : CollisionManager
 
     protected override void onCollisionTag(Collision collision)
     {
-        var velocityAfterCollision = GetVelocityAfterCollision_(collision);
+        var velocityAfterCollision = getVelocityAfterCollision_(collision);
         MainGameController.Instance.PlayerChangeVelocity(velocityAfterCollision);
     }
 
-    public Vector3 GetVelocityAfterCollision_(Collision collision)
+    private Vector3 getVelocityAfterCollision_(Collision collision)
     {
-        var dirAfterReflection = GetDirAfterReflection(collision);
-        var speedAfterCollisionEvent = GetSpeedAfterCollisionEvent(collision);
+        var dirAfterReflection = getDirAfterReflection(collision);
+        var speedAfterCollisionEvent = getSpeedAfterCollisionEvent(collision);
         var velocityAfterCollision = dirAfterReflection * speedAfterCollisionEvent;
         return velocityAfterCollision;
     }
 
-    public float GetSpeedAfterCollisionEvent(Collision collision)
+    private float getSpeedAfterCollisionEvent(Collision collision)
     {
         //得到速率
-        var speedOfCollision = GetSpeedOfCollision(collision);
+        var speedOfCollision = getSpeedOfCollision(collision);
         //彈性加成
-        var velocityAfterElasticity = GetSpeedAfterElasticity(speedOfCollision);
+        var velocityAfterElasticity = getSpeedAfterElasticity(speedOfCollision);
         //限制速率
-        var limitedSpeed = GetLimitedSpeed(velocityAfterElasticity, minSpeed_);
+        var limitedSpeed = getLimitedSpeed(velocityAfterElasticity, minSpeed_);
 
         return limitedSpeed;
     }
 
-    public Vector3 GetDirAfterReflection(Collision collision)
+    private Vector3 getDirAfterReflection(Collision collision)
     {
         var normal = collision.contacts[0].normal;
 
@@ -45,20 +45,20 @@ public class BounceObject : CollisionManager
         return bounceDirection;
     }
 
-    public float GetSpeedOfCollision(Collision collision)
+    private float getSpeedOfCollision(Collision collision)
     {
         var velocity = collision.relativeVelocity;
         return velocity.magnitude;
     }
 
-    public float GetSpeedAfterElasticity(float previousSpeed)
+    private float getSpeedAfterElasticity(float previousSpeed)
 
     {
         var speedAfterElasticity = previousSpeed * unitElasticity_;
         return speedAfterElasticity;
     }
 
-    public float GetLimitedSpeed(float previousSpeed, float minSpeed)
+    private float getLimitedSpeed(float previousSpeed, float minSpeed)
     {
         var maxSpeed = 1000f;
         return Mathf.Clamp(previousSpeed, minSpeed, maxSpeed);

@@ -4,16 +4,20 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 
-public class MainGameController : TSingletonMonoBehavior<MainGameController>
+public class MainGameController : ToSingletonMonoBehavior<MainGameController>
 {
     public GameObject PlayerObject;
     public GameData ThisGameData;
-    public Rigidbody PlayerRigidbody => PlayerObject.GetComponent<Rigidbody>();
+    public Rigidbody PlayerRigidbody;
     public UnityEvent GameRestartEvent = new UnityEvent();
     private void Start()
     {
         
     }    
+    public void SetPlayerRigidbody()
+    {
+        PlayerRigidbody = PlayerObject.GetComponent<Rigidbody>();
+    }
 
     public void PlayerAddForce(Vector3 force)
     {

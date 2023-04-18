@@ -14,36 +14,36 @@ namespace PinBallNamespace
         [Header("Charge need time")]
         [SerializeField] private float chargeUsedTime_;
        
-        private float nowPercentage_ => MAX_PERCENTAGE/nowPressedTime_;
+        private float nowPercentage_ => MAX_PERCENTAGE/chargeUsedTime_*nowPressedTime_;
         private float nowForce_ => basicLaunchForce_ * nowPercentage_;
 
         private void Update()
         {
-            ChargedLaunch();
+            chargedLaunch();
         }
 
-        public void ChargedLaunch()
+        private void chargedLaunch()
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                ResetPressedTime();
+                resetPressedTime();
             }
             if (Input.GetKey(KeyCode.Space))
             {
-                AddPressedTime();
+                addPressedTime();
             }
             if (Input.GetKeyUp(KeyCode.Space))
             {
-                BallAddForce();
+                ballAddForce();
             }
         }
 
-        public void ResetPressedTime()
+        private void resetPressedTime()
         {
             nowPressedTime_ = 0;
         }
 
-        public void AddPressedTime()
+        private void addPressedTime()
         {
             nowPressedTime_ = AddTime(nowPressedTime_, chargeUsedTime_);            
         }
@@ -55,7 +55,7 @@ namespace PinBallNamespace
             return resultTime_;
         }
 
-        public void BallAddForce()
+        private void ballAddForce()
         {           
             var launchForce_ = Vector3.forward * nowForce_;
             MainGameController.Instance.PlayerAddForce(launchForce_);

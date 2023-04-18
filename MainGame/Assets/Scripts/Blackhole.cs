@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Blackhole : MonoBehaviour
+public class Blackhole : TriggerManager
 {
     
     [SerializeField] 
@@ -13,19 +13,17 @@ public class Blackhole : MonoBehaviour
     private float launchSpeed_;
     private Vector3 obj2DMapPos_ => new Vector3(transform.position.x, 0, transform.position.z);
 
-    private void OnTriggerEnter(Collider other)
+    protected override void onTriggerEnterTag(Collider other)
     {
         playerStayTime_ = 0;
     }
 
-    private void OnTriggerStay(Collider other)
+    protected override void onTriggerStayTag(Collider other)
     {
-        if (other.CompareTag("Player"))
-        {
-            playerStayTime_ += Time.deltaTime;          
-            blackHoleLaunch();
-        }
+        playerStayTime_ += Time.deltaTime;
+        blackHoleLaunch();
     }
+
 
     private void blackHoleLaunch()
     {
