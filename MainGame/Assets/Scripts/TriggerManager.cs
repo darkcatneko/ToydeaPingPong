@@ -20,12 +20,23 @@ public class TriggerManager : MonoBehaviour
             onTriggerStayTag(other);
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag(customTag_))
+        {
+           onTriggerExitTag(other); 
+        }
+    }
 
     protected virtual void onTriggerEnterTag(Collider other)
     {
 
     }
     protected virtual void onTriggerStayTag(Collider other)
+    {
+
+    }
+    protected virtual void onTriggerExitTag(Collider other)
     {
 
     }
