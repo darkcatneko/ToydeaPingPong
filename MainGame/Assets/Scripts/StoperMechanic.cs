@@ -2,21 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Codice.Client.BaseCommands;
 
-public class StoperMechanic : MonoBehaviour
+public class StoperMechanic 
 {
-   public void DoStop(Action action,float stayTime,float actionTime,Vector3 objPos)
+    [SerializeField] public float playerStayTime_;   
+    private void doActionAfterStop(Action action,float stayTime,float actionTime,Vector3 objPos)
    {
         if (stayTime <= actionTime)
         {
-            var stopPos = GetCenterOfPosition(objPos);
-            MainGameController.Instance.PlayerChangePosition(stopPos);
-            MainGameController.Instance.PlayerChangeVelocity(Vector3.zero);
+            stop(objPos);
         }
         else
         {
             action.Invoke();
         }
+    }
+    public void StoperOnTriggerEnterBehavior()
+    {
+        playerStayTime_ = 0;
+    }
+    public void StoperOnTriggerStayBehavior(Action action, float stayTime, float actionTime, Vector3 objPos) 
+    {
+        playerStayTime_ += Time.deltaTime;
+        doActionAfterStop(action, stayTime, actionTime,objPos);
+    }
+    private void stop(Vector3 objPos)
+    {
+        var stopPos = GetCenterOfPosition(objPos);
+        MainGameController.Instance.PlayerChangePosition(stopPos);
+        MainGameController.Instance.PlayerChangeVelocity(Vector3.zero);
     }
     public Vector3 GetCenterOfPosition(Vector3 position)
     {

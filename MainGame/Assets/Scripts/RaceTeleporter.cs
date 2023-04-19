@@ -6,8 +6,6 @@ public class RaceTeleporter : TriggerManager
 {
     [Header("TeleporterUsedMath")]
     [SerializeField]
-    private float playerStayTime_;
-    [SerializeField]
     private float teleportNeedTime_;
     [SerializeField]
     private Transform teleportEndPos_;
@@ -18,40 +16,20 @@ public class RaceTeleporter : TriggerManager
 
     private Vector3 teleport2DMapPos_ => new Vector3(teleportEndPos_.transform.position.x, 0, teleportEndPos_.transform.position.z);
 
+    private StoperMechanic stoper = new StoperMechanic();
+
     protected override void onTriggerEnterTag(Collider other)
     {
-        playerStayTime_ = 0;
+        stoper.StoperOnTriggerEnterBehavior();
     }
     protected override void onTriggerStayTag(Collider other)
-    {
-        playerStayTime_ += Time.deltaTime;
-        teleport();
+    {      
+        stoper.StoperOnTriggerStayBehavior(teleportPlayer, stoper.playerStayTime_, teleportNeedTime_,obj2DMapPos_);
     }
-    private void teleport()
+    
+    private void teleportPlayer()
     {
-        if (playerStayTime_ <= teleportNeedTime_)
-        {
-            stopInTeleporter();
-            MainGameController.Instance.PlayerChangeVelocity(Vector3.zero);
-        }
-        else
-        {
-            var teleportEndCenterPos = GetCenterOfPosition(teleport2DMapPos_);            
-            MainGameController.Instance.PlayerChangePosition(teleportEndPos_.position);
-        }
-
-    }
-
-    private void stopInTeleporter()
-    {
-        var teleporterCenterPos_ = GetCenterOfPosition(obj2DMapPos_);
-        MainGameController.Instance.PlayerChangePosition(teleporterCenterPos_);
-    }
-    private Vector3 GetCenterOfPosition(Vector3 position)
-    {
-        var objCenterPos_ = position;
-        var player = MainGameController.Instance.PlayerObject;
-        objCenterPos_.y = player.transform.position.y;
-        return objCenterPos_;
-    }
+        var teleportEndCenterPos = stoper.GetCenterOfPosition(teleport2DMapPos_);
+        MainGameController.Instance.PlayerChangePosition(teleportEndCenterPos);
+    }   
 }

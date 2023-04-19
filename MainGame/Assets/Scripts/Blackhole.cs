@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Blackhole : TriggerManager
-{
-    
-    [SerializeField] 
-    private float playerStayTime_;
+{    
     [SerializeField]
     private float launchNeedTime_;
     [SerializeField]
@@ -15,40 +12,21 @@ public class Blackhole : TriggerManager
     private Vector3 launchDir_ = new Vector3(-1, 0, -1);
     private Vector3 obj2DMapPos_ => new Vector3(transform.position.x, 0, transform.position.z);
 
-    
+    private StoperMechanic stoper_ = new StoperMechanic();
 
     protected override void onTriggerEnterTag(Collider other)
     {
-        playerStayTime_ = 0;
+        stoper_.StoperOnTriggerEnterBehavior();
     }
 
     protected override void onTriggerStayTag(Collider other)
-    {
-        playerStayTime_ += Time.deltaTime;
-        blackHoleLaunch();
+    {        
+        stoper_.StoperOnTriggerStayBehavior(launchPlayer, stoper_.playerStayTime_, launchNeedTime_, obj2DMapPos_);
     }
-
-    private void blackHoleLaunch()
+    private void launchPlayer()
     {
-        if (playerStayTime_ <= launchNeedTime_)
-        {
-            stopInBlackHole();
-            MainGameController.Instance.PlayerChangeVelocity(Vector3.zero);
-        }
-        else
-        {
-            var launchVelocity_ = launchDir_ * launchSpeed_;
-            MainGameController.Instance.PlayerChangeVelocity(launchVelocity_);
-        }
-
-    }
-
-    private void stopInBlackHole()
-    {
-        var blackholeCenterPos_ = obj2DMapPos_;
-        var player = MainGameController.Instance.PlayerObject;       
-        blackholeCenterPos_.y = player.transform.position.y;
-        MainGameController.Instance.PlayerChangePosition(blackholeCenterPos_);    
+        var launchVelocity_ = launchDir_ * launchSpeed_;
+        MainGameController.Instance.PlayerChangeVelocity(launchVelocity_);
     }
     
 }

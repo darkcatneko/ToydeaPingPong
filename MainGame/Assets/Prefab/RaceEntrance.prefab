@@ -111,7 +111,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be261ed0b17f9549bba96ee93ae77db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerStayTime_: 0
   teleportNeedTime_: 1.5
   teleportEndPos_: {fileID: 0}
   whichRace_: 0
@@ -199,8 +198,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 2.1043499, z: 1.4614654}
-  m_Center: {x: -0.0000000030291085, y: 0.55217505, z: 0.23073244}
+  m_Size: {x: 1, y: 2.1043499, z: 1.796478}
+  m_Center: {x: 0.0000000022050122, y: 0.55217505, z: 0.06322625}
 --- !u!114 &2645738164242446602
 MonoBehaviour:
   m_ObjectHideFlags: 0
