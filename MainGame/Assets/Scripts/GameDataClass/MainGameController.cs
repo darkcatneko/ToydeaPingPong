@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using PinBallNamespace;
 using System;
+using UnityEngine.SceneManagement;
 
 public class MainGameController : ToSingletonMonoBehavior<MainGameController>
 {
@@ -24,6 +25,10 @@ public class MainGameController : ToSingletonMonoBehavior<MainGameController>
     private void Update()
     {
         StageManager.StageManagerUpdate();
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
     #region playerPhysic
     public void SetPlayerRigidbody()

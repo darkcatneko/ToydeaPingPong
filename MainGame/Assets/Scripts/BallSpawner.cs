@@ -11,7 +11,7 @@ public class BallSpawner : MonoBehaviour
     {
         spawn_Ball();
         //MainGameController.Instance.ListenEvent(GameEvent.GameRestart,spawn_Ball);
-        MainGameController.Instance.MainGameEvents_.RaceStartEvent.AddListener(spawn_Ball);
+        MainGameController.Instance.MainGameEvents_.GameRestartEvent.AddListener(spawn_Ball);
     }
 
     private void spawn_Ball()
