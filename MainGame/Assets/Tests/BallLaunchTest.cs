@@ -14,8 +14,7 @@ public class BallLaunchTest
     [TestCase(5, 5, 5)]
     public void LauncherTest(float nowTime, float chargeUsedTime,float result)
     {
-        var testobj = new GameObject();
-        var ballLauncher = testobj.AddComponent<BallLauncher>();
+        var ballLauncher = new BallLauncher();
         var actualOutputForce = ballLauncher.AddTime(nowTime,chargeUsedTime);
         if (nowTime + Time.deltaTime >= chargeUsedTime)
         {

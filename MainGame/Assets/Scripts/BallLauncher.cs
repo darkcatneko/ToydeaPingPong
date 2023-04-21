@@ -1,33 +1,31 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace PinBallNamespace
 {
-    public class BallLauncher : MonoBehaviour
+    [System.Serializable]
+    public class BallLauncher 
     {
-       
-        [SerializeField] private float nowPressedTime_;
-        [Header("Max Force")]
-        [SerializeField] private float  basicLaunchForce_;
+        [SerializeField]private float nowPressedTime_;
+        [SerializeField]private float  basicLaunchForce_ = 5000;
         private const float MAX_PERCENTAGE = 1f;
-        [Header("Charge need time")]
-        [SerializeField] private float chargeUsedTime_;
+        [SerializeField] private float chargeUsedTime_ = 3f;
        
         private float nowPercentage_ => MAX_PERCENTAGE/chargeUsedTime_*nowPressedTime_;
         private float nowForce_ => basicLaunchForce_ * nowPercentage_;
-
-        private void Update()
-        {
-            chargedLaunch();
-        }
-
-        private void chargedLaunch()
+        
+        public void LauncherWait()
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 resetPressedTime();
+                MainGameController.Instance.TransitionState(State_Enum.Launch_State);
             }
+        }
+        public void LauncherLaunch()
+        {
             if (Input.GetKey(KeyCode.Space))
             {
                 addPressedTime();
@@ -35,6 +33,7 @@ namespace PinBallNamespace
             if (Input.GetKeyUp(KeyCode.Space))
             {
                 ballAddForce();
+                MainGameController.Instance.TransitionState(State_Enum.Race_State);
             }
         }
 

@@ -1,12 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UmaNamespace;
+using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
 [System.Serializable]
 public class RoundData
 {
-    [SerializeField] private UmaScriptableObject thisUmaSO_;
+    [SerializeField]
+    private UmaScriptableObject thisUmaSO_;
     public UmaData ThisUmaData => thisUmaSO_.ThisUma;
     public int ThisUmaNumber = 0;
+    [SerializeField]
+    public RaceData NowRace = new RaceData();
+    [SerializeField]
+    public List<RaceData> RaceList = new List<RaceData>();
+    public void DebutRaceInit()
+    {
+        NowRace = new RaceData();
+        MainUiController.Instance.UpdateRaceInfo(NowRace);
+    }
+
 }

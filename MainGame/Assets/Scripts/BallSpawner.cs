@@ -10,7 +10,8 @@ public class BallSpawner : MonoBehaviour
     private void Start()
     {
         spawn_Ball();
-        MainGameController.Instance.GameRestartEvent.AddListener(spawn_Ball);
+        //MainGameController.Instance.ListenEvent(GameEvent.GameRestart,spawn_Ball);
+        MainGameController.Instance.MainGameEvents_.RaceStartEvent.AddListener(spawn_Ball);
     }
 
     private void spawn_Ball()

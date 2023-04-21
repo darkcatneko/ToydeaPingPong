@@ -1,19 +1,31 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using PinBallNamespace;
+using System;
 
 public class MainGameController : ToSingletonMonoBehavior<MainGameController>
 {
     public GameObject PlayerObject;
-    public GameData ThisGameData;
     public Rigidbody PlayerRigidbody;
-    public UnityEvent GameRestartEvent = new UnityEvent();
+    public BallLauncher BallLauncher;
+    public MainGameEvents MainGameEvents_ = new MainGameEvents(); //小概念
+    private StageManager StageManager = new StageManager();//小概念
+    protected override void init()
+    {
+        StageManager.StageManagerInit();
+    }
     private void Start()
     {
-        
-    }    
+        MainGameEvents_.GameStartEvent.Invoke();
+    }
+    private void Update()
+    {
+        StageManager.StageManagerUpdate();
+    }
+    #region playerPhysic
     public void SetPlayerRigidbody()
     {
         PlayerRigidbody = PlayerObject.GetComponent<Rigidbody>();
@@ -28,14 +40,28 @@ public class MainGameController : ToSingletonMonoBehavior<MainGameController>
     {
         PlayerRigidbody.velocity = velocity;
     }
+    #endregion
 
     public void PlayerChangePosition(Vector3 finalPos)
     {
         PlayerObject.transform.position = finalPos;
     }
-
+    
     public void GameRestart()
     {
-        GameRestartEvent.Invoke();
+        MainGameEvents_.GameRestartEvent.Invoke();
+        StageManager.TransitionState(State_Enum.Waiting_State);
     }
+    public void RaceStart()
+    {
+        MainGameEvents_.RaceStartEvent.Invoke();
+    }
+    public void RaceSkillActivate()
+    {
+        MainGameEvents_.RaceSkillActivateEvent.Invoke();
+    }
+    public void TransitionState(State_Enum type)
+    {
+        StageManager.TransitionState(type);
+    } 
 }
