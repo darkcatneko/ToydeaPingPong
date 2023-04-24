@@ -24,7 +24,7 @@ public class StageManager
         status_.Add(State_Enum.Waiting_State, new WaitingState(this));
         status_.Add(State_Enum.Launch_State, new LaunchState(this));
         status_.Add(State_Enum.Race_State, new RaceState(this));
-
+        status_.Add(State_Enum.Training_State, new TrainingState(this));
         TransitionState(State_Enum.Waiting_State);
     }
     public void StageManagerUpdate()

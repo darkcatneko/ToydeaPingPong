@@ -27,5 +27,5 @@ public abstract class StateBase
 }
 public enum State_Enum
 {
-    Waiting_State, Launch_State, Race_State,
+    Waiting_State, Launch_State, Race_State,Training_State,
 }

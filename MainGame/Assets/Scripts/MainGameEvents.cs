@@ -10,5 +10,5 @@ public class MainGameEvents
     public UnityEvent GameStartEvent = new();
     public UnityEvent RaceStartEvent = new UnityEvent();
     public UnityEvent<int> RaceSkillActivateEvent = new UnityEvent<int>(); 
-
+    public UnityEvent RaceEndEvent = new UnityEvent();
 }

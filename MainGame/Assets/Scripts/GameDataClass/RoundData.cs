@@ -18,7 +18,7 @@ public class RoundData
     public void DebutRaceInit()
     {
         NowRace = new RaceData();
-        MainUiController.Instance.UpdateRaceInfo(NowRace);
+        MainUiController.Instance.CallUpdateRaceInfo();
     }
 
 }

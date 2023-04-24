@@ -40,7 +40,7 @@ public enum RaceLength
 {
     Short = 1200,
     Mile = 1800,
-    Middle = 2200,
+    Middle = 2000,
     Long = 2500,
     Dirt = 1600,
 }
