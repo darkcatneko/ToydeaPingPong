@@ -20,14 +20,16 @@ public class MainGameController : ToSingletonMonoBehavior<MainGameController>
     }
     private void Start()
     {
-        MainGameEvents_.GameStartEvent.Invoke();
+        
     }
+
     private void Update()
     {
         StageManager.StageManagerUpdate();
         if (Input.GetKeyDown(KeyCode.T))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            TransitionState(State_Enum.Waiting_State);
         }
     }
     #region playerPhysic
@@ -51,7 +53,10 @@ public class MainGameController : ToSingletonMonoBehavior<MainGameController>
     {
         PlayerObject.transform.position = finalPos;
     }
-    
+    public void GameStart()
+    {
+        MainGameEvents_.GameStartEvent.Invoke();
+    }
     public void GameRestart()
     {
         MainGameEvents_.GameRestartEvent.Invoke();
@@ -61,9 +66,9 @@ public class MainGameController : ToSingletonMonoBehavior<MainGameController>
     {
         MainGameEvents_.RaceStartEvent.Invoke();
     }
-    public void RaceSkillActivate()
+    public void RaceSkillActivate(int effect)
     {
-        MainGameEvents_.RaceSkillActivateEvent.Invoke();
+        MainGameEvents_.RaceSkillActivateEvent.Invoke(effect);
     }
     public void TransitionState(State_Enum type)
     {

@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RaceSkillTrigger : TriggerManager
+public class RaceSkillTrigger : CollisionManager
 {
     [SerializeField] public int DistanceFoward;
-    protected override void onTriggerEnterTag(Collider other)
+    protected override void onCollisionTag(Collision collision)
     {
-        //GameDataManager.Instance
+        MainGameController.Instance.RaceSkillActivate(DistanceFoward);
     }
 }

@@ -11,6 +11,7 @@ public class CustomGravity : MonoBehaviour
 
     private void FixedUpdate()
     {   
-        playerRigid_.AddForce(gravity_);
+        if(playerRigid_!=null) playerRigid_.AddForce(gravity_);
+
     }
 }

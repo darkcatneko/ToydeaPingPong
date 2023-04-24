@@ -1,11 +1,12 @@
+using Codice.Client.Common.GameUI;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class ToSingletonMonoBehavior<T> : MonoBehaviour where T : MonoBehaviour
 {
     static T instance = null;
-
     public static T Instance
     {
         get
@@ -34,7 +35,7 @@ public class ToSingletonMonoBehavior<T> : MonoBehaviour where T : MonoBehaviour
     {
         if (instance == null) instance = this as T;
         if (instance == this) DontDestroyOnLoad(this);
-        else DestroyImmediate(this);
+        else DestroyImmediate(this.gameObject);
 
         init();
     }

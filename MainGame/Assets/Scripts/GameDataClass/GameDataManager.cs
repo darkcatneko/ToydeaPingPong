@@ -5,10 +5,12 @@ using UnityEngine;
 public class GameDataManager : MonoBehaviour
 {
     public GameData ThisGameData = new GameData();
+    private MainGameEvents gameEvents => MainGameController.Instance.MainGameEvents_;
     private void Start()
     {
         //MainGameController.Instance.ListenEvent(GameEvent.RaceStart, MakeDubut);
-        MainGameController.Instance.MainGameEvents_.RaceStartEvent.AddListener(MakeDubut);
+        gameEvents.RaceStartEvent.AddListener(MakeDubut);
+        gameEvents.RaceSkillActivateEvent.AddListener(DistanceShortenBySkill);
     }
 
     public void MakeDubut()

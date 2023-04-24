@@ -5,16 +5,12 @@ using UnityEngine.UI;
 
 public class MainUiController : ToSingletonMonoBehavior<MainUiController>
 {
-    [SerializeField] private Text NowRaceType;
-    [SerializeField] private Text NowRaceRemainDistance;
-    [SerializeField] private Text NowRaceCount;
-    [SerializeField] private Text NowEarnedPoint;
-    [SerializeField] private Text NowGameRound;
+    public MainUIObject MainUIOBJ_;
 
     public void UpdateRaceInfo(RaceData raceData)
     {
-        NowRaceType.text = raceData.ThisRaceType.ToString();
-        NowRaceRemainDistance.text = raceData.RemainingRunDistance.ToString();
+        MainUIOBJ_.NowRaceType.text = raceData.ThisRaceType.ToString();
+        MainUIOBJ_.NowRaceRemainDistance.text = raceData.RemainingRunDistance.ToString();
     }
 
 }
