@@ -6,6 +6,7 @@ public class MainUIObject : MonoBehaviour
 {
     [SerializeField] public Text NowRaceType;
     [SerializeField] public Text NowRaceRemainDistance;
+    [SerializeField] public Text YourHorseHighestPossiblePlace;
     [SerializeField] public Text NowRaceCount;
     [SerializeField] public Text NowEarnedPoint;
     [SerializeField] public Text NowGameRound;

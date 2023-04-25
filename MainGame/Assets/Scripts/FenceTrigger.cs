@@ -28,7 +28,7 @@ public class FenceTrigger : TriggerManager
     protected override void onTriggerEnterTag(Collider other)
     {
         FenceMechanic(fenceBehavior.Open);
-    }
+    }    
     protected override void onTriggerExitTag(Collider other) 
     {
         FenceMechanic(fenceBehavior.Close);

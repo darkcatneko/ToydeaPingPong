@@ -9,10 +9,15 @@ public class RoundData
 {
     [SerializeField]
     private UmaScriptableObject thisUmaSO_;
+
+    public float EarnedPriceMoney = 0;
+
     public UmaData ThisUmaData => thisUmaSO_.ThisUma;
     public int ThisUmaNumber = 0;
+
     [SerializeField]
     public RaceData NowRace = new RaceData();
+
     [SerializeField]
     public List<RaceData> RaceList = new List<RaceData>();
     public void DebutRaceInit()

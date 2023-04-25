@@ -7,7 +7,7 @@ public class RaceSkillTrigger : CollisionManager
     [SerializeField] public int DistanceFoward;
     protected override void onCollisionTag(Collision collision)
     {
-        MainGameController.Instance.RaceSkillActivate(DistanceFoward);
-        MainUiController.Instance.CallUpdateRaceInfo();
+        //MainGameController.Instance.RaceSkillActivate(DistanceFoward);
+        //MainUiController.Instance.CallUpdateRaceInfo();
     }
 }

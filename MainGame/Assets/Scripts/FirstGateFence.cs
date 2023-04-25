@@ -6,12 +6,22 @@ using DG.Tweening;
 public class FirstGateFence : TriggerManager
 {
     [SerializeField] private GameObject fenceObj_;
-    [SerializeField] private GateType thisGateType_;
+    //[SerializeField] private GateType thisGateType_;
     [SerializeField] private float fenceHighestPos_;
     [SerializeField] private float clostOROpenTime_;
     protected override void onTriggerEnterTag(Collider other)
     {
-        var finalPos = thisGateType_ == GateType.Inside ? fenceHighestPos_ : 0;
+        var finalPos = fenceHighestPos_;
+        fenceObj_.transform.DOMoveY(finalPos, clostOROpenTime_);
+    }    
+    public void CloseThisGate()
+    {
+        var finalPos = 0;
+        fenceObj_.transform.DOMoveY(finalPos, clostOROpenTime_);
+    }
+    public void OpenThisGate()
+    {
+        var finalPos = fenceHighestPos_;
         fenceObj_.transform.DOMoveY(finalPos, clostOROpenTime_);
     }
 }

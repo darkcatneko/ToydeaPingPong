@@ -12,19 +12,20 @@ public class RaceData
     public RaceLength ThisRaceType = RaceLength.Middle;
     public int ThisRaceLength => (int)ThisRaceType;
 
-    public int NowRunDistance;
+    //public int NowRunDistance;
+    public int YourHorseHighestPlace;
 
-    public int RemainingRunDistance => ThisRaceLength - NowRunDistance;
+    //public int RemainingRunDistance => ThisRaceLength - NowRunDistance;
 
     public RaceData()
     {
         ThisRaceType = getRandomRaceLength();
-        NowRunDistance = 0;
+        YourHorseHighestPlace = 1;
     }
     public RaceData(RaceLength raceLength)
     {
         ThisRaceType = raceLength;
-        NowRunDistance = 0;
+        YourHorseHighestPlace = 1;
     }
     private RaceLength getRandomRaceLength()
     {

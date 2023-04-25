@@ -5,17 +5,25 @@ using UnityEngine;
 public class TriggerManager : MonoBehaviour
 {
     protected virtual string customTag_ { get; } = "Player";
-
+    protected virtual string customTag2_ { get; } = "Enemy";
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag(customTag_))
         {
             onTriggerEnterTag(other);
         }
+        if ( other.gameObject.CompareTag(customTag2_))
+        {
+            onTriggerEnterOther(other);
+        }
+        if (other.gameObject.CompareTag(customTag_) || other.gameObject.CompareTag(customTag2_))
+        {
+            onTriggerEnterBoth(other);
+        }
     }
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag(customTag_))
+        if (other.gameObject.CompareTag(customTag_) || other.gameObject.CompareTag(customTag2_))
         {
             onTriggerStayTag(other);
         }
@@ -37,6 +45,14 @@ public class TriggerManager : MonoBehaviour
 
     }
     protected virtual void onTriggerExitTag(Collider other)
+    {
+
+    }
+    protected virtual void onTriggerEnterOther(Collider other)
+    {
+
+    }
+    protected virtual void onTriggerEnterBoth(Collider other)
     {
 
     }

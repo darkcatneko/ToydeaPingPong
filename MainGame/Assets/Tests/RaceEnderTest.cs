@@ -8,7 +8,8 @@ public class RaceEnderTest
 {
     
     [Test]
-    [TestCase(RaceLength.Middle,2000,1,300000000)]
+    [TestCase(RaceLength.Middle,2000,1,30000)]
+    [TestCase(RaceLength.Middle, 2000, 9, 900)]
     public void RaceEndTest(RaceLength raceLength,int runDistance,int rank,int result)
     {
         var gameObject = new GameObject();
@@ -16,7 +17,7 @@ public class RaceEnderTest
 
         gameDataManager.ThisGameData.ThisRound = new RoundData();
         gameDataManager.ThisGameData.ThisRound.NowRace.ThisRaceType = raceLength; ;
-        gameDataManager.ThisGameData.ThisRound.NowRace.NowRunDistance = runDistance;
+        //gameDataManager.ThisGameData.ThisRound.NowRace.NowRunDistance = runDistance;
 
         var EarnPoint = gameDataManager.GetRaceRewardPrice(rank);
         Debug.Log(EarnPoint);

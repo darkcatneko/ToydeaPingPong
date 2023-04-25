@@ -14,14 +14,22 @@ public class MainUiController : ToSingletonMonoBehavior<MainUiController>
         gameData_ = gameData;
     }
     private void updateRaceInfo(RaceData raceData)
-    {
-        
+    {       
         MainUIOBJ_.NowRaceType.text = raceData.ThisRaceType.ToString();
-        MainUIOBJ_.NowRaceRemainDistance.text = raceData.RemainingRunDistance.ToString();
+        MainUIOBJ_.NowRaceRemainDistance.text = raceData.ThisRaceLength.ToString();
+        MainUIOBJ_.YourHorseHighestPossiblePlace.text = raceData.YourHorseHighestPlace.ToString(); 
+    }
+    private void updateRoundInfo(RoundData roundData)
+    {
+        MainUIOBJ_.NowEarnedPoint.text = roundData.EarnedPriceMoney.ToString();
     }
     public void CallUpdateRaceInfo()
     {
         updateRaceInfo(gameData_.ThisRound.NowRace);
+    }
+    public void CallUpdateRoundInfo()
+    {
+        updateRoundInfo(gameData_.ThisRound);
     }
 
 }

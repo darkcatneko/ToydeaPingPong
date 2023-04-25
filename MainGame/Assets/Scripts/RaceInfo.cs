@@ -17,11 +17,11 @@ public class RaceInfos
 {
     public List<RaceInfo> RaceInfoList = new List<RaceInfo>();
     
-    public RaceInfo ShortRaceInfo = new RaceInfo(RaceLength.Short,170000000);
-    public RaceInfo MileRaceInfo = new RaceInfo(RaceLength.Mile, 180000000);
-    public RaceInfo MiddleRaceInfo = new RaceInfo(RaceLength.Middle, 300000000);
-    public RaceInfo LongRaceInfo = new RaceInfo(RaceLength.Long, 500000000);
-    public RaceInfo DirtRaceInfo = new RaceInfo(RaceLength.Dirt, 120000000);//必須找一個時間學excel讀法
+    public RaceInfo ShortRaceInfo = new RaceInfo(RaceLength.Short,17000);
+    public RaceInfo MileRaceInfo = new RaceInfo(RaceLength.Mile, 18000);
+    public RaceInfo MiddleRaceInfo = new RaceInfo(RaceLength.Middle, 30000);
+    public RaceInfo LongRaceInfo = new RaceInfo(RaceLength.Long, 50000);
+    public RaceInfo DirtRaceInfo = new RaceInfo(RaceLength.Dirt, 12000);//必須找一個時間學excel讀法
 
     public RaceInfos()
     {

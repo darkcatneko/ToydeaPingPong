@@ -66,9 +66,13 @@ public class MainGameController : ToSingletonMonoBehavior<MainGameController>
     {
         MainGameEvents_.RaceStartEvent.Invoke();
     }
-    public void RaceSkillActivate(int effect)
+    public void PlayerPassGoal()
     {
-        MainGameEvents_.RaceSkillActivateEvent.Invoke(effect);
+        MainGameEvents_.PlayerPassGoalEvent.Invoke();
+    }
+    public void EnemyPassGoal()
+    {
+        MainGameEvents_.EnemyPassGoalEvent.Invoke();
     }
     public void TransitionState(State_Enum type)
     {
