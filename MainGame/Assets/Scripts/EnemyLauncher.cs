@@ -38,8 +38,9 @@ public class EnemyLauncher : MonoBehaviour
     {
         for (int i = 0; i < enemyObjects.Length; i++)
         {
-            enemyObjects[i].transform.position = SpawnPosition[i];
             enemyObjects[i].GetComponent<Rigidbody>().velocity = Vector3.zero;
+            enemyObjects[i].transform.position = SpawnPosition[i];
+            
         }
     }
 }

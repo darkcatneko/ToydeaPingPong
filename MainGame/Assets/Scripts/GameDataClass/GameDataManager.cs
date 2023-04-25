@@ -18,6 +18,7 @@ public class GameDataManager : MonoBehaviour
         gameEvents_.RaceStartEvent.AddListener(makeDubut);
         gameEvents_.EnemyPassGoalEvent.AddListener(enemyPassGoal);
         gameEvents_.PlayerPassGoalEvent.AddListener(playerPassGoalGet);
+        gameEvents_.GameRestartEvent.AddListener(roundReset);
         MainUiController.Instance.GameDataInit(ThisGameData);
     }
 
@@ -42,6 +43,11 @@ public class GameDataManager : MonoBehaviour
         var price = Mathf.RoundToInt(raceInfos_.GetRacePrice(nowRaceType) *pricePrecentage_[rank-1]);
         return  price;
     }
-    
+    private void roundReset()
+    {
+        ThisGameData.RoundDatas.Add(ThisGameData.ThisRound);
+        ThisGameData.ThisRound = new RoundData();
+        MainUiController.Instance.CallUpdateRoundInfo();
+    }
     
 }

@@ -29,6 +29,7 @@ public class MainUiController : ToSingletonMonoBehavior<MainUiController>
     }
     public void CallUpdateRoundInfo()
     {
+        CallUpdateRaceInfo();
         updateRoundInfo(gameData_.ThisRound);
     }
 

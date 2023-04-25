@@ -66,7 +66,7 @@ public class BounceObject : CollisionManager
 
     private float getLimitedSpeed(float previousSpeed, float minSpeed)
     {
-        var maxSpeed = 300f;
+        var maxSpeed = 100f;
         return Mathf.Clamp(previousSpeed, minSpeed, maxSpeed);
     }
 
