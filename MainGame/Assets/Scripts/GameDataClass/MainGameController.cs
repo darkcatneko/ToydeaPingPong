@@ -13,7 +13,7 @@ public class MainGameController : ToSingletonMonoBehavior<MainGameController>
     public Rigidbody PlayerRigidbody;
     public BallLauncher BallLauncher;
     public MainGameEvents MainGameEvents_ = new MainGameEvents(); //小概念
-    private StageManager StageManager = new StageManager();//小概念
+    public StageManager StageManager = new StageManager();//小概念
     protected override void init()
     {
         StageManager.StageManagerInit();
@@ -29,7 +29,7 @@ public class MainGameController : ToSingletonMonoBehavior<MainGameController>
         if (Input.GetKeyDown(KeyCode.T))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            TransitionState(State_Enum.Waiting_State);
+            StageManager.TransitionState(State_Enum.Waiting_State);
         }
     }
     #region playerPhysic
@@ -62,10 +62,7 @@ public class MainGameController : ToSingletonMonoBehavior<MainGameController>
         MainGameEvents_.GameRestartEvent.Invoke();
         StageManager.TransitionState(State_Enum.Waiting_State);
     }
-    public void RaceStart()
-    {
-        MainGameEvents_.RaceStartEvent.Invoke();
-    }
+    
     public void PlayerPassGoal()
     {
         MainGameEvents_.PlayerPassGoalEvent.Invoke();
@@ -74,8 +71,14 @@ public class MainGameController : ToSingletonMonoBehavior<MainGameController>
     {
         MainGameEvents_.EnemyPassGoalEvent.Invoke();
     }
-    public void TransitionState(State_Enum type)
+    public void DebutRaceStart()
     {
-        StageManager.TransitionState(type);
-    } 
+        MainGameEvents_.DebutRaceStartEvent.Invoke();
+        MainGameEvents_.RaceStartEvent.Invoke();
+    }
+    public void RepeatableRaceStart(RaceLength startedRace)
+    {
+        MainGameEvents_.RepeatableRaceStartEvent.Invoke(startedRace);
+        MainGameEvents_.RaceStartEvent.Invoke();
+    }
 }

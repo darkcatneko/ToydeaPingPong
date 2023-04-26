@@ -15,10 +15,11 @@ public class GameDataManager : MonoBehaviour
     }
     private void Start()
     {
-        gameEvents_.RaceStartEvent.AddListener(makeDubut);
+        gameEvents_.DebutRaceStartEvent.AddListener(makeDubut);
         gameEvents_.EnemyPassGoalEvent.AddListener(enemyPassGoal);
         gameEvents_.PlayerPassGoalEvent.AddListener(playerPassGoalGet);
         gameEvents_.GameRestartEvent.AddListener(roundReset);
+        gameEvents_.RepeatableRaceStartEvent.AddListener(startedANewRepeatableRace);
         MainUiController.Instance.GameDataInit(ThisGameData);
     }
 
@@ -26,7 +27,11 @@ public class GameDataManager : MonoBehaviour
     {
         ThisGameData.ThisRound.DebutRaceInit();
     }
-   
+   private void startedANewRepeatableRace(RaceLength raceLength)
+    {
+        ThisGameData.ThisRound.NowRace = new RaceData(raceLength);
+        MainUiController.Instance.CallUpdateRaceInfo();
+    }
     private void enemyPassGoal()
     {
         ThisGameData.ThisRound.NowRace.YourHorseHighestPlace++;

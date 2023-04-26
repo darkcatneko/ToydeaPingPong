@@ -16,7 +16,7 @@ public class RoundData
     public int ThisUmaNumber = 0;
 
     [SerializeField]
-    public RaceData NowRace = new RaceData();
+    public RaceData NowRace = new RaceData(RaceLength.None);
 
     [SerializeField]
     public List<RaceData> RaceList = new List<RaceData>();

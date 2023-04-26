@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class RaceState : StateBase
 {
-    public RaceState(StageManager m) : base(m)
+    public RaceLength StartedRace;
+    public RaceState(StageManager m,RaceLength startedRace) : base(m)
     {
+        StartedRace = startedRace;
     }
 
     public override void OnEnter()
     {
-        MainGameController.Instance.RaceStart();
+        MainGameController.Instance.RepeatableRaceStart(StartedRace);
     }
 
     public override void OnExit()

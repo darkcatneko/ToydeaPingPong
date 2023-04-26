@@ -21,7 +21,7 @@ namespace PinBallNamespace
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 resetPressedTime();
-                MainGameController.Instance.TransitionState(State_Enum.Launch_State);
+                MainGameController.Instance.StageManager.TransitionState(State_Enum.Launch_State);
             }
         }
         public void LauncherLaunch()
@@ -33,7 +33,7 @@ namespace PinBallNamespace
             if (Input.GetKeyUp(KeyCode.Space))
             {
                 ballAddForce();
-                MainGameController.Instance.TransitionState(State_Enum.Race_State);
+                MainGameController.Instance.StageManager.TransitionState(State_Enum.Debut_State);
             }
         }
 

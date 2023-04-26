@@ -31,5 +31,7 @@ public class RaceTeleporter : TriggerManager
     {
         var teleportEndCenterPos = stoper.GetCenterOfPosition(teleport2DMapPos_);
         MainGameController.Instance.PlayerChangePosition(teleportEndCenterPos);
+        var stageData = StageData.GetRepeatStageData(whichRace_);
+        MainGameController.Instance.StageManager.TransitionState(State_Enum.Race_State, stageData);
     }   
 }

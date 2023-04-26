@@ -27,5 +27,6 @@ public class RaceShooter : TriggerManager
     {
         var launchVelocity_ = launchDir_ * launchSpeed_;
         MainGameController.Instance.PlayerChangeVelocity(launchVelocity_);
+        
     }
 }

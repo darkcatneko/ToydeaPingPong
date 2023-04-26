@@ -7,7 +7,6 @@ using UnityEngine.Events;
 public class WaitingState : StateBase
 {
     private BallLauncher ballLauncher_ => MainGameController.Instance.BallLauncher;
-    public UnityEvent WaitingStateUpdateEvent = new UnityEvent();
     public WaitingState(StageManager m) : base(m)
     {
     }
