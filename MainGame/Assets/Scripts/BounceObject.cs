@@ -8,6 +8,7 @@ public class BounceObject : CollisionManager
     protected override string customTag2_ => "Enemy";
     [SerializeField] private float unitElasticity_ = 1.2f;
     [SerializeField] private float minSpeed_ = 20f;
+    [SerializeField] private float maxSpeed_ = 100f;
 
     protected override void onCollisionTag(Collision collision)
     {
@@ -66,8 +67,7 @@ public class BounceObject : CollisionManager
 
     private float getLimitedSpeed(float previousSpeed, float minSpeed)
     {
-        var maxSpeed = 100f;
-        return Mathf.Clamp(previousSpeed, minSpeed, maxSpeed);
+        return Mathf.Clamp(previousSpeed, minSpeed, maxSpeed_);
     }
 
 

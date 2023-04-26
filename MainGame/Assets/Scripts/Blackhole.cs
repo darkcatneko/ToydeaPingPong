@@ -21,7 +21,7 @@ public class Blackhole : TriggerManager
 
     protected override void onTriggerStayTag(Collider other)
     {        
-        stoper_.StoperOnTriggerStayBehavior(launchPlayer, stoper_.playerStayTime_, launchNeedTime_, obj2DMapPos_);
+        stoper_.StoperOnTriggerStayBehavior(launchPlayer, stoper_.PlayerStayTime, launchNeedTime_, obj2DMapPos_);
     }
     private void launchPlayer()
     {

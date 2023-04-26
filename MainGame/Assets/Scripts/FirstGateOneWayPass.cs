@@ -13,9 +13,12 @@ public class FirstGateOneWayPass : TriggerManager
     [SerializeField] private int inBall_;
     private void Start()
     {
+        oneWayPassEventInit();
+    }
+    private void oneWayPassEventInit()
+    {
         MainGameController.Instance.MainGameEvents_.RaceStartEvent.AddListener(resetInBall);
     }
-
     protected override void onTriggerEnterBoth(Collider other)
     {
         

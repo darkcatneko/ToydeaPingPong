@@ -26,6 +26,10 @@ public class MainGameController : ToSingletonMonoBehavior<MainGameController>
     private void Update()
     {
         StageManager.StageManagerUpdate();
+        reloadGameCheatCode();
+    }
+    private void reloadGameCheatCode()
+    {
         if (Input.GetKeyDown(KeyCode.T))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

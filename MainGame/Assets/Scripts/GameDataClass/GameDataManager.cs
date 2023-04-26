@@ -15,6 +15,10 @@ public class GameDataManager : MonoBehaviour
     }
     private void Start()
     {
+        gameDataInit();
+    }
+    private void gameDataInit()
+    {
         gameEvents_.DebutRaceStartEvent.AddListener(makeDubut);
         gameEvents_.EnemyPassGoalEvent.AddListener(enemyPassGoal);
         gameEvents_.PlayerPassGoalEvent.AddListener(playerPassGoalGet);
@@ -22,7 +26,6 @@ public class GameDataManager : MonoBehaviour
         gameEvents_.RepeatableRaceStartEvent.AddListener(startedANewRepeatableRace);
         MainUiController.Instance.GameDataInit(ThisGameData);
     }
-
     private void makeDubut()
     {
         ThisGameData.ThisRound.DebutRaceInit();

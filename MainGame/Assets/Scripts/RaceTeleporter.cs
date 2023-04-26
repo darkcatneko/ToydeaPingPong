@@ -16,22 +16,26 @@ public class RaceTeleporter : TriggerManager
 
     private Vector3 teleport2DMapPos_ => new Vector3(teleportEndPos_.transform.position.x, 0, teleportEndPos_.transform.position.z);
 
-    private StoperMechanic stoper = new StoperMechanic();
+    private StoperMechanic stoper_ = new StoperMechanic();
 
     protected override void onTriggerEnterTag(Collider other)
     {
-        stoper.StoperOnTriggerEnterBehavior();
+        stoper_.StoperOnTriggerEnterBehavior();
     }
     protected override void onTriggerStayTag(Collider other)
     {      
-        stoper.StoperOnTriggerStayBehavior(teleportPlayer, stoper.playerStayTime_, teleportNeedTime_,obj2DMapPos_);
+        stoper_.StoperOnTriggerStayBehavior(teleportPlayer, stoper_.PlayerStayTime, teleportNeedTime_,obj2DMapPos_);
     }
     
     private void teleportPlayer()
     {
-        var teleportEndCenterPos = stoper.GetCenterOfPosition(teleport2DMapPos_);
+        var teleportEndCenterPos = stoper_.GetCenterOfPosition(teleport2DMapPos_);
         MainGameController.Instance.PlayerChangePosition(teleportEndCenterPos);
+        transitionToRaceState();
+    }   
+    private void transitionToRaceState()
+    {
         var stageData = StageData.GetRepeatStageData(whichRace_);
         MainGameController.Instance.StageManager.TransitionState(State_Enum.Race_State, stageData);
-    }   
+    }
 }

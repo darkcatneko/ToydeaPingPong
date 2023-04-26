@@ -6,7 +6,7 @@ using Codice.Client.BaseCommands;
 
 public class StoperMechanic 
 {
-    [SerializeField] public float playerStayTime_;   
+    [SerializeField] public float PlayerStayTime;   
     private void doActionAfterStop(Action action,float stayTime,float actionTime,Vector3 objPos)
    {
         if (stayTime <= actionTime)
@@ -20,11 +20,11 @@ public class StoperMechanic
     }
     public void StoperOnTriggerEnterBehavior()
     {
-        playerStayTime_ = 0;
+        PlayerStayTime = 0;
     }
     public void StoperOnTriggerStayBehavior(Action action, float stayTime, float actionTime, Vector3 objPos) 
     {
-        playerStayTime_ += Time.deltaTime;
+        PlayerStayTime += Time.deltaTime;
         doActionAfterStop(action, stayTime, actionTime,objPos);
     }
     private void stop(Vector3 objPos)

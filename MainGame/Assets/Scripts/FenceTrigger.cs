@@ -27,19 +27,19 @@ public class FenceTrigger : TriggerManager
     [SerializeField] private float flipperDamper_ = 150f;
     protected override void onTriggerEnterTag(Collider other)
     {
-        FenceMechanic(fenceBehavior.Open);
+        fenceMechanic(fenceBehavior.Open);
     }    
     protected override void onTriggerExitTag(Collider other) 
     {
-        FenceMechanic(fenceBehavior.Close);
+        fenceMechanic(fenceBehavior.Close);
     }
-    private void FenceMechanic(fenceBehavior fenceBehavior)
+    private void fenceMechanic(fenceBehavior fenceBehavior)
     {
-        rightFenceHinge_.spring = SetFence(fenceBehavior, fenceDirection.Right);
+        rightFenceHinge_.spring = setFence(fenceBehavior, fenceDirection.Right);
 
-        leftFenceHinge_.spring = SetFence(fenceBehavior, fenceDirection.Left);
+        leftFenceHinge_.spring = setFence(fenceBehavior, fenceDirection.Left);
     }
-    private JointSpring SetFence(fenceBehavior fenceBehavior,fenceDirection whichfence)
+    private JointSpring setFence(fenceBehavior fenceBehavior,fenceDirection whichfence)
     {
         var spring = new JointSpring();
         spring.spring = hitStrength_;
