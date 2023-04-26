@@ -36,7 +36,7 @@ public class RaceData
         {
             randomNum = random.Next(raceLengths.Length);
         }
-        RaceLength randomRaceLength = raceLengths[random.Next(raceLengths.Length)];
+        RaceLength randomRaceLength = raceLengths[randomNum];
         return randomRaceLength;
     }
 }

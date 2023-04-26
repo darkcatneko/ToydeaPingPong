@@ -38,9 +38,9 @@ public class GameDataManager : MonoBehaviour
     }    
     private void playerPassGoalGet()
     {
-        ThisGameData.ThisRound.EarnedPriceMoney += GetRaceRewardPrice(ThisGameData.ThisRound.NowRace.YourHorseHighestPlace);
-        MainUiController.Instance.CallUpdateRoundInfo();
+        ThisGameData.ThisRound.EarnedPriceMoney += GetRaceRewardPrice(ThisGameData.ThisRound.NowRace.YourHorseHighestPlace);        
         ThisGameData.ThisRound.RaceList.Add(ThisGameData.ThisRound.NowRace);
+        MainUiController.Instance.CallUpdateRoundInfo();
     }
     public int GetRaceRewardPrice(int rank)
     {
@@ -52,7 +52,8 @@ public class GameDataManager : MonoBehaviour
     {
         ThisGameData.RoundDatas.Add(ThisGameData.ThisRound);
         ThisGameData.ThisRound = new RoundData();
-        MainUiController.Instance.CallUpdateRoundInfo();
+        ThisGameData.WhichRound++;
+        MainUiController.Instance.CallUpdateGameDataInfo();
     }
     
 }

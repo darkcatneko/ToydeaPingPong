@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
+using static UnityEngine.Networking.UnityWebRequest;
 
 public class RaceEnderTest
 {
@@ -23,5 +24,20 @@ public class RaceEnderTest
         Debug.Log(EarnPoint);
         Assert.IsTrue(EarnPoint == result, $"Msg");
 
+    }
+
+    [Test]
+    public void RandomRaceTest()
+    {
+        bool canRaceLengthBeNone = true;
+        for (int i = 0; i < 1000; i++)
+        {
+            var race = new RaceData();
+            if (race.ThisRaceType == RaceLength.None )
+            {
+                canRaceLengthBeNone = false;
+            }
+        }
+        Assert.IsTrue(canRaceLengthBeNone == true, $"Msg");
     }
 }

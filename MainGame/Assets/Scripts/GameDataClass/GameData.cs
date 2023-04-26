@@ -10,7 +10,7 @@ public class GameData
 {
     [SerializeField]public RoundData ThisRound;
     [SerializeField]public List<RoundData> RoundDatas = new List<RoundData>();
-    public int WhichRound = 0;
+    public int WhichRound = 1;
 
     
 }
