@@ -12,7 +12,7 @@ namespace AccelZoneNamespace
         [SerializeField] private float maxSpeed_ = 2000f;
         [Header("效果數值")]
         [SerializeField] private float accelAmount_ = 1.5f;
-        [field:SerializeField] private Vector3 accelerationDir_ => transform.forward;
+        private Vector3 accelerationDir_ => transform.forward;
         protected override void onTriggerEnterTag(Collider other)
         {
             var playerVelocityAfterBoost = getPlayerVelocityAfterBoost();
