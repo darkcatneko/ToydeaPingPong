@@ -13,6 +13,7 @@ public class RoundData
     public float EarnedPriceMoney = 0;
 
     public UmaData ThisUmaData => thisUmaSO_.ThisUma;
+
     public int ThisUmaNumber = 0;
 
     [SerializeField]
@@ -20,6 +21,7 @@ public class RoundData
 
     [SerializeField]
     public List<RaceData> RaceList = new List<RaceData>();
+
     public void DebutRaceInit()
     {
         NowRace = new RaceData();

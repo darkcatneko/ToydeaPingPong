@@ -5,27 +5,22 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-[System.Serializable]
+[Serializable]
 public class RaceData 
 {
     [SerializeField]
     public RaceLength ThisRaceType = RaceLength.None;
     public int ThisRaceLength => (int)ThisRaceType;
 
-    //public int NowRunDistance;
-    public int YourHorseHighestPlace;
-
-    //public int RemainingRunDistance => ThisRaceLength - NowRunDistance;
+    public int YourHorseHighestPlace = 1;
 
     public RaceData()
     {
         ThisRaceType = getRandomRaceLength();
-        YourHorseHighestPlace = 1;
     }
     public RaceData(RaceLength raceLength)
     {
         ThisRaceType = raceLength;
-        YourHorseHighestPlace = 1;
     }
     private RaceLength getRandomRaceLength()
     {
@@ -41,7 +36,7 @@ public class RaceData
     }
 }
 
-[System.Serializable]
+[Serializable]
 public enum RaceLength
 {
     Short = 1200,

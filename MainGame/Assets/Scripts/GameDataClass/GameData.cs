@@ -8,8 +8,12 @@ using UnityEngine;
 [System.Serializable]
 public class GameData
 {
-    [SerializeField]public RoundData ThisRound;
-    [SerializeField]public List<RoundData> RoundDatas = new List<RoundData>();
+    [SerializeField]
+    public RoundData ThisRound;
+
+    [SerializeField]
+    public List<RoundData> RoundDatas = new List<RoundData>();
+
     public int WhichRound = 1;
 
     

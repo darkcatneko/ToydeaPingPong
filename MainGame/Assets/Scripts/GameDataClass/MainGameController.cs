@@ -57,6 +57,7 @@ public class MainGameController : ToSingletonMonoBehavior<MainGameController>
     {
         PlayerObject.transform.position = finalPos;
     }
+    #region CallGameEvent
     public void GameStart()
     {
         MainGameEvents_.GameStartEvent.Invoke();
@@ -85,4 +86,5 @@ public class MainGameController : ToSingletonMonoBehavior<MainGameController>
         MainGameEvents_.RepeatableRaceStartEvent.Invoke(startedRace);
         MainGameEvents_.RaceStartEvent.Invoke();
     }
+    #endregion
 }
