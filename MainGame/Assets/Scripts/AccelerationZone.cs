@@ -1,4 +1,4 @@
-using Codice.CM.Common;
+﻿using Codice.CM.Common;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,17 +7,23 @@ namespace AccelZoneNamespace
 {
     public class AccelerationZone : TriggerManager
     {
+        [Header("效果數值")]
         [SerializeField] private float minSpeed_ = 20;
         [SerializeField] private float maxSpeed_ = 2000f;
         [SerializeField] private float accelAmount_ = 1.5f;
-        [SerializeField] private Vector3 accelerationDir = Vector3.forward;
+        [SerializeField] private Vector3 accelerationDir_ = Vector3.forward;
         protected override void onTriggerEnterTag(Collider other)
+        {
+            var playerVelocityAfterBoost = getPlayerVelocityAfterBoost();
+            MainGameController.Instance.PlayerChangeVelocity(playerVelocityAfterBoost);
+        }
+        private Vector3 getPlayerVelocityAfterBoost()
         {
             var playerRigid = MainGameController.Instance.PlayerRigidbody;
             var nowPlayerSpeed = playerRigid.velocity.magnitude;
             var speedAfterBoost = GetSpeedAfterBoost(nowPlayerSpeed);
-            var velocityAfterBoost = getVelocityAfterBoost(speedAfterBoost, accelerationDir);
-            MainGameController.Instance.PlayerChangeVelocity(velocityAfterBoost);
+            var velocityAfterBoost = getVelocityAfterBoost(speedAfterBoost, accelerationDir_);
+            return velocityAfterBoost;
         }
 
         public float GetSpeedAfterBoost(float nowPlayerSpeed)

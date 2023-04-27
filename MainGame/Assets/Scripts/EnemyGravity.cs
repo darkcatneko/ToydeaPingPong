@@ -10,7 +10,7 @@ public class EnemyGravity : MonoBehaviour
     [SerializeField]private Rigidbody rigidbody_;
     private void Awake()
     {
-        rigidbody_ = this.GetComponent<Rigidbody>();
+         rigidbody_ = GetComponent<Rigidbody>();
     }
 
     private void FixedUpdate()
