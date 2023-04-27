@@ -12,6 +12,9 @@ public class RoundData
 
     public float EarnedPriceMoney = 0;
 
+    [SerializeField]
+    public TrainingData ThisUmaTraingData = new TrainingData();
+
     public UmaData ThisUmaData => thisUmaSO_.ThisUma;
 
     public int ThisUmaNumber = 0;

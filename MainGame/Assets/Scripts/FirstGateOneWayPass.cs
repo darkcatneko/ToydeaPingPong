@@ -20,8 +20,7 @@ public class FirstGateOneWayPass : TriggerManager
         MainGameController.Instance.MainGameEvents_.RaceStartEvent.AddListener(resetInBall);
     }
     protected override void onTriggerEnterBoth(Collider other)
-    {
-        
+    {        
         if (thisGateType_ == GateType.Inside)
         {
             inBall_ += 1;

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,12 +8,15 @@ namespace PinBallNamespace
     [System.Serializable]
     public class BallLauncher 
     {
-        [SerializeField]private float nowPressedTime_;
+        [Header("效果上限")]
         [SerializeField]private float  basicLaunchForce_ = 5000;
+        [SerializeField] private float maxChargeNeedTime_ = 3f;
         private const float MAX_PERCENTAGE = 1f;
-        [SerializeField] private float chargeUsedTime_ = 3f;
+        [Header("按壓時間")]
+        [SerializeField] private float nowPressedTime_;
        
-        private float nowPercentage_ => MAX_PERCENTAGE/chargeUsedTime_*nowPressedTime_;
+       
+        private float nowPercentage_ => MAX_PERCENTAGE/maxChargeNeedTime_*nowPressedTime_;
         private float nowForce_ => basicLaunchForce_ * nowPercentage_;
         
         public void LauncherWait()
@@ -44,7 +47,7 @@ namespace PinBallNamespace
 
         private void addPressedTime()
         {
-            nowPressedTime_ = AddTime(nowPressedTime_, chargeUsedTime_);            
+            nowPressedTime_ = AddTime(nowPressedTime_, maxChargeNeedTime_);            
         }
 
         public float AddTime(float nowTime_,float maxTime_)

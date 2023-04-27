@@ -76,6 +76,10 @@ public class MainGameController : ToSingletonMonoBehavior<MainGameController>
     {
         MainGameEvents_.EnemyPassGoalEvent.Invoke();
     }
+    public void TrainingEvent(Attributes attributes,int addAmount)
+    {
+        MainGameEvents_.TrainingEvent.Invoke(attributes, addAmount);
+    }
     public void DebutRaceStart()
     {
         MainGameEvents_.DebutRaceStartEvent.Invoke();

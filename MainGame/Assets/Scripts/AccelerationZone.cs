@@ -7,11 +7,12 @@ namespace AccelZoneNamespace
 {
     public class AccelerationZone : TriggerManager
     {
-        [Header("效果數值")]
+        [Header("效果上限")]
         [SerializeField] private float minSpeed_ = 20;
         [SerializeField] private float maxSpeed_ = 2000f;
+        [Header("效果數值")]
         [SerializeField] private float accelAmount_ = 1.5f;
-        [SerializeField] private Vector3 accelerationDir_ = Vector3.forward;
+        [field:SerializeField] private Vector3 accelerationDir_ => transform.forward;
         protected override void onTriggerEnterTag(Collider other)
         {
             var playerVelocityAfterBoost = getPlayerVelocityAfterBoost();

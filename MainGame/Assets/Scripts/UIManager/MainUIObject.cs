@@ -12,7 +12,7 @@ public class MainUIObject : MonoBehaviour
     [SerializeField] public Text NowGameRound;
     void Start()
     {
-        MainUiController.Instance.MainUIOBJ_ = this;
+        MainUiController.Instance.MainUIOBJ = this;
     }
 
     

@@ -6,35 +6,35 @@ using UnityEngine;
 
 public class ToSingletonMonoBehavior<T> : MonoBehaviour where T : MonoBehaviour
 {
-    static T instance = null;
+    static T instance_ = null;
     public static T Instance
     {
         get
         {
-            if (instance != null)
+            if (instance_ != null)
             {
-                return instance;
+                return instance_;
             }
 
             var gameobject = FindObjectOfType(typeof(T));
             if (gameobject != null)
             {
-                instance = gameobject as T;
-                return instance;
+                instance_ = gameobject as T;
+                return instance_;
             }
 
             var newO = new GameObject(nameof(T));
             Instantiate(newO);
-            instance = newO.AddComponent<T>();
-            return instance;
+            instance_ = newO.AddComponent<T>();
+            return instance_;
         }
     }
 
 
     void Awake()
     {
-        if (instance == null) instance = this as T;
-        if (instance == this) DontDestroyOnLoad(this);
+        if (instance_ == null) instance_ = this as T;
+        if (instance_ == this) DontDestroyOnLoad(this);
         else DestroyImmediate(this.gameObject);
 
         init();

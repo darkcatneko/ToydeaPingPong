@@ -6,8 +6,11 @@ using UnityEngine.VFX;
 public class BounceObject : CollisionManager
 {
     protected override string customTag2_ => "Enemy";
+    [Header("彈力")]
     [SerializeField] private float unitElasticity_ = 1.2f;
+    [Header("最低限速")]
     [SerializeField] private float minSpeed_ = 20f;
+    [Header("最高限速")]
     [SerializeField] private float maxSpeed_ = 100f;
 
     protected override void onCollisionTag(Collision collision)

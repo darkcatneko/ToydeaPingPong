@@ -1,13 +1,16 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Blackhole : TriggerManager
-{    
+{
+    [Header("發射需要時間")]
     [SerializeField]
     private float launchNeedTime_;
+    [Header("發射速度")]
     [SerializeField]
     private float launchSpeed_;
+    [Header("發射方向")]
     [SerializeField]
     private Vector3 launchDir_ = new Vector3(-1, 0, -1);
     private Vector3 obj2DMapPos_ => new Vector3(transform.position.x, 0, transform.position.z);

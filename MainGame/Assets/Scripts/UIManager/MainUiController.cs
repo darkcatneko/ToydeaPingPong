@@ -8,27 +8,11 @@ using UnityEngine.UI;
 
 public class MainUiController : ToSingletonMonoBehavior<MainUiController>
 {
-    public MainUIObject MainUIOBJ_;
+    public MainUIObject MainUIOBJ;
     private GameData gameData_ = new GameData();
     public void GameDataInit(GameData gameData)
     {
         gameData_ = gameData;
-    }
-    private void updateRaceInfo(RaceData raceData)
-    {       
-        MainUIOBJ_.NowRaceType.text = "NowRaceType: "+ raceData.ThisRaceType.ToString();
-        MainUIOBJ_.NowRaceRemainDistance.text = "NowRaceRemainDistance: " +raceData.ThisRaceLength.ToString();
-        MainUIOBJ_.YourHorseHighestPossiblePlace.text = "YourHorseHighestPossiblePlace: "+ raceData.YourHorseHighestPlace.ToString(); 
-        
-    }
-    private void updateRoundInfo(RoundData roundData)
-    {
-        MainUIOBJ_.NowEarnedPoint.text = "NowEarnedPoint: "+ roundData.EarnedPriceMoney.ToString();
-        MainUIOBJ_.NowRaceCount.text = "NowRaceCount: "+ roundData.RaceList.Count.ToString();
-    }
-    private void updateGameInfo(GameData gameData)
-    {
-        MainUIOBJ_.NowGameRound.text = "NowGameRound: "+gameData.WhichRound.ToString();
     }
     public void CallUpdateRaceInfo()
     {
@@ -44,4 +28,21 @@ public class MainUiController : ToSingletonMonoBehavior<MainUiController>
         CallUpdateRoundInfo();
         updateGameInfo(gameData_);
     }
+    private void updateRaceInfo(RaceData raceData)
+    {       
+        MainUIOBJ.NowRaceType.text = "NowRaceType: "+ raceData.ThisRaceType.ToString();
+        MainUIOBJ.NowRaceRemainDistance.text = "NowRaceRemainDistance: " +raceData.ThisRaceLength.ToString();
+        MainUIOBJ.YourHorseHighestPossiblePlace.text = "YourHorseHighestPossiblePlace: "+ raceData.YourHorseHighestPlace.ToString(); 
+        
+    }
+    private void updateRoundInfo(RoundData roundData)
+    {
+        MainUIOBJ.NowEarnedPoint.text = "NowEarnedPoint: "+ roundData.EarnedPriceMoney.ToString();
+        MainUIOBJ.NowRaceCount.text = "NowRaceCount: "+ roundData.RaceList.Count.ToString();
+    }
+    private void updateGameInfo(GameData gameData)
+    {
+        MainUIOBJ.NowGameRound.text = "NowGameRound: "+gameData.WhichRound.ToString();
+    }
+   
 }

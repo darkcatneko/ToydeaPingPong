@@ -6,7 +6,7 @@ public class CollisionManager : MonoBehaviour
 {
     protected virtual string customTag_ {  get; } = "Player";
     protected virtual string customTag2_ { get; } = "Player";
-    private void onCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag(customTag_))
         {

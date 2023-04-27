@@ -12,6 +12,8 @@ public class MainGameEvents
     public UnityEvent DebutRaceStartEvent = new UnityEvent();
     public UnityEvent<RaceLength> RepeatableRaceStartEvent = new UnityEvent<RaceLength>();
 
+    public UnityEvent<Attributes,int> TrainingEvent = new UnityEvent<Attributes, int>();
+
     public UnityEvent RaceStartEvent = new UnityEvent();
 
     public UnityEvent EnemyPassGoalEvent = new UnityEvent();
