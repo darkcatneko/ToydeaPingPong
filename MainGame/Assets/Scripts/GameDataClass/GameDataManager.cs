@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class GameDataManager : MonoBehaviour
@@ -56,6 +57,7 @@ public class GameDataManager : MonoBehaviour
         ThisGameData.ThisRound = new RoundData();
         ThisGameData.WhichRound++;
         MainUiController.Instance.CallUpdateGameDataInfo();
+        MainUiController.Instance.CallUpdateTraingBoard();
     }
     private void startedANewRepeatableRace(RaceLength raceLength)
     {
@@ -65,6 +67,7 @@ public class GameDataManager : MonoBehaviour
     private void umaBeTrain(Attributes attributes,int amount)
     {
         ThisGameData.ThisRound.ThisUmaTraingData.AddAttributes(attributes, amount);
+        MainUiController.Instance.CallUpdateTraingBoard();
     }
     
     

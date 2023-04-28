@@ -14,6 +14,7 @@ public class MainUiController : ToSingletonMonoBehavior<MainUiController>
     public void GameDataInit(GameData gameData)
     {
         gameData_ = gameData;
+        CallUpdateTraingBoard();
     }
     #region RaceAndRoundData
     public void CallUpdateRaceInfo()
@@ -47,4 +48,12 @@ public class MainUiController : ToSingletonMonoBehavior<MainUiController>
         MainUIOBJ.NowGameRound.text = "NowGameRound: "+gameData.WhichRound.ToString();
     }
     #endregion
+    public void CallUpdateTraingBoard()
+    {
+        TrainingBoardUIObj.SpeedSlider.value = gameData_.GetTrainingPercentage(Attributes.Speed);
+        TrainingBoardUIObj.StaminaSlider.value = gameData_.GetTrainingPercentage(Attributes.Stamina);
+        TrainingBoardUIObj.StrengthSlider.value = gameData_.GetTrainingPercentage(Attributes.Strength);
+        TrainingBoardUIObj.IntelligenceSlider.value = gameData_.GetTrainingPercentage(Attributes.Intelligence);
+        TrainingBoardUIObj.RankImage.sprite = TrainingBoardUIObj.RankSpritePrefab[(int)gameData_.ThisRound.ThisUmaTraingData.ThisUmaRank];
+    }
 }

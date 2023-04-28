@@ -5,10 +5,10 @@ using UnityEngine;
 [System.Serializable]
 public class TrainingData
 {
-    public int Speed = 90;
-    public int Stamina = 90;
-    public int Strength = 90;
-    public int Intelligence = 90;
+    public int Speed = 100;
+    public int Stamina = 100;
+    public int Strength = 100;
+    public int Intelligence = 100;
     [field:SerializeField]public UmaRank ThisUmaRank { get; private set; } 
     public void AddAttributes(Attributes attributes,int plusAmount )
     {

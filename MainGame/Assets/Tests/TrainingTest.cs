@@ -26,5 +26,21 @@ public class TrainingTest
         trainingData.AddAttributes(Attributes.Intelligence, plusAmount);
         Assert.IsTrue(trainingData.ThisUmaRank == result, $"Msg");
     }
+    [Test]
+    [TestCase(Attributes.Speed,0.5f)]
+    public void GameDataTraininPrecentageTest(Attributes attributes,float result)
+    {
+        var gameObject = new GameObject();
+        var gameDataManager = gameObject.AddComponent<GameDataManager>();
 
+        gameDataManager.ThisGameData.ThisRound = new RoundData();
+
+        gameDataManager.ThisGameData.ThisRound.ThisUmaTraingData.Speed = 150;       
+
+        var testPercentage = gameDataManager.ThisGameData.GetTrainingPercentage(attributes);
+
+        //Debug.Log(testPercentage);
+
+        Assert.IsTrue(testPercentage == result, $"Msg");
+    }
 }
