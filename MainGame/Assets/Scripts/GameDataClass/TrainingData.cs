@@ -33,11 +33,11 @@ public class TrainingData
     }
     private void rankUp()
     {
-        if (Speed ==300|| Stamina ==300|| Strength ==300|| Intelligence == 300)
+        if (Speed ==300&& Stamina ==300&& Strength ==300&& Intelligence == 300)
         {
             ThisUmaRank = (UmaRank)((int)ThisUmaRank + 1);
-        }
-        Speed = Stamina = Strength = Intelligence = 0;
+            Speed = Stamina = Strength = Intelligence = 0;
+        }      
     }
 
     private void plusSpeed(int plusAmount)
@@ -46,15 +46,15 @@ public class TrainingData
     }
     private void plusStamina(int plusAmount)
     {
-        Stamina += Mathf.Clamp(Stamina + plusAmount, 0, 300);
+        Stamina = Mathf.Clamp(Stamina + plusAmount, 0, 300);
     }
     private void plusStrength(int plusAmount)
     {
-        Strength += Mathf.Clamp(Strength + plusAmount, 0, 300);
+        Strength = Mathf.Clamp(Strength + plusAmount, 0, 300);
     }
     private void plusIntelligence(int plusAmount)
     {
-        Intelligence += Mathf.Clamp(Intelligence + plusAmount, 0, 300);
+        Intelligence = Mathf.Clamp(Intelligence + plusAmount, 0, 300);
     }
 
 }

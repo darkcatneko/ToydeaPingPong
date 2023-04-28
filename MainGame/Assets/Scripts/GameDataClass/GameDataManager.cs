@@ -26,6 +26,7 @@ public class GameDataManager : MonoBehaviour
         gameEvents_.PlayerPassGoalEvent.AddListener(playerPassGoalGet);
         gameEvents_.GameRestartEvent.AddListener(roundReset);
         gameEvents_.RepeatableRaceStartEvent.AddListener(startedANewRepeatableRace);
+        gameEvents_.TrainingEvent.AddListener(umaBeTrain);
         MainUiController.Instance.GameDataInit(ThisGameData);
     }
     private void makeDubut()
@@ -43,18 +44,11 @@ public class GameDataManager : MonoBehaviour
         ThisGameData.ThisRound.NowRace = new RaceData(RaceLength.None);
         MainUiController.Instance.CallUpdateRoundInfo();
     }
-    private void startedANewRepeatableRace(RaceLength raceLength)
-    {
-        ThisGameData.ThisRound.NowRace = new RaceData(raceLength);
-        MainUiController.Instance.CallUpdateRaceInfo();
-    }
-      
-    
     public int GetRaceRewardPrice(int rank)
     {
         var nowRaceType = ThisGameData.ThisRound.NowRace.ThisRaceType;
-        var price = Mathf.RoundToInt(raceInfos_.GetRacePrice(nowRaceType) *pricePrecentage_[rank-1]);
-        return  price;
+        var price = Mathf.RoundToInt(raceInfos_.GetRacePrice(nowRaceType) * pricePrecentage_[rank - 1]);
+        return price;
     }
     private void roundReset()
     {
@@ -63,5 +57,17 @@ public class GameDataManager : MonoBehaviour
         ThisGameData.WhichRound++;
         MainUiController.Instance.CallUpdateGameDataInfo();
     }
+    private void startedANewRepeatableRace(RaceLength raceLength)
+    {
+        ThisGameData.ThisRound.NowRace = new RaceData(raceLength);
+        MainUiController.Instance.CallUpdateRaceInfo();
+    }
+    private void umaBeTrain(Attributes attributes,int amount)
+    {
+        ThisGameData.ThisRound.ThisUmaTraingData.AddAttributes(attributes, amount);
+    }
+    
+    
+   
     
 }

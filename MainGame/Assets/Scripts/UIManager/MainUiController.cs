@@ -9,11 +9,13 @@ using UnityEngine.UI;
 public class MainUiController : ToSingletonMonoBehavior<MainUiController>
 {
     public MainUIObject MainUIOBJ;
+    public TrainingBoardUIObj TrainingBoardUIObj;
     private GameData gameData_ = new GameData();
     public void GameDataInit(GameData gameData)
     {
         gameData_ = gameData;
     }
+    #region RaceAndRoundData
     public void CallUpdateRaceInfo()
     {
         updateRaceInfo(gameData_.ThisRound.NowRace);
@@ -44,5 +46,5 @@ public class MainUiController : ToSingletonMonoBehavior<MainUiController>
     {
         MainUIOBJ.NowGameRound.text = "NowGameRound: "+gameData.WhichRound.ToString();
     }
-   
+    #endregion
 }
