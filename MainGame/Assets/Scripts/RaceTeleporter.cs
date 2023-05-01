@@ -21,6 +21,7 @@ public class RaceTeleporter : TriggerManager
     protected override void onTriggerEnterTag(Collider other)
     {
         stoper_.StoperOnTriggerEnterBehavior();
+        //MainGameController.Instance.PlayerEnterTeleporter();
     }
     protected override void onTriggerStayTag(Collider other)
     {      

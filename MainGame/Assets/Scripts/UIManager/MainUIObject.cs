@@ -1,7 +1,9 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Video;
+
 public class MainUIObject : MonoBehaviour
 {
     [SerializeField] public Text NowRaceType;
@@ -10,6 +12,13 @@ public class MainUIObject : MonoBehaviour
     [SerializeField] public Text NowRaceCount;
     [SerializeField] public Text NowEarnedPoint;
     [SerializeField] public Text NowGameRound;
+    [SerializeField] public Image BoostImage;
+    [SerializeField] public GameObject BoostShadowImage;
+    [Header("影片放送器")]
+    [SerializeField] public VideoPlayer VideoPlayer;
+    [SerializeField] public RenderTexture VideoRenderTexture;
+    [SerializeField] public RawImage VideoRawImage;
+    [SerializeField] public Image UpperVideoImage;
     void Start()
     {
         MainUiController.Instance.MainUIOBJ = this;

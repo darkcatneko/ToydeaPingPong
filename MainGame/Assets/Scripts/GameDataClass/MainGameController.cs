@@ -90,5 +90,9 @@ public class MainGameController : ToSingletonMonoBehavior<MainGameController>
         MainGameEvents_.RepeatableRaceStartEvent.Invoke(startedRace);
         MainGameEvents_.RaceStartEvent.Invoke();
     }
+    public void PlayerEnterTeleporter()
+    {
+        MainGameEvents_.PlayerEnterTeleporterEvent.Invoke();
+    }
     #endregion
 }

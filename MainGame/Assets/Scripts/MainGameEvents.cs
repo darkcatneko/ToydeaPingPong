@@ -18,5 +18,7 @@ public class MainGameEvents
 
     public UnityEvent EnemyPassGoalEvent = new UnityEvent();
     public UnityEvent PlayerPassGoalEvent = new UnityEvent();
+
+    public UnityEvent PlayerEnterTeleporterEvent = new UnityEvent();
     
 }

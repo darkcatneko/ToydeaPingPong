@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace PinBallNamespace
 {
@@ -14,10 +15,11 @@ namespace PinBallNamespace
         private const float MAX_PERCENTAGE = 1f;
         [Header("按壓時間")]
         [SerializeField] private float nowPressedTime_;
-       
-       
-        private float nowPercentage_ => MAX_PERCENTAGE/maxChargeNeedTime_*nowPressedTime_;
-        private float nowForce_ => basicLaunchForce_ * nowPercentage_;
+        
+
+        public float NowPercentage => MAX_PERCENTAGE/maxChargeNeedTime_*nowPressedTime_;
+        private float nowForce_ => basicLaunchForce_ * NowPercentage;
+
         
         public void LauncherWait()
         {
@@ -35,11 +37,16 @@ namespace PinBallNamespace
             }
             if (Input.GetKeyUp(KeyCode.Space))
             {
-                ballAddForce();
-                MainGameController.Instance.StageManager.TransitionState(State_Enum.Debut_State);
+                release();
             }
         }
 
+        private void release()
+        {
+            ballAddForce();
+            resetPressedTime();
+            MainGameController.Instance.StageManager.TransitionState(State_Enum.Debut_State);
+        }
         private void resetPressedTime()
         {
             nowPressedTime_ = 0;
@@ -47,7 +54,7 @@ namespace PinBallNamespace
 
         private void addPressedTime()
         {
-            nowPressedTime_ = AddTime(nowPressedTime_, maxChargeNeedTime_);            
+            nowPressedTime_ = AddTime(nowPressedTime_, maxChargeNeedTime_);
         }
 
         public float AddTime(float nowTime_,float maxTime_)
