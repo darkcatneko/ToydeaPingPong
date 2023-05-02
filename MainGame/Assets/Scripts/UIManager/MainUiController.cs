@@ -7,7 +7,6 @@ using UnityEngine.Assertions.Must;
 using UnityEngine.Events;
 using UnityEngine.Playables;
 using UnityEngine.UI;
-using DG.Tweening;
 using UnityEngine.Networking;
 
 public class MainUiController : ToSingletonMonoBehavior<MainUiController>
@@ -18,7 +17,7 @@ public class MainUiController : ToSingletonMonoBehavior<MainUiController>
     private void Start()
     {
         MainGameController.Instance.MainGameEvents_.DebutRaceStartEvent.AddListener(CallPlayDebutVideo);
-        MainGameController.Instance.MainGameEvents_.PlayerEnterTeleporterEvent.AddListener(racePreparation);
+        //MainGameController.Instance.MainGameEvents_.PlayerEnterTeleporterEvent.AddListener(racePreparation);
     }
     private void Update()
     {
@@ -94,8 +93,8 @@ public class MainUiController : ToSingletonMonoBehavior<MainUiController>
         MainUIOBJ.VideoRawImage.enabled = true;
         MainUIOBJ.VideoRawImage.color = new Color(1, 1, 1, 1);
         MainUIOBJ.VideoPlayer.Play();
-        Invoke("fadeRawImage", 1f);
-        Invoke("closeRawImage", 2f);
+        Invoke("fadeDebutRawImage", 0.35f);
+        Invoke("closeDebutRawImage", 0.6f);
     }
     private void clearOutRenderTexture(RenderTexture renderTexture)
     {
@@ -104,16 +103,20 @@ public class MainUiController : ToSingletonMonoBehavior<MainUiController>
         GL.Clear(true, true, Color.clear);
         RenderTexture.active = rt;
     }
-    private void closeRawImage()
+    private void closeDebutRawImage()
     {
         MainUIOBJ.VideoRawImage.enabled = false;
     }
-    private void fadeRawImage()
+    private void fadeDebutRawImage()
     {
-        MainUIOBJ.VideoRawImage.CrossFadeAlpha(0, 1f,true);
+        MainUIOBJ.VideoRawImage.CrossFadeAlpha(0, 0.25f,true);
     }
     private void racePreparation()
     {
         MainUIOBJ.UpperVideoImage.enabled = true;
+    }
+    public void FadeStartVideoRawImage()
+    {
+        MainUIOBJ.StartVideoRawImage.CrossFadeAlpha(0, 0.25f, true);
     }
 }

@@ -9,6 +9,8 @@ public class TrainingData
     public int Stamina = 100;
     public int Strength = 100;
     public int Intelligence = 100;
+
+    public int EnterRaceChance = 0;
     [field:SerializeField]public UmaRank ThisUmaRank { get; private set; } 
     public void AddAttributes(Attributes attributes,int plusAmount )
     {
@@ -36,6 +38,8 @@ public class TrainingData
         if (Speed ==300&& Stamina ==300&& Strength ==300&& Intelligence == 300)
         {
             ThisUmaRank = (UmaRank)((int)ThisUmaRank + 1);
+            EnterRaceChance += 1;
+            MainGameController.Instance.PlayerRankUp();
             Speed = Stamina = Strength = Intelligence = 0;
         }      
     }

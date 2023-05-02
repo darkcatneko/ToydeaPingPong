@@ -61,12 +61,15 @@ public class StageManager
             case State_Enum.Debut_State:
                 CurrentState = new DebutState(this);
                 return;
+            case State_Enum.Video_State:
+                CurrentState = new VideoState(this);
+                return;
         }
 
     }
     public void StageManagerInit()
     {
-        TransitionState(State_Enum.Waiting_State);
+        TransitionState(State_Enum.Video_State);
     }
     public void StageManagerUpdate()
     {

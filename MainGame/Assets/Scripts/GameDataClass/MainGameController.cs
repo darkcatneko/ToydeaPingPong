@@ -16,11 +16,12 @@ public class MainGameController : ToSingletonMonoBehavior<MainGameController>
     public StageManager StageManager = new StageManager();//小概念
     protected override void init()
     {
-        StageManager.StageManagerInit();
+        
     }
     private void Start()
     {
-        
+        StageManager.StageManagerInit();
+        Invoke("stopStartVideoAnimation", 9f);
     }
 
     private void Update()
@@ -94,5 +95,24 @@ public class MainGameController : ToSingletonMonoBehavior<MainGameController>
     {
         MainGameEvents_.PlayerEnterTeleporterEvent.Invoke();
     }
+    public void PlayerFirstEnterField()
+    {
+        MainGameEvents_.PlayerFirstEnterFieldEvent.Invoke();
+    }
+    public void PlayerRankUp()
+    {
+        MainGameEvents_.PlayerRankUpEvent.Invoke();
+    }
+    public void RacePointToZero()
+    {
+        MainGameEvents_.RacePointToZeroEvent.Invoke();
+    }
     #endregion
+    
+
+    private void stopStartVideoAnimation()
+    {
+        MainUiController.Instance.FadeStartVideoRawImage();
+        StageManager.TransitionState(State_Enum.Waiting_State);
+    }
 }

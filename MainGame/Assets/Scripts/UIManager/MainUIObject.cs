@@ -19,6 +19,8 @@ public class MainUIObject : MonoBehaviour
     [SerializeField] public RenderTexture VideoRenderTexture;
     [SerializeField] public RawImage VideoRawImage;
     [SerializeField] public Image UpperVideoImage;
+    [Header("開頭影片")]
+    [SerializeField] public RawImage StartVideoRawImage;
     void Start()
     {
         MainUiController.Instance.MainUIOBJ = this;

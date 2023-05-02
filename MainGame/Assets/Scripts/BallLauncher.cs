@@ -18,7 +18,7 @@ namespace PinBallNamespace
         
 
         public float NowPercentage => MAX_PERCENTAGE/maxChargeNeedTime_*nowPressedTime_;
-        private float nowForce_ => basicLaunchForce_ * NowPercentage;
+        private float nowForce_ => basicLaunchForce_+(500f * NowPercentage);
 
         
         public void LauncherWait()

@@ -17,13 +17,25 @@ public class RaceEnderTest
         var gameDataManager = gameObject.AddComponent<GameDataManager>();
 
         gameDataManager.ThisGameData.ThisRound = new RoundData();
-        gameDataManager.ThisGameData.ThisRound.NowRace.ThisRaceType = raceLength; ;
+        gameDataManager.ThisGameData.ThisRound.NowRace.ThisRaceType = raceLength; 
         //gameDataManager.ThisGameData.ThisRound.NowRace.NowRunDistance = runDistance;
 
         var EarnPoint = gameDataManager.GetRaceRewardPrice(rank);
         Debug.Log(EarnPoint);
         Assert.IsTrue(EarnPoint == result, $"Msg");
 
+    }
+    [Test]
+    [TestCase(900,UmaRank.E,135)]
+    [TestCase(900, UmaRank.SS, 900)]
+    public void LimitedRewardPriceCounterTest(int price,UmaRank umaRank,int result)
+    {
+        var gameObject = new GameObject();
+        var gameDataManager = gameObject.AddComponent<GameDataManager>();
+
+        gameDataManager.ThisGameData.ThisRound = new RoundData();
+        var EarnPoint = gameDataManager.GetLimitRewardByUmaRank(price, umaRank);
+        Assert.IsTrue(EarnPoint == result, $"Msg");
     }
 
     [Test]
