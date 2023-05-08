@@ -12,6 +12,7 @@ public class GameDataManager : MonoBehaviour
     private RaceInfos raceInfos_ = new RaceInfos();
 
     private float[] pricePrecentage_ = new float[9] { 1f, 0.4f, 0.25f, 0.1f, 0.08f, 0.07f, 0.06f, 0.05f, 0.03f };
+    private int[] trainingPointPercentage = new int[9] { 300, 250, 200, 100, 80, 60, 40, 20, 10 };
     private void Awake()
     {
 
@@ -24,10 +25,11 @@ public class GameDataManager : MonoBehaviour
     {
         gameEvents_.DebutRaceStartEvent.AddListener(makeDubut);
         gameEvents_.EnemyPassGoalEvent.AddListener(enemyPassGoal);
-        gameEvents_.PlayerPassGoalEvent.AddListener(playerPassGoalGet);
+        gameEvents_.PlayerPassGoalEvent.AddListener(playerPassGoalGetTrainingPoint);
         gameEvents_.GameRestartEvent.AddListener(roundReset);
         gameEvents_.RepeatableRaceStartEvent.AddListener(startedANewRepeatableRace);
         gameEvents_.TrainingEvent.AddListener(umaBeTrain);
+        gameEvents_.PlayerRankedUpEvent.AddListener(umaRankUp);
         MainUiController.Instance.GameDataInit(ThisGameData);
     }
     private void makeDubut()
@@ -38,7 +40,23 @@ public class GameDataManager : MonoBehaviour
     {
         ThisGameData.ThisRound.NowRace.YourHorseHighestPlace++;
     }
-    private void playerPassGoalGet()
+    private void playerPassGoalGetTrainingPoint()
+    {
+        var trainingPoint = GetTrainingPointByRaceRank(ThisGameData.ThisRound.NowRace.YourHorseHighestPlace);
+        ThisGameData.ThisRound.ThisUmaTraingData.AddAttributes(Attributes.Speed, trainingPoint);
+        ThisGameData.ThisRound.ThisUmaTraingData.AddAttributes(Attributes.Stamina, trainingPoint);
+        ThisGameData.ThisRound.ThisUmaTraingData.AddAttributes(Attributes.Strength, trainingPoint);
+        ThisGameData.ThisRound.ThisUmaTraingData.AddAttributes(Attributes.Intelligence, trainingPoint);
+        MainUiController.Instance.CallUpdateTraingBoard();
+    }
+
+    private int GetTrainingPointByRaceRank(int raceRank)
+    {
+        var trainingPoint = trainingPointPercentage[raceRank-1];
+        return trainingPoint;
+    }
+    #region 玩家獲取金錢
+    private void playerPassGoalGetMoney()
     {
         ThisGameData.ThisRound.EarnedPriceMoney += GetLimitedRewardPrice(ThisGameData.ThisRound.NowRace.YourHorseHighestPlace,ThisGameData.ThisRound.ThisUmaTraingData.ThisUmaRank);
         ThisGameData.ThisRound.RaceList.Add(ThisGameData.ThisRound.NowRace);
@@ -64,6 +82,7 @@ public class GameDataManager : MonoBehaviour
         LimitReward = Mathf.RoundToInt( LimitReward*rankLimitation[(int)umaRank]);
         return LimitReward;
     }
+    #endregion
     private void roundReset()
     {
         ThisGameData.RoundDatas.Add(ThisGameData.ThisRound);
@@ -75,11 +94,8 @@ public class GameDataManager : MonoBehaviour
     private void startedANewRepeatableRace(RaceLength raceLength)
     {
         ThisGameData.ThisRound.NowRace = new RaceData(raceLength);
-        ThisGameData.ThisRound.ThisUmaTraingData.EnterRaceChance--;
-        if (ThisGameData.ThisRound.ThisUmaTraingData.EnterRaceChance == 0)
-        {
-            MainGameController.Instance.RacePointToZero();
-        }
+        ThisGameData.ThisRound.ThisUmaTraingData.CanEnterBonusStage = false; ;
+        MainGameController.Instance.PlayerRankedUp();
         MainUiController.Instance.CallUpdateRaceInfo();
     }
     private void umaBeTrain(Attributes attributes, int amount)
@@ -87,7 +103,11 @@ public class GameDataManager : MonoBehaviour
         ThisGameData.ThisRound.ThisUmaTraingData.AddAttributes(attributes, amount);
         MainUiController.Instance.CallUpdateTraingBoard();
     }
-
+    private void umaRankUp()
+    {
+        ThisGameData.ThisRound.ThisUmaTraingData.RankUp();
+        MainUiController.Instance.CallUpdateTraingBoard();
+    }
 
 
 

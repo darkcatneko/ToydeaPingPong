@@ -8,13 +8,15 @@ public class MainGameEvents
 {
     public UnityEvent GameRestartEvent = new();
     public UnityEvent GameStartEvent = new();
+    public UnityEvent GameOverEvent = new UnityEvent();
 
     public UnityEvent DebutRaceStartEvent = new UnityEvent();
     public UnityEvent<RaceLength> RepeatableRaceStartEvent = new UnityEvent<RaceLength>();
-    public UnityEvent RacePointToZeroEvent = new UnityEvent();
+    public UnityEvent PlayerRankedUpEvent = new UnityEvent();
 
     public UnityEvent<Attributes,int> TrainingEvent = new UnityEvent<Attributes, int>();
-    public UnityEvent PlayerRankUpEvent = new UnityEvent();
+    public UnityEvent PlayerShouldRankUpEvent = new UnityEvent();
+    //public UnityEvent PlayerRankedUpEvent = new UnityEvent();
 
     public UnityEvent RaceStartEvent = new UnityEvent();
 

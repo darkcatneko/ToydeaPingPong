@@ -21,7 +21,7 @@ public class MainGameController : ToSingletonMonoBehavior<MainGameController>
     private void Start()
     {
         StageManager.StageManagerInit();
-        Invoke("stopStartVideoAnimation", 9f);
+       
     }
 
     private void Update()
@@ -62,11 +62,16 @@ public class MainGameController : ToSingletonMonoBehavior<MainGameController>
     public void GameStart()
     {
         MainGameEvents_.GameStartEvent.Invoke();
+        StageManager.TransitionState(State_Enum.Waiting_State);
     }
     public void GameRestart()
     {
         MainGameEvents_.GameRestartEvent.Invoke();
         StageManager.TransitionState(State_Enum.Waiting_State);
+    }
+    public void GameOver()
+    {
+        MainGameEvents_.GameOverEvent.Invoke();
     }
     
     public void PlayerPassGoal()
@@ -99,20 +104,19 @@ public class MainGameController : ToSingletonMonoBehavior<MainGameController>
     {
         MainGameEvents_.PlayerFirstEnterFieldEvent.Invoke();
     }
-    public void PlayerRankUp()
+    public void PlayerShouldRankUp()
     {
-        MainGameEvents_.PlayerRankUpEvent.Invoke();
+        MainGameEvents_.PlayerShouldRankUpEvent.Invoke();
     }
-    public void RacePointToZero()
+    public void PlayerRankedUp()
     {
-        MainGameEvents_.RacePointToZeroEvent.Invoke();
+        MainGameEvents_.PlayerRankedUpEvent.Invoke();
     }
     #endregion
     
 
     private void stopStartVideoAnimation()
     {
-        MainUiController.Instance.FadeStartVideoRawImage();
-        StageManager.TransitionState(State_Enum.Waiting_State);
+       
     }
 }

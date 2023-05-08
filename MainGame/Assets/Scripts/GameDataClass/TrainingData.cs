@@ -1,16 +1,17 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
 public class TrainingData
 {
-    public int Speed = 100;
-    public int Stamina = 100;
-    public int Strength = 100;
-    public int Intelligence = 100;
-
-    public int EnterRaceChance = 0;
+    public int Speed = 0;
+    public int Stamina = 0;
+    public int Strength = 0;
+    public int Intelligence = 0;
+    public float MaxBar = 1000;
+    //public int EnterRaceChance = 0;
+    public bool CanEnterBonusStage = false;
     [field:SerializeField]public UmaRank ThisUmaRank { get; private set; } 
     public void AddAttributes(Attributes attributes,int plusAmount )
     {
@@ -31,34 +32,40 @@ public class TrainingData
             default:
                 break;
         }
-        rankUp();
+        rankUpChallangeStart();
     }
-    private void rankUp()
+    private void rankUpChallangeStart()
     {
-        if (Speed ==300&& Stamina ==300&& Strength ==300&& Intelligence == 300)
+        if (Speed == MaxBar && Stamina == MaxBar && Strength == MaxBar && Intelligence == MaxBar)
+        {
+            CanEnterBonusStage = true;
+            MainGameController.Instance.PlayerShouldRankUp();
+        }
+    }
+    public void RankUp()
+    {
+        if (Speed == MaxBar && Stamina == MaxBar && Strength == MaxBar && Intelligence == MaxBar)
         {
             ThisUmaRank = (UmaRank)((int)ThisUmaRank + 1);
-            EnterRaceChance += 1;
-            MainGameController.Instance.PlayerRankUp();
             Speed = Stamina = Strength = Intelligence = 0;
         }      
     }
 
     private void plusSpeed(int plusAmount)
     {
-        Speed = Mathf.Clamp(Speed + plusAmount, 0, 300);
+        Speed = Mathf.Clamp(Speed + plusAmount, 0, (int)MaxBar);
     }
     private void plusStamina(int plusAmount)
     {
-        Stamina = Mathf.Clamp(Stamina + plusAmount, 0, 300);
+        Stamina = Mathf.Clamp(Stamina + plusAmount, 0, (int)MaxBar);
     }
     private void plusStrength(int plusAmount)
     {
-        Strength = Mathf.Clamp(Strength + plusAmount, 0, 300);
+        Strength = Mathf.Clamp(Strength + plusAmount, 0, (int)MaxBar);
     }
     private void plusIntelligence(int plusAmount)
     {
-        Intelligence = Mathf.Clamp(Intelligence + plusAmount, 0, 300);
+        Intelligence = Mathf.Clamp(Intelligence + plusAmount, 0, (int)MaxBar);
     }
 
 }

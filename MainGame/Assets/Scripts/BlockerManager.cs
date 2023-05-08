@@ -8,8 +8,8 @@ public class BlockerManager : MonoBehaviour
 
     private void Start()
     {
-        MainGameController.Instance.MainGameEvents_.PlayerRankUpEvent.AddListener(turnOffBlockers);
-        MainGameController.Instance.MainGameEvents_.RacePointToZeroEvent.AddListener(turnOnBlockers);
+        MainGameController.Instance.MainGameEvents_.PlayerShouldRankUpEvent.AddListener(turnOffBlockers);
+        MainGameController.Instance.MainGameEvents_.PlayerRankedUpEvent.AddListener(turnOnBlockers);
     }
     private void turnOffBlockers()
     {

@@ -16,15 +16,15 @@ public class TrainingTest
         Assert.IsTrue(trainingData.ThisUmaRank == result, $"Msg");
     }
     [Test]
-    [TestCase( 210, UmaRank.D)]
-    public void TrainingTestRankUpTest(int plusAmount, UmaRank result)
+    [TestCase( 1000,true)]
+    public void TrainingTestRankUpTest(int plusAmount,bool canEnterBonusStage)
     {
         var trainingData = new TrainingData();
         trainingData.AddAttributes(Attributes.Speed, plusAmount);
         trainingData.AddAttributes(Attributes.Strength, plusAmount);
         trainingData.AddAttributes(Attributes.Stamina, plusAmount);
         trainingData.AddAttributes(Attributes.Intelligence, plusAmount);
-        Assert.IsTrue(trainingData.ThisUmaRank == result, $"Msg");
+        Assert.IsTrue(trainingData.CanEnterBonusStage == canEnterBonusStage, $"Msg");
     }
     [Test]
     [TestCase(Attributes.Speed,0.5f)]
@@ -35,7 +35,7 @@ public class TrainingTest
 
         gameDataManager.ThisGameData.ThisRound = new RoundData();
 
-        gameDataManager.ThisGameData.ThisRound.ThisUmaTraingData.Speed = 150;       
+        gameDataManager.ThisGameData.ThisRound.ThisUmaTraingData.Speed = 500;       
 
         var testPercentage = gameDataManager.ThisGameData.GetTrainingPercentage(attributes);
 

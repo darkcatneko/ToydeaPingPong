@@ -5,24 +5,12 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Events;
 public class SceneReloadHandler : MonoBehaviour
 {
-    
-    void OnEnable()
-    {
-        SceneManager.sceneLoaded += OnSceneReload;
-    }
     private void Start()
     {
-        //SceneManager.sceneLoaded += OnSceneReload;
+        Invoke("gameStarter", 9f);
     }
-
-    public void OnSceneReload(Scene scene, LoadSceneMode mode)
+    private void gameStarter()
     {
-        //MainGameController.Instance.GameStart();
-        //Debug.Log("startscene");
-    }
-
-    private void OnDisable()
-    {
-        SceneManager.sceneLoaded -= OnSceneReload;
+        MainGameController.Instance.GameStart();
     }
 }

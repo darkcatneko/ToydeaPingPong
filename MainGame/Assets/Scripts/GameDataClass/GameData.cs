@@ -15,18 +15,19 @@ public class GameData
     public List<RoundData> RoundDatas = new List<RoundData>();
 
     public int WhichRound = 1;
+    
     public float GetTrainingPercentage(Attributes attributes)
     {
         switch (attributes)
         {
             case Attributes.Speed:
-                return ThisRound.ThisUmaTraingData.Speed / 300f;
+                return ThisRound.ThisUmaTraingData.Speed / ThisRound.ThisUmaTraingData.MaxBar;
             case Attributes.Stamina:
-                return ThisRound.ThisUmaTraingData.Stamina / 300f;
+                return ThisRound.ThisUmaTraingData.Stamina / ThisRound.ThisUmaTraingData.MaxBar;
             case Attributes.Strength:
-                return ThisRound.ThisUmaTraingData.Strength / 300f;
+                return ThisRound.ThisUmaTraingData.Strength / ThisRound.ThisUmaTraingData.MaxBar;
             case Attributes.Intelligence:
-                return ThisRound.ThisUmaTraingData.Intelligence / 300f;
+                return ThisRound.ThisUmaTraingData.Intelligence / ThisRound.ThisUmaTraingData.MaxBar;
             default:
                 return 0;
         }

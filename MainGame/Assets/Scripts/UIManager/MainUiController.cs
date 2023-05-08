@@ -17,7 +17,13 @@ public class MainUiController : ToSingletonMonoBehavior<MainUiController>
     private void Start()
     {
         MainGameController.Instance.MainGameEvents_.DebutRaceStartEvent.AddListener(CallPlayDebutVideo);
-        //MainGameController.Instance.MainGameEvents_.PlayerEnterTeleporterEvent.AddListener(racePreparation);
+        MainGameController.Instance.MainGameEvents_.PlayerShouldRankUpEvent.AddListener(moveInvitationImage);
+        MainGameController.Instance.MainGameEvents_.PlayerRankedUpEvent.AddListener(returnInvitationImage);
+        MainGameController.Instance.MainGameEvents_.GameStartEvent.AddListener(fadeStartVideoRawImage);
+        MainGameController.Instance.MainGameEvents_.GameOverEvent.AddListener(returnInvitationImage);
+        MainGameController.Instance.MainGameEvents_.GameOverEvent.AddListener(callGameOverBoard);
+        MainGameController.Instance.MainGameEvents_.GameRestartEvent.AddListener(turnOffGameOverBoard);
+        MainGameController.Instance.MainGameEvents_.PlayerPassGoalEvent.AddListener(callRaceResultImage);
     }
     private void Update()
     {
@@ -115,8 +121,31 @@ public class MainUiController : ToSingletonMonoBehavior<MainUiController>
     {
         MainUIOBJ.UpperVideoImage.enabled = true;
     }
-    public void FadeStartVideoRawImage()
+    private void fadeStartVideoRawImage()
     {
         MainUIOBJ.StartVideoRawImage.CrossFadeAlpha(0, 0.25f, true);
+    }
+    private void moveInvitationImage()
+    {
+        MainUIOBJ.InvitationRaceImage.SetActive(true);
+        var imageBehavior = MainUIOBJ.InvitationRaceImage.GetComponent<InvitationImageBehavior>();
+        imageBehavior.MoveThisImage();
+    }
+    private void returnInvitationImage()
+    {
+        MainUIOBJ.InvitationRaceImage.SetActive(false);
+        MainUIOBJ.InvitationRaceImage.transform.position = MainUIOBJ.InvitationRaceImageSpawnPlace.transform.position;
+    }
+    private void callGameOverBoard()
+    {
+        MainUIOBJ.GameOverPanel.SetActive(true);
+    }
+    private void turnOffGameOverBoard()
+    {
+        MainUIOBJ.GameOverPanel.SetActive(false);
+    }
+    private void callRaceResultImage()
+    {
+        MainUIOBJ.RaceResultImage.GetComponent<RaceResultImageBehavior>().CallResultImage(gameData_.ThisRound.NowRace.YourHorseHighestPlace);
     }
 }
