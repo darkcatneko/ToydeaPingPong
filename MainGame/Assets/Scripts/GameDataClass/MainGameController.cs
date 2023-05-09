@@ -112,6 +112,10 @@ public class MainGameController : ToSingletonMonoBehavior<MainGameController>
     {
         MainGameEvents_.PlayerRankedUpEvent.Invoke();
     }
+    public void PlayerEatCarrot()
+    {
+        MainGameEvents_.PlayerEatCarrotEvent.Invoke();
+    }
     #endregion
     
 

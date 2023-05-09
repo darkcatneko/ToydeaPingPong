@@ -51,5 +51,6 @@ public class RaceEnderTest
             }
         }
         Assert.IsTrue(canRaceLengthBeNone == true, $"Msg");
+
     }
 }

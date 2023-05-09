@@ -5,6 +5,7 @@ using UnityEngine;
 public class BlockerManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] blockers = new GameObject[0];
+    [SerializeField] private GameObject blockerIcons_;
 
     private void Start()
     {
@@ -17,6 +18,7 @@ public class BlockerManager : MonoBehaviour
         {
             blocker.SetActive(false);
         }
+        blockerIcons_.SetActive(false);
     }
     private void turnOnBlockers()
     {
@@ -24,5 +26,6 @@ public class BlockerManager : MonoBehaviour
         {
             blocker.SetActive(true);
         }
+        blockerIcons_.SetActive(true);
     }
 }

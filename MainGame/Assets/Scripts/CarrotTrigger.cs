@@ -9,7 +9,8 @@ public class CarrotTrigger : TriggerManager
     protected override void onTriggerEnterTag(Collider other)
     {
         MainGameController.Instance.TrainingEvent(thisTrainingAttributes, trainingAddAmount_);
-        //呼叫遊戲這個蘿蔔已經被吃掉
         this.gameObject.SetActive(false);
+        MainGameController.Instance.PlayerEatCarrot();
+        
     }
 }

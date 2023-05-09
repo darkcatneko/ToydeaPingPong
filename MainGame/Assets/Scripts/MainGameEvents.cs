@@ -16,14 +16,13 @@ public class MainGameEvents
 
     public UnityEvent<Attributes,int> TrainingEvent = new UnityEvent<Attributes, int>();
     public UnityEvent PlayerShouldRankUpEvent = new UnityEvent();
-    //public UnityEvent PlayerRankedUpEvent = new UnityEvent();
 
     public UnityEvent RaceStartEvent = new UnityEvent();
 
     public UnityEvent EnemyPassGoalEvent = new UnityEvent();
     public UnityEvent PlayerPassGoalEvent = new UnityEvent();
 
-
+    public UnityEvent PlayerEatCarrotEvent = new UnityEvent();
     public UnityEvent PlayerFirstEnterFieldEvent = new UnityEvent();
     public UnityEvent PlayerEnterTeleporterEvent = new UnityEvent();
     
