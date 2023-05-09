@@ -8,9 +8,10 @@ using UnityEngine.Assertions.Must;
 public class RaceResultImageBehavior : MonoBehaviour
 {
     [SerializeField] private GameObject spawnPos;
+    [SerializeField] private GameObject endPos;
     [SerializeField]private Image thisImageRenderer_;
     [SerializeField]private Sprite[] resultSprites;
-    [SerializeField] private Vector3 finalPos_;
+    //[SerializeField] private Vector3 finalPos_;
     [SerializeField] private float animationTime_=0.3f;
     [SerializeField] private float fadeTime_=0.6f;
 
@@ -18,7 +19,7 @@ public class RaceResultImageBehavior : MonoBehaviour
     {
         thisImageRenderer_.sprite = resultSprites[rank-1];
         this.gameObject.SetActive(true);
-        this.gameObject.transform.DOMove(finalPos_, animationTime_).OnComplete(startFadeCoroutine);
+        this.gameObject.transform.DOMove(endPos.transform.position, animationTime_).OnComplete(startFadeCoroutine);
     }
     private void startFadeCoroutine()
     {

@@ -29,6 +29,12 @@ public class TrainingData
             case Attributes.Intelligence:
                 plusIntelligence(plusAmount);
                 break;
+            case Attributes.All:
+                plusSpeed(plusAmount);
+                plusStamina(plusAmount);
+                plusStrength(plusAmount);
+                plusIntelligence(plusAmount);
+                break;
             default:
                 break;
         }
@@ -75,6 +81,7 @@ public enum Attributes
     Stamina,
     Strength,
     Intelligence,
+    All,
 }
 [System.Serializable]
 public enum UmaRank { E, D, C, B, A, S, SS }

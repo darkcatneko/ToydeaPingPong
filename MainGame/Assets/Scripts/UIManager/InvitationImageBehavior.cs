@@ -6,11 +6,12 @@ using UnityEngine.UI;
 
 public class InvitationImageBehavior : MonoBehaviour
 {
-    [SerializeField] private Vector3 finalPOS_;
+    //[SerializeField] private Vector3 finalPOS_;
+    [SerializeField] private GameObject endPos;
     [SerializeField] private float animationSpeed_ = 0.5f;
 
     public void MoveThisImage()
     {
-        this.gameObject.GetComponent<Image>().rectTransform.DOMove(finalPOS_, animationSpeed_);
+        this.gameObject.GetComponent<Image>().rectTransform.DOMove(endPos.transform.position, animationSpeed_);
     }
 }
