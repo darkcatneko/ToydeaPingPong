@@ -26,4 +26,6 @@ public class MainGameEvents
     public UnityEvent PlayerFirstEnterFieldEvent = new UnityEvent();
     public UnityEvent PlayerEnterTeleporterEvent = new UnityEvent();
     
+    public UnityEvent PlayerHitBounceObjectEvent = new UnityEvent();
+        
 }

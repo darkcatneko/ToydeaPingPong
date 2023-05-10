@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: b155723c2db5b5543a024f00e751a149
+  m_SerializeEntries:
+  - m_GUID: 3f577047e6c221b40a8a5d472e7c21ec
+    m_Address: Audio/BounceObject
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0417097243724d8438961537775dac3f
+    m_Address: Audio/EatCarrot
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 37e0a61d468cff6499bc8a1ec66258d2
+    m_Address: Audio/RaceFinish
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3bbda0d67fb1f924fa1f7db813d6a59d
+    m_Address: Audio/RaceShouldStart
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cd9042e697796ef46b9e88050bd21bea
+    m_Address: Audio/TrainingTrigger
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: de58ac11bb9447345b46a81cd8958d9f
+    m_Address: Audio/BounceObjectSE
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d960e443c2f18cf45940cc5496f9d39a, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 1f238554ad13e074fa18145a4d26e8bb, type: 2}
+    - {fileID: 11400000, guid: 94a75a6dd7bb0b34a87b91d82e8b9280, type: 2}

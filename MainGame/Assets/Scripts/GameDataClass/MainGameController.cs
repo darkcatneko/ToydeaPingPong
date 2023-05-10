@@ -116,6 +116,10 @@ public class MainGameController : ToSingletonMonoBehavior<MainGameController>
     {
         MainGameEvents_.PlayerEatCarrotEvent.Invoke();
     }
+    public void PlayerHitBounceObject()
+    {
+        MainGameEvents_.PlayerHitBounceObjectEvent.Invoke();
+    }
     #endregion
     
 

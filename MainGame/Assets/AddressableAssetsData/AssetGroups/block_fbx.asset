@@ -1,0 +1,2109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: block_fbx
+  m_EditorClassIdentifier: 
+  m_GroupName: block_fbx
+  m_Data:
+    m_SerializedData: []
+  m_GUID: c94a155c66fdf7b46b040c4ba56a6927
+  m_SerializeEntries:
+  - m_GUID: 93e7ace5715d9784cb562cd821a59d7d
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_2Steps_Large-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 54c2344ae74e4074fbec0288415beb4e
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_2Steps_Large_CornerExt-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 279c9c17a753e9141bbf5c37163ab8c0
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_2Steps_Large_CornerInt-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e3525ad6930235b4ea30d53c02a52ca7
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_2Steps_Medium-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3860d3dadaae5694093484959bb16c02
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_2Steps_Small-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0ed0f59c764607744956692452788106
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_2Steps_Small-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 62dea270c3f6c264b944ceed3f2cf260
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_2Steps_Small_CornerExt-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cfa0e1d551d09b84295e63ba852f9be0
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_2Steps_Small_CornerInt-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: eceee340498bdd045be605e6a8964b81
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_3Steps_Curved_Small-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fc2393795c8634c46b80b2147a80582a
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_3Steps_Large-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8b3046936d6d6d44eb3443f08e3edd3c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_3Steps_Medium-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c1d3ce87c18ee984c96c6c972e7a4490
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_3Steps_Medium-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f3a4525314d6e134a961284b6cf36183
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_3Steps_Medium_AngleIn-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a968addaf46b8e64281e0dac68f02266
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_3Steps_Medium_CornerExt.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 19c266282beaa09468e0b4fc56e76621
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_3Steps_Small-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 75fd927a36883c045bc5b7cd364b9549
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_3Steps_Small_CornerExt-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b8a87a51eb8d373448c0fab9476b6ad1
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_4Steps_Curved_Large-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1e1d2374b56e90942a8f5f232657a8fd
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_4Steps_Curved_Small-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ea1ced9c4f1d1544aac3f28068acad67
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Diagonal_A-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6c9b0be0de7a41d46a1cb5c60b053a03
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Diagonal_A-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 302d791f67b94bd4784d406ecc17f2d3
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Diagonal_A-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: abab7663d31fa7e47ac243d6a2459233
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Diagonal_A-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f0cff853175aa2746a7976c1ecc9bc15
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Diagonal_B-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5b80797194018094897e8b700fe6c3d9
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Diagonal_B-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6766d3675a2651146b553e2ee7ebbd15
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Diagonal_B-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ce5c0b0e05e558249a3bd500ee8caa69
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Diagonal_B-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c072c5f5084aae940bcff6d685b32506
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Diagonal_C-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ed293a95de90cd9448b543dd7632e0ec
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Diagonal_C-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 16ce8eafcd450fc4b847661e60c89da8
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Diagonal_C-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ac155e86cc058b64d88374d2ee9bae58
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Diagonal_C-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ffe1ceb723ce8104a9762ebf01eb352e
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Diagonal_D-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a367add3ef361c14c9a8c59a90ff0f8c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Diagonal_D-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ef3e7d557a5264347a0962c5f80de892
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Diagonal_D-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a8f061ddc2ac2554b87c6b12d3f661c3
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Diagonal_D-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 30e7eae656ed9d144ab6fe77dbd5dda3
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Large-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 98042ac824487ee45aa23dd17caac947
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Large-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: dad082795deb9f646b263b807e9ba644
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Large-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a2455e92f742e344cae830a1d80c184d
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Large-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b25c546a800d24d42b07456500a2d33a
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Small-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f8e01c55c4bddfc43bf92cc4d93cf20a
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Small-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4140afc2c67a30c49a493affe7926100
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Small-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 21e0160e72842f44390c73b4abccaba5
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cshape_Small-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b82e0589e3679db45a608652cee4cf19
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_A-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ee4561468f8bc554bbb70e777fd1e174
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_A-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b5d9d940877402643bf2b69871a84d4d
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_A-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b560476e0b631b64792a041eb334041c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_A-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 66f0385affa43fb438d984e191fee9a6
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_A-X4.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 887c5ac1eea67fe47a5e05cd339ed90d
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_B-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1834d42de86c3b64ebac4138a412f1ed
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_B-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e874069abdde49f4d8dabe2fa70d3109
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_B-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d67e6415d00037845bbb861d7ed246cd
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_B-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 77b63115333ea424eac0e56670933963
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_B-X4.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c303be6230e87f14e9cff59e9a86b35b
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Beveled_A-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 36ecd4801de1a8946888e89e2e583e46
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Beveled_A_Corner-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e5adb872bc3a4f641b862b5bfdf00f1d
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Beveled_A_Corner-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 047116309505d0f42ba86fa6d0689a99
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Beveled_A_Corner-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2c5de99a744bd3b4baf2c242cd88d5d4
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Beveled_A_Corner-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 546f10dd3fb30c44ab8239cf8ef5ed05
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Beveled_B-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f1088a18106a26e418f74748dbb7b2ab
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Beveled_B_Corner-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d2aea78d2a85c774fb2a8f4a98790a27
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Beveled_B_Corner-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 32fbfed35c929b141b9b4c374977d0d2
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Beveled_B_Corner-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3805c740cbd7939449692faf9a8cca6b
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Beveled_B_Corner-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cf3dea1335ff4274bb80b5bd6bcb590c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Beveled_C-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3812f589d52a7434e9d7a52a9d273326
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Beveled_C_Corner-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4a88165357c7fab44b37aa55279cd454
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Beveled_C_Corner-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f8011d1f2c4a95849ba7efa73867cdd1
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Beveled_C_Corner-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 760162577cd49b84ba7df5ad120ca826
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Beveled_C_Corner-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3ed1952fe5a3c934ca328807d734a435
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Beveled_D-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 36a8eac2bfa2c544f971e4d3e6b5564a
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Beveled_D_Corner-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cdaa8b79a88905441b0a0e79718f986c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Beveled_D_Corner-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cf8cc20ba34c17c42acd793229c3bdc2
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Beveled_D_Corner-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: acce06c1bf9493f489b28ffcb6f59b55
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Beveled_D_Corner-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 200414143390dce40a8e3fa148ac3889
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_C-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f7dfcb1d34e11114d8c9dad70b8128c1
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_C-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f6ccf8ceb181f474c8bc2b6a39b3fe63
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_C-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: af8cfd04ec5696e429c2d85f8949dc82
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_C-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c1ece40a1275b9c49ab30e429f2a74d2
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_C-X4.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 86af0a36482e51442b14dd8574e9f570
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_A-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ebf70a92c3862a74db0ffe6a375f6ef2
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_A-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fcd3a5a0e38f8eb4a8f4b81897b73323
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_A-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5d90c3d37b03ad04b84e0cc5a5b0bdfc
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_A-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: da54f5c4dc57356468b3e4da39dd450b
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_B-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 781b2d08e792ea548a99db2241c9b4b8
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_B-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ab42a5fa198448b438940cfc25054a4f
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_B-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ae5a222e8a9b8bf4eae7f3ab858dfd81
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_B-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5fd3c0ed05ea53f4595863733dab0bf7
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_C-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9b51551c5c24fb447b169e08042248ad
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_C-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b48e0e6cc41d1d24d8814ae23edcb263
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_C-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b35a24dc29432814a9e085d5ade2d100
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_C-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f88c5ba56df6a2345b1938ca94e12e19
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_D-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f80a58b237644b746811aba61b8f35a2
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_D-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3c28d5e9c55e3c544a798606189eb804
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_D-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4a606e0497e9da249bc53560d40b9a13
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_D-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5e2c799855e441e4fa3dc4a7ed195049
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_Diagonal_A-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8b961bbb56e75f648934393234d15dec
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_Diagonal_A-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d7712193e472fc54b8f33c9c3829679b
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_Diagonal_A-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c2df98646dd007945b544cb79cb1cee0
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_Diagonal_A-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1967f3b84e705c743ae8db8b60b1ab10
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_Diagonal_B-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 00f9249373a96a143b8b1f08963be3ea
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_Diagonal_B-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cdc108f5b6ef9644a9b4d6b48a257f68
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_Diagonal_B-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7a0042d69cfa7f84fb10bc272aa89e99
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_Diagonal_B-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a576b8ca1170b5448baf90e941ab89d4
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_Diagonal_C-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ecbad75c1012ec64998d75c3c7dfc93b
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_Diagonal_C-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 71aaeef47608815449825c99e73c353c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_Diagonal_C-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0dc8ef88ce89083448b5f5996d6df257
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_Diagonal_C-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8e4f255817cab65468d7d71c5b501977
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_E-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 33153da8942a833498b2eccc9d89414d
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_E-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0e338b7736737af45921ecd4fb8d9b24
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_E-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 93bfd8678cc3b024599fbd9e6b3385a9
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_E-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 18a616d47df6df54d9797d6bb5392473
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_F-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9aeb8b243490459429ae485626b97368
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_F-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 030c132120c6f8648a9e0a3aa56b47de
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_F-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 71c56c0a86472e641aed5a320dbe3fea
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_F-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 03859c7824d20c040b753c6108b55546
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_G-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: af8f9c05bad9bff41b567375904efe31
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_G-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5280132618908c24fb4b973c81454032
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_G-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8da924edd378d054991646f08dc87fe8
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_G-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c0482e4a17110c2448f87f13924b250a
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_H-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 72c1800ada904df47802993aaae5d4d1
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_H-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7603718fabc86be468befd644e7afb3a
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_H-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 375ea956ec0dd2a45a25baa4795da714
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_Chamfered_H-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5c9aaaf05a2c1c742813fcd7045b4538
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_D-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 962dcc66bd7ae27418844b58b3954bd5
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_D-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4a0faaf7b6d947b409bcd1d10bed1124
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_D-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ac5802651534f2c4f8bb46b2992aecc7
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_D-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d0e716956d182834d95162402192e6d6
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Cube_D-X4.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ddb8f21dc838307498f65c04dfec32b0
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_A-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a1cfff6f215dd7a428e8c7c7bfcb6a61
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_A-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6fb5efe2b7f3afd4bb79dfe9ed779954
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_A-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9700cc8823e37894092fb3bcf1021b9b
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_A-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 419a1fb8287d26948a25ee93fae907c9
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_B-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1edca7be8c6a8704e86a1eeff581bef5
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_B-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d91ded475214e974ba010ef8f0d27e05
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_B-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5a5bbce5d5bea6442a0910be9ca541c1
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_B.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d47b0b2ff75f4a145864d71d4abdbf4e
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_C-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d1445f2f15685d74dae1c5ff0e37d0e1
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_C-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: eb356c567e55c6e40b90bc08277a8e3a
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_C-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 880181213ce83184a86cd1fdcbfe74e6
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_C-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 66ab58721b6c51447bc5df7a29cdbb4d
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_D-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8a91c65029ece0640b35d76891271549
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_D-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0e0f7bc7c86658c42bb538429658d320
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_D-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 241f0617ef73279439adc08370e6de11
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_D-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: de89f7aac8bba9b478323e78ee28f260
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_E-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1420eafac37ea7a41873d953ac2b7fd9
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_E-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 67c6e09f3bd91ff41b8e0afb224d6837
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_E-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e21f9fb50cb02e848b5fe01fabb1a856
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_E-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 419ba83f942b12a44bd62b6fc1df293e
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_F-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 355581d00481d554989866a899f12b31
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_F-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4328f3b8db053dd4abf8dac3198e3e33
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_F-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d9c34ac5e208e964e941d01bdf02f583
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Cshape_F-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 96cde4a1f4c5e0448baddfe1caa4ff6c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_A-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b7275ba315c82924a8a6e5e4bff85fae
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_A-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1a70ed494f371784187b1e51d2e74296
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_A-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 70d28a16e742a0545a0c79fee4de6b8b
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_A-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 12bc0041bec65994faa33f5634e875f9
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_B-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8eca7059629a1ee40851e256acbe8a03
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_B-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f28ad244bd849e94eb2f465d9d9ccf64
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_B-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 20713d670fd6b594da625c7475cd041e
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_B-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8354c50299ec87f4aa30ca3f93b63010
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_C-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c39e3005252108340832944b3f9e366b
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_C-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 85f09bb050a4b0b4e9609a2259a54a03
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_C-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9428cf1945d137049931659066dbac5c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_C-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: eec29641ecb359f4d8480309ab64fcdf
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_D-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: edc6457ad6d005945afafb064bf8cb19
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_D-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ce9ca3dbc864c5647840a85f397d9161
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_D-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d110dccdbc7f36c4eb404a64b8d671bd
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_D-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 844988710b17e714d8bfd5fc86c5bf5a
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_E-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6f4cbdecdf3d82343b0971e7d6e40126
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_E-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a6ded8a6be9da794db7d0d8582c4c7c2
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_E-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 61cb21beb8e1a4d4a831668f53454707
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_E-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a7f5f4a2c262e3f488d97653bddeb4cc
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_F-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8d0bebda7ce430c41ae14eff1e9f99a8
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_F-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e0d3b0af04e9d464a91befcfe40c5b8d
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_F-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9f7127cdac7820642909c356d11ab27c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Lshape_F-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bfa8e5528c4a1884290e03a03bf1c617
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_A-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 37d55e7d3ce0aa647a39dcc32b27cfdf
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_A-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4e8daeb3597420a4ba408a964167e984
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_A-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ffbaee77c7755b54d941f0e7db4beeda
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_A-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: de57a076bf3755c41bab1b273c19e8a5
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_B-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f4d6ae920fe34f7428c6bc2fa0ff6236
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_B-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 46319d703e13b6b4dbcc0d37b149cca4
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_B-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9a92c40682cb71c408e6b3a784a35cbe
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_B-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5cc42ce7d7931814f9eacbef9d284a64
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_C-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e6f7e7a5ffb613941868b574b98e53a7
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_C-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 62af706dd7f7922459b7aa432630b4b0
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_C-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3585419c1c8de2a4f95940a72ba3fbcf
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_C-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 18da65ab477f6d34ea6e61de88dc985a
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_D-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2fa8b6c5a1fb98845ae6c890b55fb0c5
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_D-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: da7a86ed5c4332a498ad72625f43d964
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_D-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 651799c280cff79479f7f61379bcf414
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_D-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4c45fd68170cb5241a6bc11c67fd1be6
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_E-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a109f4335c53962459ffe9118b330997
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_E-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b950125e9169a8647821ae28ab48fde1
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_E-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7f6c178a6900e1847927d2d708c2273f
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_E-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ab5606ab69635f0499571c235fa2a221
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_F-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cadfa64a89164b049a950620581ceb7c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_F-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d30260894ab6d20488999c3baa2c7fad
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_F-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 02cb110351b1b7f4a83ab8efcb97df22
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_F-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f3ec3d78460ed0e4dac69b44b4a31109
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_G-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b34ac379580a63e41ab01ca8046b87a4
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_G-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4e0b56c33612af24cbad3cd500d36a73
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_G-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c031d78505e73b44db75f3b21fedba31
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_G-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 31560bc7a94e09e449c65a731ae07b79
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_H-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 25da2b4a24788c0409fecc41695b6255
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_H-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: aae5af750734a0f4c9e600ea705bfc1f
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_H-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a8c55d07963a234458050201b9716bd9
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Curve_Sshape_H-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c9d603a4d890e1e4bb4ca45570024a66
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Large-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 93aceee29cf05c240909fb815bb5685f
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Large-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b60a6fef673d0ab448c3a2947a93e6cf
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Large-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ac390bb1cf95f4549baf3cf73aa35b27
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Large-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 327add29ef599e648bc64cdd5e60916a
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Large_Beveled-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5c5edb7d231a1aa40aba5040be902c74
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Large_Beveled-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 31dd0012521d9dc4493a4cd8f9d82117
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Large_Beveled-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e493ded15cb03f040b54a655ddedf4ba
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Large_Beveled-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f5f3b818d5f40eb4697918b4e7b97e48
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Large_Beveled_Chamfered-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 727e209e7db67144fa36f62024a9ae4d
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Large_Beveled_Chamfered-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f33c169314230df4889e60a3ee0e621a
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Large_Beveled_Chamfered-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b7803d55a95225342aaba3250edf3f14
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Large_Beveled_Chamfered-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 56823d0e79151e94aa6db812f0296433
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Large_Chanfered-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3ec03b8c47937ed4ea4166cdfcd443f8
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Large_Chanfered-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3df8f720e1a0b994f81df71479a085d4
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Large_Chanfered-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0d5dde8e08cf12e45a543985cdf030a2
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Large_Chanfered-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1ebe752bdfac1604fa60f60147f34d0e
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Medium-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e7d9b5c6042c0e4438334304a948d7b9
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Medium-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a4bc9d50489a4e44a87d17f2ba7a6bbb
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Medium-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fca2930d4edeecd4f9f9f5aca6fe5e85
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Medium-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c38baeb6fa4bdcd44b378aeb4e542f56
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Medium_Beveled-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bdf33399d1825bf46a0b6dbef0110bd9
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Medium_Beveled-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c70713289124027469812c1fcdacfb4e
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Medium_Beveled-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 468352a40138b9044a7ff3d0645af84c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Medium_Beveled-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fefcaa5a43861984ba2106009655ad87
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Medium_Beveled_Chamfered-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ce1052a965ae6e64a90ab2dad209bfd1
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Medium_Beveled_Chamfered-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 36f9e6367f96aea4fbe14bb363632958
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Medium_Beveled_Chamfered-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e12a40944241a1443bd213ee1b5990cb
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Medium_Beveled_Chamfered-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 977c330e9f15a1f43925f2200116d9e4
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Medium_Chanfered-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 44869e32b7e32de479787d81c04dfba3
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Medium_Chanfered-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5c8f4a1274bda064db0def172e5b8fb1
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Medium_Chanfered-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2634882b41a3cd843ae173729286a081
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Medium_Chanfered-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 72ae77d69bd01e949b759951ba88c53b
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Small-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 38b2039ee6a5f974781441f95ee01ee7
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Small-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d9e4bfcdaa8263149827887d68c600a9
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Small-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5c1c30c1cef23984eb8962ed03ddaf36
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Small-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6e0b42b489b1f4a4796493f9184bd994
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Small_Beveled-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 509b6ebd1d2c76f44a949c7f607a6856
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Small_Beveled-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e3ba63376b9f70e4e802f0ce123b0986
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Small_Beveled-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a61b53b136f356e4587de1addc81b175
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Small_Beveled-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 16115c6c97120d3469ca57d162cd4bd0
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Small_Beveled_Chamfered-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2631d76c2614a4743bf16c7490e87d01
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Small_Beveled_Chamfered-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0ab4e3154f5d8d74b9421b8d10acd271
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Small_Beveled_Chamfered-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b0113112e65935f4fb69708d13a499ab
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Small_Beveled_Chamfered-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e349c43bec0f46c41a6a7315fee8580e
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Small_Chamfered-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a98a9d0e67ede2840bd0dbf4da125559
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Small_Chamfered-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: aa884acbf17a0004f8c36184799c5428
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Small_Chamfered-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4fee035f7c7ee2b40a495eda7c0373c1
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_A_Small_Chamfered-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3222524b91f4a6943bac7d985ba181b1
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Large-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fbbd0e2fc4568ff4faacc5a301b891bb
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Large-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3d1fbcae5b56cfa43a10f07551db1845
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Large-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 67d64421d363d5d4b8b931633557a44d
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Large-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2218540a24e17c540b2e6405f3da3e7e
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Large_Beveled-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 69f2c044b6ff9694cabd4220cee25710
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Large_Beveled-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8f69b5b6bd465a1409d5522574b2c3a8
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Large_Beveled-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 22a5cda4d645df2419b6d59714d4f9da
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Large_Beveled-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 986ef847c7e1c1f4c96486a46fddc974
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Large_Beveled_Chamfered-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c792b3d92ae46c143bcca3d4144f384f
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Large_Beveled_Chamfered-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 95c1240e8013ba749a31f5668747cb6c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Large_Beveled_Chamfered-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3a5c208179be2a341ab2600c9a3afecc
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Large_Beveled_Chamfered-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3ced4b2a1e5baa34e87b9d83cab2c1c8
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Large_Chanfered-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3907537ce5b52734e928c4b375af7f8c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Large_Chanfered-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 79fc96127c2526c4f98bcc80175eedce
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Large_Chanfered-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 070dc1f17764a904090a916898e3a8f1
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Large_Chanfered-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1da3db1fb706165419de69f4f0e497d0
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Medium-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6a8014c5449d90c40b1e479b099ad159
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Medium-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2d592f1bd77f2ad408f0bb70e684f905
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Medium-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f9ce96d490f221942934415984138966
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Medium-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d7a50b737157a744985227a8bb7fe529
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Medium_Beveled-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a7c6d810cd63e4447bf4c5d462d1afc6
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Medium_Beveled-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8f422ee55a070f44e91596420a85cd6b
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Medium_Beveled-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7064c4ef6ce93b34b9e420ba8d32d20a
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Medium_Beveled-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 21f6ec29d357c894ca9091c736f101eb
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Medium_Beveled_Chamfered-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4508d2b7f1bf57846bef7509e51230f3
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Medium_Beveled_Chamfered-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5eb78546a502b054288b2781b428d309
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Medium_Beveled_Chamfered-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 437549714c6a3114db3fe0bee4cab8d1
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Medium_Beveled_Chamfered-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0713ca8f2385c8c46856c9961bce02e9
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Medium_Chanfered-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: dc9f90516508ede45babc8de163135c6
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Medium_Chanfered-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7ee0afa25930a344fa5e83add2ccd787
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Medium_Chanfered-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ba9bbd4cd8765354fa559a382795195c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Medium_Chanfered-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 70ccdac065bb5be438eccce472740ca5
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Small-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3b3845869a9d8a44b94c5f0f873ba22d
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Small-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 93eae60aca5a79f46933bcf9630bfda3
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Small-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bda11fe7c13bde743a13a16314bd4893
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Small-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ab22abf3832d88d49ae1220fe40a778d
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Small_Beveled-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d75c919b873658b4ca2fe91eaa1b78c5
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Small_Beveled-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 46702c160596d32448806efb0a11a666
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Small_Beveled-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d05e8769a1857274288d980f8e2749af
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Small_Beveled-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 08ef91edde8bf374e89a8f92fad03b57
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Small_Beveled_Chamfered-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c63559b4788b3054eb8fc7ce27f867fa
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Small_Beveled_Chamfered-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 44056f7a846bcb04c8a21ade653e1c30
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Small_Beveled_Chamfered-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8c566d7bcc49d0842b54d8273946ae11
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Small_Beveled_Chamfered-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8d1cebf8c0e90604da0d3bc2fa81ccf1
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Small_Chanfered-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c9c461ee484ab34448000c1eef385e44
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Small_Chanfered-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: db19aed98221ab34996be01a2d702c48
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Small_Chanfered-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3bf88ca4121ceb64eb91de5190bd9b6e
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_B_Small_Chanfered-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 539fe17ea98f33f4aa5524bf844161c5
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_C_Medium_Beveled-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8f3d5c7484abf0d42b249f692d6088f0
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_C_Medium_Beveled-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4f56dc95a1b734947a6a639c2c8040b7
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_C_Medium_Beveled-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a8ad987f336bb2e408b03397734df734
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_C_Medium_Beveled-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 774c5dec11d81e448a6a537477b5083a
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_C_Medium_Beveled_Chamfered-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e248234e39a66364c9e1b20f73baa6eb
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_C_Medium_Beveled_Chamfered-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a8edc8818966428458e13c0897cbe559
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_C_Medium_Beveled_Chamfered-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a3d58e2c78355754a9cfe01386fc7eda
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_C_Medium_Beveled_Chamfered-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0842198c1c62d19418d6350886fabc1a
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_D_Medium_Beveled-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 36056c6a9b6db1948becc2beea89b659
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_D_Medium_Beveled-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fd768c325aba3824a98d4b1a6d3d646d
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_D_Medium_Beveled-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a6ed9a95a9d08e44b9f37a37c1e1048a
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_D_Medium_Beveled-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7160506176762564d9eb3ba7f6639bf7
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_D_Medium_Beveled_Chamfered-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 649e0e279a8a0b647871e10e69cb81ad
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_D_Medium_Beveled_Chamfered-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1cb48af6fe21ff8418701fe9f8e06e19
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_D_Medium_Beveled_Chamfered-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c43e41591c44ecb4ca4881e2230c64e4
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_D_Medium_Beveled_Chamfered-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1c2ac801bd0255d429b8fa2534903127
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_E_Large-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4fb74618b4901114fa06ba0a82d55463
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_E_Large-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a35dd0f4328f1254e8fd24624af79489
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_E_Large-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6bb8865b7bcd0c04cad469abe81e9a5e
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_E_Large-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 85901a88bb4e5214b9d1522bbe8cd1e2
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_E_Small-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1d64a07a616160e40a9afa31a857b52e
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_E_Small-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 547e606171912f04290275c21ad3e40d
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_E_Small-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 52e493870c7a78b4482ded26f5f7004b
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_E_Small-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d616a58966620a240b00acc76d0a2780
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_F_Large-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 438e12559abf2f64d89cad3b8e2f5d81
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_F_Large-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5272deca8ce68c14abcb4cd666f39786
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_F_Large-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 45531edb7cb37ef4686b50f25af60c35
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_F_Large-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 67d1312c06fd477408c53863fb0939d3
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_F_Small-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 763d792a5d892c64492f8f951caadb87
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_F_Small-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 81183b40495e6f5419bdb73d6d236bbf
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_F_Small-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e2ed67079aabc18438576c00c36d97d8
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_F_Small-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ec5e609e99dc41a439ddfbb16c288976
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_G_Large-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 797d7e8a89e27784089d2e3c91ff60ee
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_G_Large-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 863598fc6b337d24fa93e0936d91b4da
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_G_Large-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 99a06d625a3271a42a7436e34212f661
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_G_Large-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a313e91db748cf046a5b0c757cae7668
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_G_Small-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e19dd674e5a8cd349b01d3349d39cd81
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_G_Small-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7d2c73ddf767f70428785132038096c6
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_G_Small-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 46ceb78f0fd7e584bb2153ecd2c6cdc9
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_G_Small-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: be8bf858fa3b8984da50f25446927eab
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_H-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b3621517f13dea146b1d8268ed33f279
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_H-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9e3d68f83a477a445b9e9923794aa331
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_H-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6f398a7df17512847ba2c5fc02c39169
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_H-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d5c8ea4dc1409584bb55edbf83dfe4d0
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_I-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 361711b7856dc0848a6f238a38620187
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_I-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 50b6c39719c37ac45a60028c6bfc6b69
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_I-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: be42a8f401a9bfa409ef04129cd3bfd3
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_I-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d9737b39f5185464886fdd24c77ba424
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_J-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 144e75dd16c37c3469ef7393f1a91fa6
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_J-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ee8b42ee05c93b644a11754849264c1d
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_J-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: dd4ba0db9ca63c140990c4d14493901e
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_J-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b8e1c8dd3a8815d46810956e8e9b956e
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_K-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c3fc36a6cbaaf51449eaf64eb3ee3580
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_K-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 65a016037fdd14e49886d13abfcb68c0
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_K-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5002e70ee75b2f84986249144d5652fb
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Lshape_K-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b107c548f934b494a965d98849c21546
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_A_Large-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 671b04ac9c21567499df8ea3cffebc42
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_A_Large-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 86e1633615d8dfc4d95ae0c162a13b38
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_A_Large-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fc9e6fd0f60ff21458ce3e24e685dbc0
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_A_Small-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6b5f1d527d76abd48b907e8fd3ea404a
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_A_Small-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: adaa5c525697a1744918bd499185b921
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_A_SmallX0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a1a45a49dfa3cb94e84ba2443ce1880f
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_B_Large-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6810476a1beabfb4f8d48e5c9110ae18
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_B_Medium-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fa2bec52fa57b364d80976dc43ac90b7
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_B_Small-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9b530ffaac46d8741a30e86cfe0f728f
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_C_Large-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 73e79e824419bcb449bda5b6bae85c46
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_C_Large-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: be8ca1e9160497b4a8185c20aafc5130
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_C_Medium-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 44382ae295ecc99449279ead0c9d0ab2
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_C_Medium-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c70ea0359c4a0c84396ad4d68c3903d4
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_C_Small-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ed63d3542a365974c948ba346767920d
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_C_Small-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2e52a57387bcdd7449d19785d62e4510
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_CornerExt_Rounded_A-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: db863db6ad30da048a3640a7571a9d6b
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_CornerExt_Rounded_A-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 53bcd87ebe52ba544a937f9cc9fcf12e
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_CornerExt_Rounded_A-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b4ccc7a57b923b24f9ac5533a70591e0
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_CornerExt_Rounded_B-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 714c3aba7a7348c40a232f7d83868643
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_CornerExt_Rounded_B-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 50ede59246616014ab2346ade8b7b317
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_CornerExt_Rounded_B-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0f44440b9395f5a479113d188fde2118
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_CornerExt_Rounded_C-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c87b92bbcb8e3ee47bcdf845475f8b75
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_CornerExt_Rounded_C-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d64c9099a9ddb8448858a3580058da33
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_CornerExt_Rounded_C-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e1889e7fc515a1d4980d364583935274
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_CornerInt_Rounded_A-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 79ee9c23969100049ae0a317859f72f3
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_CornerInt_Rounded_A-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bf667dc1590f07a44be94395ba450700
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Quarter_Circle_CornerInt_Rounded_A-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7f7deb8baa7041b4ab51a481ddc3ac79
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Ramp_A_Large-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 12a211baf2ab51c498ff3f43a5894d08
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Ramp_A_Medium-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2c7d089fb6a2f804db5f947147469597
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Ramp_A_Small-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1a0a68e522084bd4c97e84e6790cfadb
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Ramp_B_Large-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 03c40a9befe6ef54281eceef37a7bce3
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Ramp_B_Medium-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9b048802937436441bd2c41c7f7926fe
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Ramp_B_Small-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f34de85f9ebd2894c8c072db93c3cba5
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Ramp_C_Large-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 568a1c05222cf5e4aa74762c0b4d22bb
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Ramp_C_Medium-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a8497ebfd10056541ba1bf5811a43f3c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Ramp_C_Small-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 07dba83957ba8d243825f09b9f5a3c7f
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Ramp_CornerExt_Hard-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 180c8619171bb00488ec8c6d7d9d9130
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Ramp_CornerExt_Hard-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d7bf437053297e7449f3e3061896d5d1
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Ramp_CornerExt_Hard-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e5f4d7dbbff88b64793167f2855eafdc
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Ramp_CornerInt_Hard-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 27827b2d69c3dd646bd2c3a483073173
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Ramp_CornerInt_Hard-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1f4b9f508f766e0438e8a025fcbb3401
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Ramp_CornerInt_Hard-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1ae3ff968154ff340beeb3daa085fab2
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Ramp_CornerInt_Smooth-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0ea2444d9d0b1d648a007eadba65c70d
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Ramp_CornerInt_Smooth-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1d5dad2d3a5ab5e4092620f57c285606
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Ramp_CornerInt_Smooth-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 18e76993e263be54b8e71ed724314585
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Semi_Circle_Large_A-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 97ca95ef5397b914f9894a32eb3271f9
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Semi_Circle_Large_B-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a34a9e97a3f9f6441a4b6ec654639815
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Semi_Circle_Large_C-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: aa41d329c21a5634d8fe14513e6a3f3a
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Semi_Circle_Large_D-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 39fb46f168ee5ce4cbedc3036f89c80c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Semi_Circle_Medium_A-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 84971295bc1b82d48a44fd787acdae91
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Semi_Circle_Medium_B-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 19e8f7eb8dbd5dc4f851a58c93897e9a
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Semi_Circle_Medium_C-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4adb5732c70eac740884523eae19bb40
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Semi_Circle_Medium_D-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a6cbd51c6b7eaf049be3c69ae3217985
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Semi_Circle_Small_A-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 58471eae5e0ffeb4c9f5f1ec856ef621
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Semi_Circle_Small_B-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: adadd247dfca3404ba581f2981fa0543
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Semi_Circle_Small_C-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2e4906c6cb2462c488b234e1c8ca187e
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Semi_Circle_Small_D-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2c8f99261c7fa964aaee415484412df0
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Large_A-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f68cc6925c0fea646885a672dd64a821
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Large_A-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ff66fe3fd5e7ab442b0ba85ef542e570
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Large_A-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 06374650b816d3d41be685f4f46f91ae
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Large_A-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5033ab043f66035429f4a0a319a1646e
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Large_B-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5b98602ed270dd647aead8c083b039fc
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Large_B-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1f4460daabdfca44e8025fb1b8405d74
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Large_B-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cbc7afb6b818f074f932c08ce45be4bc
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Large_B-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 03cdf281bc25fdc4c86917bd119dccf0
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Large_C-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3641b86e48371274ba63690f456bfbd3
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Large_C-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b05e68af4b789f84aa74d86bc60d1ded
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Large_C-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5724e087a2af8a14897c53ca925bf91b
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Large_C-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bd8c4b89038f84a429e4e82adb98c891
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Large_D-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 51d8e9b0584aeb0449dfdd9f9eae0756
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Large_D-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b12c0e263529583469dcd5f39f413591
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Large_D-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c74b1d71ed95521468a7a97a813f1d80
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Large_D-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ab360c652f233a540a4f589ba3091038
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Large_E-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 163e6d0e828c0e24191cbf66a845267c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Large_E-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 991546d9cfd4e9240a0e728b34cabdaa
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Large_E-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9e1cb2eaf31d9d244b1f9de9bbeb1e14
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Large_E-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 63d5804f0f89ea940a2011bc9d5d05e1
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Medium_A-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4e84ecc312eb1f444b62a13e97c2fea1
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Medium_A-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: af0a211f8458ef14a97cfa2cc08b55e6
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Medium_A-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 272a0f1c68ddf2f43b62e104f20ba1ac
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Medium_B-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8b9b02f479b716544a87039148473b13
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Medium_B-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f6a70716e7525fe4c9f96fccf2deb974
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Medium_B-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 37e13f3ab81c05e438269117236dd6a3
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Medium_C-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4856a117453ecf84f89cf5531acd3950
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Medium_C-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2876cd49bf53bea4cbc391851ebf8db5
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Medium_C-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c9b4cba4cc9af8a40a0b45e0321ab81c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Medium_D-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7329dc912701ff6469282def9b123883
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Medium_D-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d3fbf3976b7dce046b0e6c15f66118bb
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Medium_D-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d6c2d808da703a4429e89ff8f1739bbe
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Medium_E-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: dc1abbb599e084f48bb2ac46c355fb7c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Medium_E-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a70556b5504c2994ca6fd142f656c2d7
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Medium_E-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 51c42d56cd5a3cc4a8a9bca7e85f5161
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Small_A-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 154e3f32026de0d488b37eb84c90c2cd
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Small_A-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 08f7cba9251ed214d8fb913d986d56bd
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Small_A-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7bc923a6850820941977aba05bc8ed2e
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Small_B-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6ee6cc7a61228c948ac63486166dc889
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Small_B-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f9825b30428f85846ab6f9742b229851
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Small_B-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7d75d314586e7f04190ce899817fcd1c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Small_C-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cc809b7ea6741d04691924ea3ea1cb48
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Small_C-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 16ac3e6056f269242874629a4bdc29db
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Small_C-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f7803a3f3a17cf6479a49ec23077ead9
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Small_D-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1bd8f01277a032d4abee494c9903c864
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Small_D-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 824437645859d5e45bf8aaabf5ce10df
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Small_D-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 397139c52e4659041b390240ee010173
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Small_E-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 110944c311841d34aa6661b56a44b875
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Small_E-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bb057f7c0e5040547a38394d9fd3d00a
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Slope_Small_E-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 660d439a0911f1c49936db868f542e76
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Speed_Bump_Large_A-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: bc0083fe400bca9499a0aff733afa6d6
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Speed_Bump_Large_A-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5687df53146271c4281ec1e6fe234f49
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Speed_Bump_Large_B-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 20b11e8b1235fa24ebffd69a1d4eca4b
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Speed_Bump_Large_B-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a135a28224061314fbc8d419605d8b69
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Speed_Bump_Large_C-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: be6f2d374c2c1ad4eaa2bc5b293a6d30
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Speed_Bump_Large_C-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 96fc7f669c1173b4eb0812d0bf3d2d22
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Speed_Bump_Large_D-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a8db5e3ccbe336c40bad1cb467ff70c7
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Speed_Bump_Large_D-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3d874822b60461b458d1e53115e6884d
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Speed_Bump_Small_A-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9f5f0edc2b4090748af39ea70a0c9a42
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Speed_Bump_Small_A-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7232625affd9f5f458a02c97d8152c8d
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Speed_Bump_Small_B-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ae9f3d4fd21a5c941bde7aeebdee192c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Speed_Bump_Small_B-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 09e1931d5028b0d4083291909abdd4c1
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Speed_Bump_Small_C-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7a966d498aa364345bfa5f941a94b5cc
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Speed_Bump_Small_C-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 76679992aca850346bb53928ca9f8e97
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Speed_Bump_Small_D-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 386babb5238bf43439d4e5603fe1b738
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Speed_Bump_Small_D-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cec31b4725f4da44e9d392d97bb64e6e
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Corner_Slope_Large-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 20ab0d11d965bb54b9112bfe80352185
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Corner_Slope_Large-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: abf3369771e106b4ba9ec7f6bd0ef44c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Corner_Slope_Large-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 427bc24e1fb4cb74f93b938eaad390f7
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Corner_Slope_Large-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 887ecdf85b6048844b150f2bd3529f45
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Corner_Slope_Medium_A-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 14642496f390a5d4ba85d0e985a59da2
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Corner_Slope_Medium_A-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 88713dd6185f027458031d46251c6634
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Corner_Slope_Medium_A-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 10ba0c52211171e4faed6d48ff6004bc
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Corner_Slope_Medium_A-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0df2f684a68990b4d84c53f522d20e2b
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Corner_Slope_Medium_B-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0b8f10ef939df2e419c486c6860b4456
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Corner_Slope_Medium_B-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e927b8ce4d4899743a2d750571f8744f
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Corner_Slope_Medium_B-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 75144d86f9b7db8448089bc46fd2bf86
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Corner_Slope_Medium_B-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a0bbf207b34f25e49afc85a13ade0ca1
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Corner_Slope_Small-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b6e1d89463dd0294f83cd882b97e9025
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Corner_Slope_Small-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d35c861a67b3e794c80da112d840e684
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Corner_Slope_Small-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 898baa60374bab545ad575017855b350
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Corner_Slope_Small-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 042439f7a9dfe3d4fba04a652e3fd6b3
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Large-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6e1f23e37a16bdf46bd0d77a532c5217
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Large-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 912978cbd9ea7054ca074943cdccb913
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Large-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 644cc14577b877b47996972776f9f7aa
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Large-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 93527daf81d84b342a3803536f72a811
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Medium-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7d213b41c1cd0a644b0c5effc5a742bc
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Medium-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 269f616e789fcc7469d1e648db757601
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Medium-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1cc52d80134eee249904672830510e45
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Medium-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 457ca390b271e794b949ff189bb3cb6a
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Slope_Large-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9af9c241d874b0243a59aa9108a6e043
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Slope_Large-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 641b6798b4f217848a109b9e59d5f01f
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Slope_Large-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c81b62f5b5f4835498bb8e463b2d051c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Slope_Large-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a53c2fac0b16eef4f89ac206ced35a80
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Slope_Medium-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 01dca20466d9b3d48aaac29a8df03414
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Slope_Medium-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a758578ff458e4f4c8a232fbf1720a9e
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Slope_Medium-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 184e8de093435b949a964c9d9e2fc651
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Slope_Medium-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 233eb6860ebf3474dbb9fe4dbd8869c9
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Slope_Small-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 03a87cc96f71d6844ba8caebd8d3b04c
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Slope_Small-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fbd0b4d1757be0d419b24f8e39032a94
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Slope_Small-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d42cc48de5a6aad468d2abda57ee2758
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Slope_Small-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4ec97bc37b629434383c957f928de39b
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Small-X0.5.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b0811f6bae896e64ea9f85f3e5bfdbb1
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Small-X0.25.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 55a33f567ee0a344886c7fc71ff4ca23
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Small-X1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: df60e2c8845a42f46b505708022bdd84
+    m_Address: Assets/BBlock/Prefabs/@FBX/Globals_Blocks/Block_Triangle_Small-X2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d960e443c2f18cf45940cc5496f9d39a, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c0c4cd85a06d1074c8afb1845191bc75, type: 2}
+    - {fileID: 11400000, guid: 5be3f86c6e4a52b48be873d277b0de46, type: 2}

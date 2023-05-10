@@ -16,6 +16,10 @@ public class CollisionManager : MonoBehaviour
         {
             onCollisionTag2(collision);
         }
+        if (collision.gameObject.CompareTag(customTag_)|| collision.gameObject.CompareTag(customTag2_))
+        {
+            onCollisionTagBoth(collision);
+        }
     }
 
     protected virtual void onCollisionTag(Collision collision)
@@ -25,5 +29,9 @@ public class CollisionManager : MonoBehaviour
     protected virtual void onCollisionTag2(Collision collision)
     {
         
+    }
+    protected virtual void onCollisionTagBoth(Collision collision)
+    {
+
     }
 }
