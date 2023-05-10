@@ -26979,18 +26979,6 @@ MonoBehaviour:
   pressedPosition_: 30
   hitStrength_: 20000
   flipperDamper_: 150
---- !u!114 &1349654153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1349654137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 591aeb8530be7d64c8083c49a215df12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1373046000
 GameObject:
   m_ObjectHideFlags: 0
@@ -27334,7 +27322,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386940182}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -43972,18 +43960,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!114 &2068239399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068239387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 591aeb8530be7d64c8083c49a215df12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2075572581
 GameObject:
   m_ObjectHideFlags: 0

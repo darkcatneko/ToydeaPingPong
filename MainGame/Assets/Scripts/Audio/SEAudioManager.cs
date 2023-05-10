@@ -16,6 +16,7 @@ public class SEAudioManager : MonoBehaviour
     {
         seAudioManagerInit();
         MainGameController.Instance.MainGameEvents_.PlayerHitBounceObjectEvent.AddListener(callBounceObjectSE);
+        MainGameController.Instance.MainGameEvents_.PlayerEatCarrotEvent.AddListener(callEatCarrotSE);
     }   
     private void seAudioManagerInit()
     {
@@ -31,6 +32,7 @@ public class SEAudioManager : MonoBehaviour
     {
         bounceObjectSE_ = await AddressableSearcher.Instance.GetAddressableAsset<AudioClip>("Audio/BounceObjectSE");
         eatCarrotSE_ = await AddressableSearcher.Instance.GetAddressableAsset<AudioClip>("Audio/EatCarrot");
+        raceEndSE_ = await AddressableSearcher.Instance.GetAddressableAsset<AudioClip>("Audio/RaceFinish");
     }
     private GameObject SpawnAudioSource()
     {
@@ -57,6 +59,12 @@ public class SEAudioManager : MonoBehaviour
     {
         var audioPlayer = SpawnAudioSource().GetComponent<AudioSource>();
         audioPlayer.clip = bounceObjectSE_;
+        audioPlayer.Play();
+    }
+    private void callEatCarrotSE()
+    {
+        var audioPlayer = SpawnAudioSource().GetComponent<AudioSource>();
+        audioPlayer.clip = eatCarrotSE_;
         audioPlayer.Play();
     }
 }
