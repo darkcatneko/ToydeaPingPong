@@ -42,7 +42,7 @@ public class TrainingData
     }
     private void rankUpChallangeStart()
     {
-        if (Speed == MaxBar && Stamina == MaxBar && Strength == MaxBar && Intelligence == MaxBar)
+        if (Speed == MaxBar && Stamina == MaxBar && Strength == MaxBar && Intelligence == MaxBar&&CanEnterBonusStage ==false )
         {
             CanEnterBonusStage = true;
             MainGameController.Instance.PlayerShouldRankUp();

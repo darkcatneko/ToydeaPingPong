@@ -13,7 +13,7 @@ public class RaceResultImageBehavior : MonoBehaviour
     [SerializeField]private Sprite[] resultSprites;
     //[SerializeField] private Vector3 finalPos_;
     [SerializeField] private float animationTime_=0.3f;
-    [SerializeField] private float fadeTime_=0.6f;
+    [SerializeField] private float fadeTime_=1.2f;
 
     public void CallResultImage(int rank)
     {
