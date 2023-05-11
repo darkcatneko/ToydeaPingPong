@@ -5541,7 +5541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitElasticity_: 1.2
-  minSpeed_: 0
+  minSpeed_: 20
   maxSpeed_: 35
 --- !u!114 &44882613
 MonoBehaviour:
@@ -5706,7 +5706,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59282786}
   m_LocalRotation: {x: 0.00076995743, y: -0.08505772, z: 0.008692912, w: 0.99633783}
-  m_LocalPosition: {x: 6.0456, y: 1.8048, z: -13.9326}
+  m_LocalPosition: {x: 5.79, y: 1.8048, z: -13.23}
   m_LocalScale: {x: 3.2122574, y: 1.6547458, z: 0.028368821}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27301,7 +27301,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &1386940183
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32666,15 +32666,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1280813827021745040, guid: 33bbb94827b371040b725af52e64f43f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.41667
+      value: 0.4225887
       objectReference: {fileID: 0}
     - target: {fileID: 1280813827021745040, guid: 33bbb94827b371040b725af52e64f43f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.41667
+      value: 0.28776896
       objectReference: {fileID: 0}
     - target: {fileID: 1280813827021745040, guid: 33bbb94827b371040b725af52e64f43f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.41667
+      value: 0.28776896
       objectReference: {fileID: 0}
     - target: {fileID: 1280813827021745040, guid: 33bbb94827b371040b725af52e64f43f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32736,6 +32736,10 @@ PrefabInstance:
       propertyPath: finalPOS_.y
       value: 303
       objectReference: {fileID: 0}
+    - target: {fileID: 1280813827021745042, guid: 33bbb94827b371040b725af52e64f43f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5a17aba5c11780b4b929e33047de1bc8, type: 3}
     - target: {fileID: 1280813827021745047, guid: 33bbb94827b371040b725af52e64f43f, type: 3}
       propertyPath: m_Name
       value: InvitationRace
@@ -41640,8 +41644,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: fe4c4b202ce749d448b54c44ff93dfbe, type: 3}
   - {fileID: 21300000, guid: 3b3ceb8bb835ed04c937e8ac4463d1a6, type: 3}
   - {fileID: 21300000, guid: b80d04a362fd52b429293e9980f3d0a4, type: 3}
-  animationTime_: 0.3
-  fadeTime_: 1.5
+  animationTime_: 0.6
+  fadeTime_: 3
 --- !u!1 &1767861273
 GameObject:
   m_ObjectHideFlags: 0

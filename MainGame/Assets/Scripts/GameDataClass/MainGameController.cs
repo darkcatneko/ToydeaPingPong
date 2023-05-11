@@ -121,10 +121,5 @@ public class MainGameController : ToSingletonMonoBehavior<MainGameController>
         MainGameEvents_.PlayerHitBounceObjectEvent.Invoke();
     }
     #endregion
-    
-
-    private void stopStartVideoAnimation()
-    {
-       
-    }
+        
 }
